@@ -1006,6 +1006,149 @@
         "Non-alcoholic stout",
         "Radler/shandy"
        ]
+      },
+      {
+       "id": "1.2.38",
+       "name": "Malts",
+       "styles": [
+        "Pilsner malt",
+        "Pale ale malt",
+        "Maris Otter",
+        "Vienna malt",
+        "Munich malt",
+        "Wheat malt",
+        "Rye malt",
+        "Crystal/caramel malts",
+        "Chocolate malt",
+        "Black (patent) malt",
+        "Roasted barley",
+        "Smoked malt",
+        "Acidulated malt"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "1.2.39",
+       "name": "Hops: US & Southern Hemisphere",
+       "styles": [
+        "Cascade",
+        "Centennial",
+        "Citra",
+        "Mosaic",
+        "Simcoe",
+        "Amarillo",
+        "Chinook",
+        "Galaxy (Australia)",
+        "Nelson Sauvin (NZ)",
+        "Motueka (NZ)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "1.2.40",
+       "name": "Hops: European",
+       "styles": [
+        "Saaz",
+        "Hallertauer Mittelfrüh",
+        "Tettnanger",
+        "Spalter",
+        "East Kent Goldings",
+        "Fuggle",
+        "Styrian Golding"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "1.2.41",
+       "name": "Yeast & Microbes",
+       "styles": [
+        "Ale yeast (S. cerevisiae)",
+        "Lager yeast (S. pastorianus)",
+        "Kveik",
+        "Belgian/Saison yeast",
+        "Hefeweizen yeast",
+        "Brettanomyces",
+        "Lactobacillus",
+        "Pediococcus"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "1.2.42",
+       "name": "Water Profiles",
+       "styles": [
+        "Burton-on-Trent (high sulfate)",
+        "Pilsen (very soft)",
+        "Munich (carbonate)",
+        "Dublin (carbonate)",
+        "London",
+        "Dortmund",
+        "Vienna",
+        "Sulfate-to-chloride ratio"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "1.2.43",
+       "name": "Brewing Process",
+       "styles": [
+        "Malting (steep, germinate, kiln)",
+        "Milling",
+        "Mashing",
+        "Lautering",
+        "Sparging",
+        "Boil",
+        "Whirlpool",
+        "Wort chilling",
+        "Fermentation",
+        "Lagering/conditioning",
+        "Packaging"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "1.2.44",
+       "name": "Mash Methods",
+       "styles": [
+        "Single infusion",
+        "Step infusion",
+        "Single decoction",
+        "Double decoction",
+        "Triple decoction",
+        "Cereal mash",
+        "Protein rest",
+        "Saccharification rest"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "1.2.45",
+       "name": "Hopping Techniques",
+       "styles": [
+        "Bittering addition",
+        "Flavor/aroma addition",
+        "Whirlpool hop stand",
+        "Dry hopping",
+        "Biotransformation",
+        "First wort hopping",
+        "CO2 hop extract"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "1.2.46",
+       "name": "Measurements",
+       "styles": [
+        "Original gravity (OG)",
+        "Final gravity (FG)",
+        "ABV",
+        "IBU",
+        "SRM color",
+        "EBC color",
+        "Apparent attenuation",
+        "Degrees Plato"
+       ],
+       "parent": "Science"
       }
      ]
     },
@@ -1298,6 +1441,100 @@
         "Non-alcoholic aperitif/bitter alternatives",
         "Shrub-based drinks"
        ]
+      },
+      {
+       "id": "1.3.22",
+       "name": "Raw Materials",
+       "styles": [
+        "Corn",
+        "Rye",
+        "Malted barley",
+        "Wheat",
+        "Sugarcane juice",
+        "Molasses",
+        "Grapes/wine",
+        "Apples & pears",
+        "Blue agave (A. tequilana Weber)",
+        "Potatoes",
+        "Sorghum",
+        "Rice"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "1.3.23",
+       "name": "Mash Bills",
+       "styles": [
+        "Bourbon (≥51% corn)",
+        "Rye whiskey (≥51% rye)",
+        "High-rye bourbon",
+        "Wheated bourbon",
+        "Single malt (100% malted barley)",
+        "Four-grain"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "1.3.24",
+       "name": "Fermentation",
+       "styles": [
+        "Sweet mash",
+        "Sour mash (backset)",
+        "Wash (distiller's beer)",
+        "Open vs closed fermenters",
+        "Dunder (Jamaican rum)",
+        "Solid-state fermentation (baijiu)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "1.3.25",
+       "name": "Distillation",
+       "styles": [
+        "Pot still",
+        "Column (Coffey) still",
+        "Hybrid still",
+        "Alembic charentais",
+        "Double distillation",
+        "Triple distillation",
+        "Doubler/thumper",
+        "Heads (foreshots)",
+        "Hearts",
+        "Tails (feints)",
+        "Reflux",
+        "Proof & ABV"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "1.3.26",
+       "name": "Agave Production",
+       "styles": [
+        "Jimador harvest (coa)",
+        "Piñas",
+        "Earthen pit oven (mezcal)",
+        "Masonry horno",
+        "Autoclave",
+        "Diffuser (difusor)",
+        "Tahona (stone wheel)",
+        "Roller mill",
+        "Copper & clay pot stills"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "1.3.27",
+       "name": "Finishing & Bottling",
+       "styles": [
+        "Proofing (dilution)",
+        "Chill filtration",
+        "Non-chill filtered",
+        "Cask strength",
+        "Blending (vatting)",
+        "Caramel color (E150a)",
+        "See Barrel Toasting & Aging"
+       ],
+       "parent": "Techniques"
       }
      ]
     }
@@ -1427,6 +1664,303 @@
         "Dalgona coffee",
         "Shakerato"
        ]
+      },
+      {
+       "id": "2.1.10",
+       "name": "Arabica Varieties",
+       "styles": [
+        "Typica",
+        "Bourbon",
+        "Caturra",
+        "Catuaí",
+        "Mundo Novo",
+        "Geisha (Gesha)",
+        "SL28",
+        "SL34",
+        "Pacamara",
+        "Maragogype",
+        "Villa Sarchi",
+        "Pink Bourbon"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.11",
+       "name": "Hybrids & Resistant Cultivars",
+       "styles": [
+        "Timor Hybrid",
+        "Catimor",
+        "Sarchimor",
+        "Castillo",
+        "Colombia",
+        "Ruiru 11",
+        "Batian",
+        "Marsellesa",
+        "Obatã",
+        "Starmaya (F1 hybrid)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.12",
+       "name": "Ethiopian Landraces",
+       "styles": [
+        "Ethiopian heirloom landraces",
+        "JARC 74110",
+        "JARC 74112",
+        "Kurume",
+        "Wolisho"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.13",
+       "name": "Robusta & Other Species",
+       "styles": [
+        "Robusta (C. canephora) clones",
+        "Conilon (Brazil)",
+        "Liberica",
+        "Excelsa (C. liberica var. dewevrei)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.14",
+       "name": "Growing Conditions",
+       "styles": [
+        "Altitude (masl)",
+        "Shade-grown",
+        "Full sun",
+        "Agroforestry",
+        "Volcanic soils",
+        "Distinct dry season",
+        "Coffee belt (tropics)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.15",
+       "name": "Origins: Africa & Arabia",
+       "styles": [
+        "Ethiopia (Yirgacheffe, Sidama, Guji)",
+        "Kenya (Nyeri, Kirinyaga)",
+        "Rwanda",
+        "Burundi",
+        "Uganda",
+        "Tanzania",
+        "Yemen"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.16",
+       "name": "Origins: Latin America",
+       "styles": [
+        "Colombia",
+        "Brazil",
+        "Guatemala",
+        "Costa Rica",
+        "Honduras",
+        "El Salvador",
+        "Panama",
+        "Peru",
+        "Mexico",
+        "Nicaragua",
+        "Bolivia"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.17",
+       "name": "Origins: Asia-Pacific",
+       "styles": [
+        "Sumatra",
+        "Java",
+        "Sulawesi",
+        "Papua New Guinea",
+        "India (Monsooned Malabar)",
+        "Vietnam",
+        "Yunnan",
+        "Hawaii (Kona)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.1.18",
+       "name": "Harvest",
+       "styles": [
+        "Selective hand-picking",
+        "Strip picking",
+        "Mechanical harvesting",
+        "Ripeness sorting",
+        "Float sorting"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.1.19",
+       "name": "Wet Processing Steps",
+       "styles": [
+        "Pulping",
+        "Fermentation (dry or underwater)",
+        "Washing",
+        "Mechanical demucilaging",
+        "Drying"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.1.20",
+       "name": "Honey Grades",
+       "styles": [
+        "White honey",
+        "Yellow honey",
+        "Red honey",
+        "Black honey"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.1.21",
+       "name": "Experimental Processing",
+       "styles": [
+        "Anaerobic natural",
+        "Anaerobic washed",
+        "Carbonic maceration",
+        "Lactic process",
+        "Yeast-inoculated",
+        "Thermal shock",
+        "Co-fermented (infused)",
+        "Double fermentation"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.1.22",
+       "name": "Drying",
+       "styles": [
+        "Patio drying",
+        "Raised (African) beds",
+        "Mechanical dryers (guardiolas)",
+        "Target moisture 10–12%",
+        "Resting (reposo)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.1.23",
+       "name": "Milling & Grading",
+       "styles": [
+        "Hulling (parchment removal)",
+        "Polishing",
+        "Density sorting",
+        "Optical color sorting",
+        "Screen size grading",
+        "SCA specialty grade",
+        "Primary defects (black, sour, fungus)",
+        "Secondary defects (broken, insect, quakers)"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "2.1.24",
+       "name": "Roast Chemistry",
+       "styles": [
+        "Drying phase",
+        "Maillard reactions",
+        "Caramelization",
+        "Strecker degradation",
+        "Chlorogenic acid breakdown",
+        "CO2 degassing"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "2.1.25",
+       "name": "Roast Profile",
+       "styles": [
+        "Charge temperature",
+        "Turning point",
+        "Rate of rise (RoR)",
+        "First crack",
+        "Development time ratio",
+        "Second crack",
+        "Agtron color"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "2.1.26",
+       "name": "Extraction & Strength",
+       "styles": [
+        "Extraction yield (18–22%)",
+        "Total dissolved solids (TDS)",
+        "SCA brewing control chart",
+        "Brew ratio (~1:15–1:18)",
+        "Refractometer"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "2.1.27",
+       "name": "Brewing Variables",
+       "styles": [
+        "Grind size",
+        "Water temperature (90–96 °C)",
+        "Contact time",
+        "Agitation",
+        "Bypass",
+        "Espresso ratio (~1:2)",
+        "Pressure (~9 bar)"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "2.1.28",
+       "name": "Water for Coffee",
+       "styles": [
+        "SCA water standard (TDS ~150 mg/L)",
+        "Calcium hardness",
+        "Alkalinity (~40 mg/L)",
+        "pH ~7",
+        "Chlorine-free"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "2.1.29",
+       "name": "Cupping Protocol",
+       "styles": [
+        "SCA cupping form",
+        "Fragrance/aroma",
+        "Flavor",
+        "Aftertaste",
+        "Acidity",
+        "Body",
+        "Balance",
+        "Uniformity",
+        "Clean cup",
+        "Sweetness",
+        "Overall",
+        "Specialty = 80+ points"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "2.1.30",
+       "name": "Flavor Wheel (SCA/WCR)",
+       "styles": [
+        "Fruity",
+        "Floral",
+        "Sweet",
+        "Nutty/cocoa",
+        "Spices",
+        "Roasted",
+        "Green/vegetative",
+        "Sour/fermented",
+        "Other (papery, chemical)"
+       ],
+       "parent": "Quality & Standards"
       }
      ]
     },
@@ -1554,6 +2088,198 @@
         "Powdered (matcha/instant)",
         "RTD bottled tea"
        ]
+      },
+      {
+       "id": "2.2.11",
+       "name": "Tea Plant Varieties",
+       "styles": [
+        "Camellia sinensis var. sinensis",
+        "Camellia sinensis var. assamica",
+        "Cambod (hybrid type)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.2.12",
+       "name": "Notable Cultivars",
+       "styles": [
+        "Yabukita",
+        "Okumidori",
+        "Saemidori",
+        "Asatsuyu",
+        "Fuding Da Bai",
+        "Tieguanyin",
+        "Jin Xuan (TTES #12)",
+        "Qing Xin",
+        "Rou Gui",
+        "Shui Xian",
+        "Longjing #43",
+        "AV2 (Darjeeling clone)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.2.13",
+       "name": "Growing Regions",
+       "styles": [
+        "China (Fujian, Yunnan, Zhejiang, Anhui)",
+        "India (Darjeeling, Assam, Nilgiri)",
+        "Sri Lanka (Nuwara Eliya, Uva, Dimbula)",
+        "Japan (Shizuoka, Uji, Kagoshima)",
+        "Taiwan (Alishan, Nantou)",
+        "Kenya",
+        "Nepal (Ilam)",
+        "Vietnam"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.2.14",
+       "name": "Growing Practices",
+       "styles": [
+        "Elevation",
+        "Shading (kabuse, tencha)",
+        "Seasonal flushes (first, second, autumn)",
+        "Plucking table pruning",
+        "Organic/biodynamic",
+        "Old-tree (gushu) gardens"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.2.15",
+       "name": "Plucking Standards",
+       "styles": [
+        "Bud only",
+        "One bud, one leaf",
+        "One bud, two leaves",
+        "One bud, three leaves",
+        "Mature leaves (oolong, dark tea)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "2.2.16",
+       "name": "Processing Steps",
+       "styles": [
+        "Withering",
+        "Bruising/shaking (oolong)",
+        "Rolling",
+        "Oxidation",
+        "Kill-green (sha qing)",
+        "Drying/firing",
+        "Sorting",
+        "Roasting"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.2.17",
+       "name": "Kill-Green Methods",
+       "styles": [
+        "Pan-firing (wok)",
+        "Steaming (Japan)",
+        "Baking",
+        "Sun-drying (pu-erh maocha)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.2.18",
+       "name": "Process by Tea Type",
+       "styles": [
+        "White: wither + dry",
+        "Yellow: kill-green + yellowing (men huang)",
+        "Green: kill-green + roll + dry",
+        "Oolong: partial oxidation",
+        "Black: full oxidation",
+        "Dark: heaping (wo dui) / aging"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.2.19",
+       "name": "Post-Processing",
+       "styles": [
+        "Compression (cakes, bricks)",
+        "Aging",
+        "Re-roasting",
+        "Scenting (jasmine)",
+        "Blending"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.2.20",
+       "name": "Japanese Processing",
+       "styles": [
+        "Aracha (crude tea)",
+        "Asamushi (light steam)",
+        "Fukamushi (deep steam)",
+        "Tencha (for matcha)",
+        "Stone-milling",
+        "Gyokuro shading (~3 weeks)",
+        "Hojicha roasting",
+        "Kukicha (stems)",
+        "Shiage (refining)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.2.21",
+       "name": "Orthodox vs CTC",
+       "styles": [
+        "Orthodox rolling",
+        "CTC (crush, tear, curl)",
+        "Rotorvane",
+        "Fannings",
+        "Dust"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.2.22",
+       "name": "Leaf Grades",
+       "styles": [
+        "OP (Orange Pekoe)",
+        "FOP",
+        "GFOP",
+        "TGFOP",
+        "FTGFOP",
+        "SFTGFOP",
+        "BOP (Broken OP)",
+        "Fannings",
+        "Dust",
+        "CTC grades (BP, PD)"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "2.2.23",
+       "name": "Brewing Methods",
+       "styles": [
+        "Western teapot",
+        "Gongfu cha (gaiwan, Yixing)",
+        "Grandpa style",
+        "Kyusu (Japanese)",
+        "Cold brew",
+        "Matcha whisking (chasen)"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "2.2.24",
+       "name": "Brewing Parameters",
+       "styles": [
+        "White/green ~70–85 °C",
+        "Oolong ~85–95 °C",
+        "Black/dark ~95–100 °C",
+        "Western ~2–3 g per 250 mL",
+        "Gongfu ~5–7 g per 100 mL",
+        "Multiple infusions",
+        "Soft water"
+       ],
+       "parent": "Techniques"
       }
      ]
     },
@@ -1601,6 +2327,85 @@
         "Jun (green tea and honey)",
         "Kombucha vinegar"
        ]
+      },
+      {
+       "id": "2.3.5",
+       "name": "SCOBY Microbes",
+       "styles": [
+        "Komagataeibacter xylinus",
+        "Acetobacter",
+        "Gluconobacter",
+        "Brettanomyces (Dekkera)",
+        "Zygosaccharomyces",
+        "Saccharomyces",
+        "Schizosaccharomyces",
+        "Lactobacillus (variable)"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "2.3.6",
+       "name": "SCOBY Biology",
+       "styles": [
+        "Bacterial cellulose pellicle",
+        "Yeast invertase splits sucrose",
+        "Yeast make ethanol",
+        "Bacteria oxidize ethanol to acetic acid",
+        "Gluconic & glucuronic acids"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "2.3.7",
+       "name": "Brewing Process",
+       "styles": [
+        "Sweet tea base (~50–100 g sugar/L)",
+        "Starter liquid (~10–20%)",
+        "Initial pH ≤4.6",
+        "F1: 7–14 days at ~20–29 °C",
+        "Finished pH ~2.5–3.5",
+        "F2: flavor & bottle",
+        "Refrigerate"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "2.3.8",
+       "name": "Alcohol Control",
+       "styles": [
+        "Below 0.5% ABV = non-alcoholic (US TTB)",
+        "Hard kombucha ≥0.5% (TTB-regulated)",
+        "ABV lab testing",
+        "Cold chain",
+        "Yeast management"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "2.3.9",
+       "name": "Flavoring & Carbonation",
+       "styles": [
+        "Fruit juice",
+        "Whole fruit",
+        "Herbs & botanicals",
+        "Ginger",
+        "Bottle conditioning",
+        "Forced carbonation (kegging)"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "2.3.10",
+       "name": "Quality & Safety",
+       "styles": [
+        "Mold (fuzzy, dry spots)",
+        "Kahm yeast",
+        "Fruit flies",
+        "Vinegar eels",
+        "Over-acidification",
+        "Food-safe vessels (no leaded glaze)"
+       ],
+       "parent": "Quality & Standards"
       }
      ]
     }
@@ -1674,6 +2479,74 @@
         "Boiled (point-of-use)",
         "UV-treated"
        ]
+      },
+      {
+       "id": "3.1.7",
+       "name": "Sources & Hydrogeology",
+       "styles": [
+        "Confined aquifers",
+        "Unconfined aquifers",
+        "Springs",
+        "Artesian wells",
+        "Surface water (lakes, rivers)",
+        "Glacial melt",
+        "Desalination"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "3.1.8",
+       "name": "Treatment",
+       "styles": [
+        "Coagulation & flocculation",
+        "Sedimentation",
+        "Sand filtration",
+        "Activated carbon",
+        "Reverse osmosis",
+        "Ion exchange (softening)",
+        "UV disinfection",
+        "Ozonation",
+        "Chlorination/chloramination",
+        "Remineralization"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "3.1.9",
+       "name": "Water Chemistry",
+       "styles": [
+        "TDS (mg/L)",
+        "Hardness (Ca, Mg)",
+        "Alkalinity (bicarbonate)",
+        "pH",
+        "Sodium",
+        "Silica",
+        "Nitrate",
+        "Conductivity"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "3.1.10",
+       "name": "Standards",
+       "styles": [
+        "US EPA (Safe Drinking Water Act)",
+        "US FDA bottled water (21 CFR 165.110)",
+        "EU Natural Mineral Water Directive",
+        "WHO drinking-water guidelines"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "3.1.11",
+       "name": "Water for Beverages",
+       "styles": [
+        "SCA coffee water standard",
+        "Tea (soft, low-mineral)",
+        "Brewing water profiles (see Beer Academy)",
+        "Ice quality"
+       ],
+       "parent": "Techniques"
       }
      ]
     },
@@ -1765,6 +2638,68 @@
         "Green juice (kale/spinach/cucumber)",
         "Mixed vegetable juice"
        ]
+      },
+      {
+       "id": "3.2.8",
+       "name": "Juice Fruit Varieties",
+       "styles": [
+        "Valencia orange",
+        "Hamlin orange",
+        "Pera orange (Brazil)",
+        "Gala apple",
+        "Fuji apple",
+        "Honeycrisp apple",
+        "Concord grape",
+        "Niagara grape",
+        "Wonderful pomegranate",
+        "Kent mango",
+        "Alphonso mango",
+        "MD2 pineapple"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "3.2.9",
+       "name": "Extraction",
+       "styles": [
+        "Washing & sorting",
+        "Citrus extractors (JBT/FMC, Brown)",
+        "Hydraulic press",
+        "Belt press",
+        "Rack-and-cloth press",
+        "Decanter centrifuge",
+        "Enzymatic maceration (pectinase)",
+        "Cold-press"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "3.2.10",
+       "name": "Processing",
+       "styles": [
+        "Clarification & fining",
+        "Deaeration",
+        "HTST pasteurization",
+        "Hot-fill",
+        "HPP (~600 MPa)",
+        "Evaporation (concentrate)",
+        "Aroma recovery",
+        "Aseptic storage"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "3.2.11",
+       "name": "Quality & Regulation",
+       "styles": [
+        "Brix",
+        "Brix/acid ratio",
+        "FDA Juice HACCP (5-log reduction)",
+        "Unpasteurized warning label",
+        "Patulin limits (apple)",
+        "% juice labeling (21 CFR 101.30)"
+       ],
+       "parent": "Quality & Standards"
       }
      ]
     },
@@ -1923,6 +2858,124 @@
         "Almond creamer",
         "Coconut creamer"
        ]
+      },
+      {
+       "id": "3.3.12",
+       "name": "Dairy Cattle Breeds",
+       "styles": [
+        "Holstein-Friesian",
+        "Jersey",
+        "Guernsey",
+        "Brown Swiss",
+        "Ayrshire",
+        "Milking Shorthorn",
+        "Normande",
+        "Montbéliarde",
+        "Gir",
+        "Sahiwal"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "3.3.13",
+       "name": "Goat & Sheep Breeds",
+       "styles": [
+        "Saanen",
+        "Alpine",
+        "Nubian",
+        "LaMancha",
+        "Nigerian Dwarf",
+        "East Friesian (sheep)",
+        "Lacaune (sheep)",
+        "Awassi (sheep)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "3.3.14",
+       "name": "Farming & Feeding",
+       "styles": [
+        "Pasture-based (grass-fed)",
+        "Total mixed ration (TMR)",
+        "Silage",
+        "Hay",
+        "Free-stall housing",
+        "USDA organic (≥120 grazing days)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "3.3.15",
+       "name": "Milking",
+       "styles": [
+        "Herringbone parlor",
+        "Parallel parlor",
+        "Rotary parlor",
+        "Robotic milking (AMS)",
+        "Teat dipping",
+        "Somatic cell count (SCC)",
+        "Bulk tank cooling (≤7 °C / 45 °F)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "3.3.16",
+       "name": "Milk Components",
+       "styles": [
+        "Water (~87%)",
+        "Fat (~3.5–4%)",
+        "Protein (~3.3%)",
+        "Casein (~80% of protein)",
+        "Whey proteins (~20%)",
+        "Lactose (~4.8%)",
+        "Minerals (Ca, P)",
+        "A1 vs A2 β-casein",
+        "Fat globules"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "3.3.17",
+       "name": "Processing Steps",
+       "styles": [
+        "Receiving & testing",
+        "Clarification",
+        "Separation (cream/skim)",
+        "Standardization",
+        "Homogenization",
+        "HTST (72 °C / 15 s)",
+        "Ultra-pasteurization (≥138 °C / 2 s)",
+        "UHT aseptic",
+        "ESL (extended shelf life)",
+        "Microfiltration"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "3.3.18",
+       "name": "Grading & Regulation",
+       "styles": [
+        "Grade A (Pasteurized Milk Ordinance)",
+        "Manufacturing grade (Grade B)",
+        "Antibiotic residue testing",
+        "Bacteria count limits",
+        "Raw milk sales (state law)"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "3.3.19",
+       "name": "Plant Milk Production",
+       "styles": [
+        "Soaking",
+        "Wet milling",
+        "Enzymatic hydrolysis (oat)",
+        "Filtering/decanting",
+        "Fortification (Ca, D, B12)",
+        "Homogenization",
+        "UHT"
+       ],
+       "parent": "Production"
       }
      ]
     }
@@ -1989,6 +3042,58 @@
         "Infant formula",
         "Thickened liquids (IDDSI levels 1–4)"
        ]
+      },
+      {
+       "id": "4.1.6",
+       "name": "Electrolyte Science",
+       "styles": [
+        "Sodium",
+        "Potassium",
+        "Chloride",
+        "Magnesium",
+        "Calcium",
+        "Osmolality (hypo/iso/hypertonic)",
+        "Glucose-sodium co-transport (SGLT1)"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "4.1.7",
+       "name": "Functional Ingredients",
+       "styles": [
+        "Probiotic strains (Lactobacillus, Bifidobacterium)",
+        "Prebiotic fibers (inulin, FOS)",
+        "Collagen peptides",
+        "Ashwagandha",
+        "Curcumin (turmeric)",
+        "Ginger",
+        "Acetic acid (vinegar)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "4.1.8",
+       "name": "Regulation",
+       "styles": [
+        "Conventional food vs dietary supplement (DSHEA)",
+        "Structure/function claims",
+        "FDA health claims",
+        "Supplement Facts vs Nutrition Facts",
+        "Medical foods"
+       ],
+       "parent": "Quality & Standards"
+      },
+      {
+       "id": "4.1.9",
+       "name": "Evidence Levels",
+       "styles": [
+        "Meta-analyses & systematic reviews",
+        "Randomized controlled trials",
+        "Observational studies",
+        "Mechanistic & animal studies",
+        "Expert opinion"
+       ],
+       "parent": "Science"
       }
      ]
     },
@@ -2050,6 +3155,57 @@
         "Weight management",
         "Overnight (casein)"
        ]
+      },
+      {
+       "id": "4.2.6",
+       "name": "Protein Processing",
+       "styles": [
+        "Microfiltration",
+        "Ultrafiltration",
+        "Ion exchange",
+        "Enzymatic hydrolysis",
+        "Spray drying",
+        "Instantizing (lecithin)",
+        "Concentrate (WPC 34–80%)",
+        "Isolate (≥90% protein)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "4.2.7",
+       "name": "Protein Quality Science",
+       "styles": [
+        "PDCAAS",
+        "DIAAS",
+        "Leucine content",
+        "Essential amino acids",
+        "Fast (whey) vs slow (casein) digestion",
+        "Branched-chain amino acids"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "4.2.8",
+       "name": "Formulation",
+       "styles": [
+        "Heat stability (UHT RTD)",
+        "Emulsifiers & stabilizers",
+        "Sweeteners",
+        "Flavor masking",
+        "Protein per serving"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "4.2.9",
+       "name": "Regulation & Testing",
+       "styles": [
+        "FDA protein claims (good/excellent source)",
+        "Supplement vs conventional food",
+        "NSF Certified for Sport",
+        "Informed Sport"
+       ],
+       "parent": "Quality & Standards"
       }
      ]
     },
@@ -2110,6 +3266,44 @@
         "Citicoline/Alpha-GPC drinks",
         "Lion's mane drinks"
        ]
+      },
+      {
+       "id": "4.3.6",
+       "name": "Caffeine Science",
+       "styles": [
+        "Adenosine receptor antagonism",
+        "Half-life (~3–7 h)",
+        "~80 mg per 250 mL can",
+        "FDA: ~400 mg/day healthy adults",
+        "EFSA: 200 mg single dose",
+        "CYP1A2 metabolism"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "4.3.7",
+       "name": "Other Ingredients",
+       "styles": [
+        "Taurine",
+        "B vitamins",
+        "Glucuronolactone",
+        "Ginseng",
+        "L-carnitine",
+        "Sugar vs non-nutritive sweeteners",
+        "Electrolytes"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "4.3.8",
+       "name": "Regulation",
+       "styles": [
+        "Beverage vs supplement labeling",
+        "Caffeine disclosure",
+        "EU 'high caffeine content' label (>150 mg/L)",
+        "Restrictions on sales to minors (some countries)"
+       ],
+       "parent": "Quality & Standards"
       }
      ]
     }
@@ -2185,6 +3379,73 @@
         "Post-mix (fountain)",
         "Pre-mix (bottle/can)"
        ]
+      },
+      {
+       "id": "5.1.6",
+       "name": "Carbonation Science",
+       "styles": [
+        "CO2 solubility (Henry's law)",
+        "Volumes of CO2",
+        "Soda ~2.5–4 volumes",
+        "Temperature & pressure",
+        "Carbonic acid",
+        "Nucleation & bubble retention"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "5.1.7",
+       "name": "Syrup Making",
+       "styles": [
+        "Simple syrup",
+        "Flavor concentrates & emulsions",
+        "Throw ratio (e.g. 1:5)",
+        "Brix targets",
+        "Batch mixing",
+        "Bag-in-box (post-mix)"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "5.1.8",
+       "name": "Sweeteners",
+       "styles": [
+        "Sucrose (cane sugar)",
+        "HFCS 55",
+        "Aspartame",
+        "Sucralose",
+        "Acesulfame K",
+        "Stevia (Reb M)",
+        "Monk fruit",
+        "Erythritol",
+        "Allulose"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "5.1.9",
+       "name": "Acids & Preservatives",
+       "styles": [
+        "Phosphoric acid (colas)",
+        "Citric acid",
+        "Malic acid",
+        "Tartaric acid",
+        "Sodium benzoate",
+        "Potassium sorbate"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "5.1.10",
+       "name": "Packaging",
+       "styles": [
+        "Glass bottle",
+        "Aluminum can",
+        "PET bottle",
+        "Fountain (post-mix)",
+        "Keg"
+       ],
+       "parent": "Production"
       }
      ]
     },
@@ -2300,6 +3561,106 @@
         "Ginger beer (ginger bug)",
         "Palm wine"
        ]
+      },
+      {
+       "id": "5.2.10",
+       "name": "Kefir Microbiology",
+       "styles": [
+        "Kefir grains (kefiran matrix)",
+        "Lactobacillus kefiranofaciens",
+        "Lactococcus",
+        "Leuconostoc",
+        "Yeasts (Saccharomyces, Kluyveromyces)",
+        "Water kefir grains (dextran)"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "5.2.11",
+       "name": "Koji & Aspergillus",
+       "styles": [
+        "Aspergillus oryzae (yellow koji)",
+        "Aspergillus luchuensis (black koji, awamori)",
+        "Aspergillus sojae",
+        "Koji making (seikiku)",
+        "Saccharification"
+       ],
+       "parent": "Science"
+      },
+      {
+       "id": "5.2.12",
+       "name": "Sake Rice & Polishing",
+       "styles": [
+        "Yamada Nishiki",
+        "Omachi",
+        "Gohyakumangoku",
+        "Miyama Nishiki",
+        "Seimaibuai (polishing ratio)",
+        "Daiginjo ≤50%",
+        "Ginjo ≤60%",
+        "Shinpaku (starchy heart)"
+       ],
+       "parent": "Cultivation & Raw Materials"
+      },
+      {
+       "id": "5.2.13",
+       "name": "Sake Brewing Process",
+       "styles": [
+        "Washing & soaking",
+        "Steaming",
+        "Koji making",
+        "Shubo/moto (yeast starter)",
+        "Sandan shikomi (3-stage addition)",
+        "Moromi (main mash)",
+        "Multiple parallel fermentation",
+        "Pressing (jōsō)",
+        "Filtration",
+        "Hi-ire (pasteurization)",
+        "Aging"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "5.2.14",
+       "name": "Moto (Starter) Methods",
+       "styles": [
+        "Sokujō-moto",
+        "Kimoto",
+        "Yamahai-moto",
+        "Bodaimoto"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "5.2.15",
+       "name": "Cider Making",
+       "styles": [
+        "Sweet apples",
+        "Sharp apples",
+        "Bittersweet apples",
+        "Bittersharp apples",
+        "Milling & pressing",
+        "Wild vs cultured yeast",
+        "Keeving",
+        "Malolactic fermentation",
+        "Traditional method (cider)",
+        "Back-sweetening"
+       ],
+       "parent": "Production"
+      },
+      {
+       "id": "5.2.16",
+       "name": "Mead Making",
+       "styles": [
+        "Honey varietals",
+        "Must preparation",
+        "Staggered nutrient additions (SNA)",
+        "Yeast selection",
+        "Degassing",
+        "Aging",
+        "Stabilize & back-sweeten"
+       ],
+       "parent": "Production"
       }
      ]
     },
@@ -2385,6 +3746,32 @@
         "Peanut punch",
         "Kava (Fiji/Vanuatu/Tonga)"
        ]
+      },
+      {
+       "id": "5.3.7",
+       "name": "Preparation: Americas",
+       "styles": [
+        "Mate: gourd & bombilla",
+        "Tereré: cold water/juice infusion",
+        "Horchata: soaked rice & cinnamon",
+        "Chicha de jora: malted corn ferment",
+        "Chicha morada: purple corn boil",
+        "Atole: masa cooked in water/milk"
+       ],
+       "parent": "Techniques"
+      },
+      {
+       "id": "5.3.8",
+       "name": "Preparation: Asia & Beyond",
+       "styles": [
+        "Boba: tapioca pearls boiled & sugared",
+        "Masala chai: tea simmered with milk & spices",
+        "Teh tarik: 'pulled' between vessels",
+        "Thai tea: cloth-filter brew",
+        "Cà phê sữa đá: phin drip on condensed milk",
+        "Horchata de chufa: tiger nuts macerated"
+       ],
+       "parent": "Techniques"
       }
      ]
     }

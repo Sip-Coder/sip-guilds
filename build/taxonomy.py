@@ -128,6 +128,8 @@ G=[
   ("Europe","Horchata de chufa (Valencia); Kompot; Sbiten; Elderflower cordial; Mulled wine (Glühwein)"),
   ("North America","Egg cream (New York); Switchel (New England); Sweet apple cider (unfiltered); Root beer float; Hot chocolate"),
   ("Caribbean & Pacific","Sorrel (Jamaica); Mauby; Sea moss drink; Peanut punch; Kava (Fiji/Vanuatu/Tonga)")])])]
+import sys,os;sys.path.insert(0,os.path.dirname(__file__));from depth import DEPTH
+G=[(gn,tag,grp,gc,[(an,ac,list(subs)+DEPTH.get(an,[])) for an,ac,subs in acs]) for gn,tag,grp,gc,acs in G]
 out={"title":"Sip Studies × Sipopedia Beverage Taxonomy","version":"2.0","structure":"guild > academy > subgenre > styles","guilds":[]}
 for gi,(gn,tag,grp,gc,acs) in enumerate(G):
   g={"id":gi+1,"name":gn,"tagline":tag,"grouping":grp,"color":gc,"academies":[]}
