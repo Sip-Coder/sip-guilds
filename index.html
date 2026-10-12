@@ -127,9 +127,9 @@ rows.forEach(d=>d.className='ar done');return}
 const g=G[stop.g],A=stop.A,c=A.a.color,first=manual||k==0||subs[k-1].A!=A;
 if(k==0&&!manual){lit.fill(0);seen.fill(0);acads.forEach(a=>a.done=0);score=0}
 $('num').textContent=String(stop.g+1).padStart(2,'0');$('title').textContent=title(g.name);$('tagline').textContent=g.tagline;$('acad').textContent=A.a.name;
-const sn=stop.sg.name.replace(/^\d+ /,'');$('subt').textContent=`${stop.sg.id} ${sn.toUpperCase()}`;
+const sn=stop.sg.name.replace(/^\d+ /,'');$('subt').textContent=`${stop.sg.id} ${stop.sg.parent?stop.sg.parent.toUpperCase()+' › ':''}${sn.toUpperCase()}`;
 $('step').style.setProperty('--c',c);$('ring').setAttribute('stroke',c);coreM.color.set(c).lerp(new THREE.Color('#2ee6ff'),.5);
-hub.style.setProperty('--c',c);hub.firstChild.textContent=sn.toUpperCase();hub.lastChild.textContent=`${A.a.name} · ${title(g.name)}`;hub.style.opacity=0;
+hub.style.setProperty('--c',c);hub.firstChild.textContent=sn.toUpperCase();hub.lastChild.textContent=stop.sg.parent?`${stop.sg.parent} · ${A.a.name}`:`${A.a.name} · ${title(g.name)}`;hub.style.opacity=0;
 const rg=region(),midY=(rg.top+rg.bot)/2,offs=(midY-innerHeight/2)/innerHeight;
 const dist=MOB?260:200;lookTo.copy(stop.pos);lookTo.y+=offs*2*dist*Math.tan(27.5*Math.PI/180);camTo.set(lookTo.x,lookTo.y-14,stop.pos.z+dist);
 travel=SP*(first?2.4:1.4);dur=travel+dwell(stop.sg.styles.length);

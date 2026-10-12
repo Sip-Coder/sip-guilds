@@ -1,6 +1,6 @@
 # Sip Studies — Guild Crawler (Sipopedia academies)
 
-A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 121 subgenres → 633 styles**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 13.5 min.
+A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 142 subgenres → 774 styles (optional sub-subgenre `parent`, e.g. Milk › Cream & Cream Products › Fluid Creams)**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 16 min.
 
 **Live:** https://sip-coder.github.io/sip-guilds/
 
@@ -20,7 +20,9 @@ A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 aca
 - Water: US FDA 21 CFR 165.110 bottled water standard of identity (spring, mineral, artesian, purified, sparkling)
 - Non-alc: US TTB/FDA definitions for dealcoholized (<0.5% ABV) beverages; common market categories
 - Juice: US FDA 21 CFR 101.30 (percentage juice declaration) and 21 CFR 120 (juice HACCP; unpasteurized warning)
-- Milk: US FDA Grade "A" Pasteurized Milk Ordinance; 21 CFR 131 (milk fat levels)
+- Milk & cream: US FDA 21 CFR Part 131 standards of identity — milk §131.110, acidified §131.111, cultured §131.112, concentrated §131.115, sweetened condensed §131.120, nonfat dry §131.125, evaporated §131.130, dry whole §131.147, dry cream §131.149, heavy cream §131.150, light cream §131.155, light whipping §131.157, sour cream §131.160/.162, eggnog §131.170, half-and-half §131.180, sour half-and-half §131.185/.187, yogurt §131.200 — https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-131 ; reduced/low/fat-free naming per 21 CFR 101.62 & 130.10; Grade "A" Pasteurized Milk Ordinance; UK cream fat minimums per UK Dairy industry/Food Standards Agency guidance; USDA National Organic Program (organic)
+- Cocktails: International Bartenders Association official list (Unforgettables / Contemporary Classics / New Era) — https://iba-world.com/cocktails/all-cocktails/
+- Decaffeination & coffee formats: SCA; Swiss Water Decaf Co. process notes
 - Health/medical drinks: WHO oral rehydration salts formula; IDDSI framework (thickened drinks)
 - Protein/energy: US FDA dietary supplement & caffeine guidance; EFSA scientific opinion on caffeine safety (2015)
 - Kombucha & fermented drinks: Kombucha Brewers International code of practice; BJCP 2025 cider and 2015 mead guidelines

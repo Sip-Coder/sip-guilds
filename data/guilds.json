@@ -115,6 +115,17 @@
       },
       {
        "id": "1.1.8",
+       "name": "Wine-Based Drinks",
+       "styles": [
+        "Sangria",
+        "Spritzer",
+        "Wine cooler",
+        "Mulled wine",
+        "Kalimotxo (wine + cola)"
+       ]
+      },
+      {
+       "id": "1.1.9",
        "name": "Dealcoholized Wine (≤0.5% ABV)",
        "styles": [
         "Dealcoholized red",
@@ -458,6 +469,17 @@
       },
       {
        "id": "1.2.35",
+       "name": "Flavored Malt & Hard Seltzer (outside BJCP)",
+       "styles": [
+        "Hard seltzer",
+        "Flavored malt beverage",
+        "Malt liquor",
+        "Hard root beer/soda",
+        "Hard tea"
+       ]
+      },
+      {
+       "id": "1.2.36",
        "name": "NA & Low-Alcohol Beer (outside BJCP)",
        "styles": [
         "Non-alcoholic lager (≤0.5% ABV)",
@@ -633,6 +655,66 @@
       },
       {
        "id": "1.3.13",
+       "name": "Other Regional Spirits",
+       "styles": [
+        "Aquavit (akvavit)",
+        "Rakı",
+        "Arak",
+        "Pálinka",
+        "Slivovitz (šljivovica)",
+        "Singani",
+        "Feni"
+       ]
+      },
+      {
+       "id": "1.3.14",
+       "name": "The Unforgettables",
+       "styles": [
+        "Old Fashioned",
+        "Manhattan",
+        "Dry Martini",
+        "Negroni",
+        "Daiquiri",
+        "Whiskey Sour",
+        "Sidecar",
+        "Sazerac",
+        "Boulevardier",
+        "Martinez"
+       ],
+       "parent": "Cocktails (IBA)"
+      },
+      {
+       "id": "1.3.15",
+       "name": "Contemporary Classics",
+       "styles": [
+        "Margarita",
+        "Mojito",
+        "Cosmopolitan",
+        "Moscow Mule",
+        "Mai Tai",
+        "Piña Colada",
+        "Bloody Mary",
+        "Caipirinha",
+        "Mimosa",
+        "French 75"
+       ],
+       "parent": "Cocktails (IBA)"
+      },
+      {
+       "id": "1.3.16",
+       "name": "New Era Drinks",
+       "styles": [
+        "Espresso Martini",
+        "Spritz Veneziano",
+        "Penicillin",
+        "Paper Plane",
+        "Tommy's Margarita",
+        "Naked and Famous"
+       ],
+       "parent": "Cocktails (IBA)"
+      },
+      {
+       "id": "1.3.17",
        "name": "Zero-Proof",
        "styles": [
         "Virgin cocktails (mocktails)",
@@ -721,6 +803,43 @@
         "Cold brew",
         "Cold drip (Kyoto)",
         "Phin (Vietnamese)"
+       ]
+      },
+      {
+       "id": "2.1.6",
+       "name": "Decaffeination",
+       "styles": [
+        "Swiss Water Process",
+        "CO2 (supercritical) process",
+        "Ethyl acetate (sugarcane) process",
+        "Methylene chloride (direct/indirect) process"
+       ]
+      },
+      {
+       "id": "2.1.7",
+       "name": "Coffee Formats",
+       "styles": [
+        "Whole bean",
+        "Ground",
+        "Instant (freeze-dried)",
+        "Instant (spray-dried)",
+        "Single-serve pods/capsules",
+        "Coffee concentrate",
+        "Drip bags"
+       ]
+      },
+      {
+       "id": "2.1.8",
+       "name": "Iced & Blended Drinks",
+       "styles": [
+        "Iced coffee",
+        "Iced latte",
+        "Nitro cold brew",
+        "Frappé (Greek)",
+        "Blended iced coffee (frappuccino-style)",
+        "Espresso tonic",
+        "Dalgona coffee",
+        "Shakerato"
        ]
       }
      ]
@@ -811,6 +930,43 @@
         "Hibiscus",
         "Ginger",
         "Lemongrass"
+       ]
+      },
+      {
+       "id": "2.2.8",
+       "name": "Scented & Blended",
+       "styles": [
+        "Jasmine tea",
+        "Earl Grey (bergamot)",
+        "Lychee black",
+        "Rose black",
+        "Osmanthus oolong",
+        "Chai spice blend"
+       ]
+      },
+      {
+       "id": "2.2.9",
+       "name": "Tea Drinks",
+       "styles": [
+        "Iced tea",
+        "Sweet tea (US South)",
+        "Milk tea",
+        "Chai latte",
+        "Matcha latte",
+        "London fog",
+        "Arnold Palmer (tea + lemonade)"
+       ]
+      },
+      {
+       "id": "2.2.10",
+       "name": "Tea Formats",
+       "styles": [
+        "Loose leaf",
+        "Tea bags",
+        "Pyramid sachets",
+        "Compressed cakes/bricks",
+        "Powdered (matcha/instant)",
+        "RTD bottled tea"
        ]
       }
      ]
@@ -921,6 +1077,17 @@
         "Flavored/infused",
         "Hydrogen water"
        ]
+      },
+      {
+       "id": "3.1.6",
+       "name": "Tap & Treated",
+       "styles": [
+        "Municipal tap water",
+        "Private well water",
+        "Carbon-filtered",
+        "Boiled (point-of-use)",
+        "UV-treated"
+       ]
       }
      ]
     },
@@ -937,7 +1104,10 @@
         "Juice from concentrate",
         "Nectar",
         "Juice drink/cocktail",
-        "Smoothie"
+        "Smoothie",
+        "Lemonade",
+        "Limeade",
+        "Fruit punch"
        ]
       },
       {
@@ -1019,64 +1189,153 @@
      "subgenres": [
       {
        "id": "3.3.1",
+       "name": "Fat Level: Whole, 2%, 1%, Skim",
+       "styles": [
+        "Whole milk (≥3.25% milkfat)",
+        "Reduced-fat milk (2%)",
+        "Low-fat milk (1%)",
+        "Fat-free/skim milk (<0.5%)"
+       ],
+       "standards": "Whole milk: 21 CFR 131.110"
+      },
+      {
+       "id": "3.3.2",
+       "name": "Fluid Creams",
+       "styles": [
+        "Half-and-half (10.5–18% fat)",
+        "Light (coffee) cream (18–30%)",
+        "Light whipping cream (30–36%)",
+        "Heavy cream (≥36%)",
+        "Whipping cream (30–36%, not std.)",
+        "Whipped cream (aerosol)"
+       ],
+       "parent": "Cream & Cream Products",
+       "standards": "Half-and-half: §131.180; Light (coffee) cream: §131.155; Light whipping cream: §131.157; Heavy cream: §131.150"
+      },
+      {
+       "id": "3.3.3",
+       "name": "Cultured Creams",
+       "styles": [
+        "Sour cream",
+        "Acidified sour cream",
+        "Sour half-and-half",
+        "Acidified sour half-and-half",
+        "Crème fraîche"
+       ],
+       "parent": "Cream & Cream Products",
+       "standards": "Sour cream: §131.160; Acidified sour cream: §131.162; Sour half-and-half: §131.185; Acidified sour half-and-half: §131.187"
+      },
+      {
+       "id": "3.3.4",
+       "name": "International & Dry Creams",
+       "styles": [
+        "Single cream (UK, ≥18%)",
+        "Double cream (UK, ≥48%)",
+        "Clotted cream (UK, ≥55%)",
+        "Dry cream"
+       ],
+       "parent": "Cream & Cream Products",
+       "standards": "Dry cream: §131.149"
+      },
+      {
+       "id": "3.3.5",
+       "name": "Concentrated & Dry",
+       "styles": [
+        "Evaporated milk",
+        "Sweetened condensed milk",
+        "Concentrated milk",
+        "Nonfat dry milk",
+        "Dry whole milk"
+       ],
+       "standards": "Evaporated milk: §131.130; Sweetened condensed milk: §131.120; Concentrated milk: §131.115; Nonfat dry milk: §131.125; Dry whole milk: §131.147"
+      },
+      {
+       "id": "3.3.6",
+       "name": "Cultured & Acidified Milks",
+       "styles": [
+        "Cultured buttermilk",
+        "Acidified milk",
+        "Drinkable yogurt (yogurt base)",
+        "See Fermented Academy: kefir, kumis",
+        "See Regional Academy: lassi, ayran, doogh"
+       ],
+       "standards": "Cultured buttermilk: §131.112; Acidified milk: §131.111; Drinkable yogurt: §131.200"
+      },
+      {
+       "id": "3.3.7",
+       "name": "Flavored Milks",
+       "styles": [
+        "Chocolate milk",
+        "Strawberry milk",
+        "Vanilla milk",
+        "Banana milk",
+        "Coffee milk",
+        "Eggnog",
+        "Milkshake"
+       ],
+       "standards": "Eggnog: §131.170"
+      },
+      {
+       "id": "3.3.8",
+       "name": "Processing",
+       "styles": [
+        "Raw (unpasteurized)",
+        "Pasteurized (HTST)",
+        "Vat (low-temperature) pasteurized",
+        "Ultra-pasteurized",
+        "UHT (aseptic, shelf-stable)",
+        "Homogenized",
+        "Non-homogenized (cream-top)",
+        "Lactose-free",
+        "A2 milk",
+        "Ultra-filtered (high-protein)",
+        "Organic (USDA NOP)",
+        "Grass-fed",
+        "Vitamin A & D fortified"
+       ]
+      },
+      {
+       "id": "3.3.9",
        "name": "By Species",
        "styles": [
         "Cow",
         "Goat",
         "Sheep",
         "Water buffalo",
-        "Camel"
+        "Camel",
+        "Yak",
+        "Donkey",
+        "Mare"
        ]
       },
       {
-       "id": "3.3.2",
-       "name": "Fat Level (US)",
-       "styles": [
-        "Whole (3.25%)",
-        "Reduced-fat (2%)",
-        "Low-fat (1%)",
-        "Fat-free (skim)"
-       ]
-      },
-      {
-       "id": "3.3.3",
-       "name": "Processing",
-       "styles": [
-        "Raw (unpasteurized)",
-        "Pasteurized (HTST)",
-        "Ultra-pasteurized",
-        "UHT (shelf-stable)",
-        "Homogenized",
-        "Non-homogenized (cream-top)",
-        "Lactose-free",
-        "Ultra-filtered",
-        "A2 milk"
-       ]
-      },
-      {
-       "id": "3.3.4",
-       "name": "Milk Drinks",
-       "styles": [
-        "Chocolate milk",
-        "Strawberry milk",
-        "Eggnog",
-        "Milkshake",
-        "Cultured buttermilk"
-       ]
-      },
-      {
-       "id": "3.3.5",
+       "id": "3.3.10",
        "name": "Plant Milks",
        "styles": [
         "Oat",
         "Almond",
         "Soy",
-        "Coconut",
         "Rice",
-        "Pea",
+        "Coconut",
         "Cashew",
+        "Pea",
         "Hemp",
-        "Macadamia"
+        "Macadamia",
+        "Flax",
+        "Hazelnut",
+        "Pistachio"
+       ]
+      },
+      {
+       "id": "3.3.11",
+       "name": "Creamers",
+       "styles": [
+        "Dairy coffee creamer (half-and-half based)",
+        "Non-dairy creamer (liquid)",
+        "Non-dairy creamer (powder)",
+        "Oat creamer",
+        "Almond creamer",
+        "Coconut creamer"
        ]
       }
      ]
@@ -1322,6 +1581,16 @@
       },
       {
        "id": "5.1.4",
+       "name": "Cordials & Squashes",
+       "styles": [
+        "Squash (UK fruit concentrate)",
+        "Cordial",
+        "Drinking vinegar (shrub syrup)",
+        "Soda syrup"
+       ]
+      },
+      {
+       "id": "5.1.5",
        "name": "Carbonation Methods",
        "styles": [
         "Forced carbonation (CO2)",
@@ -1499,6 +1768,17 @@
       },
       {
        "id": "5.3.5",
+       "name": "North America",
+       "styles": [
+        "Egg cream (New York)",
+        "Switchel (New England)",
+        "Sweet apple cider (unfiltered)",
+        "Root beer float",
+        "Hot chocolate"
+       ]
+      },
+      {
+       "id": "5.3.6",
        "name": "Caribbean & Pacific",
        "styles": [
         "Sorrel (Jamaica)",
