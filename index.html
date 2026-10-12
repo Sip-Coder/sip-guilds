@@ -12,14 +12,14 @@ canvas{position:fixed;inset:0;display:block}
 #dash{position:fixed;left:0;right:0;bottom:0;z-index:3;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr .9fr;gap:1px;background:#ffffff10;border-top:1px solid #ffffff18;height:170px}
 .p{background:#05060ae6;padding:8px 10px;overflow:hidden;font-size:10px}.p h4{font-weight:400;font-size:9px;letter-spacing:.2em;color:#6c7a8c;margin-bottom:6px}
 #log div{white-space:nowrap;color:#8fa1b5;line-height:1.45}#log div:last-child{color:#fff}
-#secs div{display:flex;justify-content:space-between;line-height:1.5;color:#55616f}#secs div.on{color:var(--c);}#secs div.done{color:#9fb3c8}
+#secs div{font-size:9px;line-height:1.35!important;display:flex;justify-content:space-between;line-height:1.5;color:#55616f}#secs div.on{color:var(--c);}#secs div.done{color:#9fb3c8}
 #score{display:flex;align-items:center;gap:10px}#score svg{width:90px;height:90px}#sval{font-size:26px;color:#fff}
 @media(max-width:760px){#dash{grid-template-columns:1.5fr 1fr;height:140px}#score svg{width:64px;height:64px}#dash .hm{display:none}.tag{font-size:8px}#top .hm{display:none}}
 </style>
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
 </head><body>
 <div id="top"><span>FPS <b id="fps">--</b></span><span>PARTICLES <b id="pc">--</b></span><span class="hm">RES <b id="res">--</b></span><span class="hm">MODE <b>AUTOCRAWL</b></span><div id="brand">SIP <span>STUDIES</span></div></div>
-<div id="step"><div id="num">01</div><div id="title">WATER</div><div id="sub">BEVERAGE GUILD CRAWLER</div></div>
+<div id="step"><div id="num">01</div><div id="title">WATER</div><div id="subt" style="font-size:clamp(11px,1.6vw,16px);letter-spacing:.18em;color:var(--c);margin-top:6px"></div><div id="sub">BEVERAGE GUILD CRAWLER</div></div>
 <div id="tags"></div>
 <div id="dash">
 <div class="p"><h4>CRAWL LOG</h4><div id="log"></div></div>
@@ -34,92 +34,95 @@ import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
 import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
-const RM=matchMedia('(prefers-reduced-motion: reduce)').matches, MOB=innerWidth<760;
-const G=[
-{n:'WATER',c:'#2ee6ff',t:['spring','mineral','sparkling','alkaline','artesian','TDS']},
-{n:'COFFEE',c:'#ff9a3c',t:['espresso','pour-over','cold brew','arabica','robusta','natural process']},
-{n:'TEA',c:'#7dff6a',t:['green','black','oolong','white','pu-erh','matcha']},
-{n:'WINE',c:'#ff3b7a',t:['red','white','rosé','sparkling','orange','fortified']},
-{n:'BEER',c:'#ffd23c',t:['lager','IPA','stout','sour','wheat','pilsner']},
-{n:'SPIRITS',c:'#b06bff',t:['whiskey','gin','rum','tequila','mezcal','brandy']},
-{n:'SAKE · CIDER',c:'#ff6af0',t:['junmai','ginjo','nigori','dry cider','perry','ice cider']},
-{n:'NON-ALC',c:'#3cffc8',t:['mocktail','kombucha','shrub','NA beer','dealc wine','tonic']}];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,MOB=innerWidth<760,CAP=MOB?4:6;
+const DATA=await (await fetch('data/guilds.json')).json();const G=DATA.guilds;
 const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
-const r=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true});r.setPixelRatio(Math.min(devicePixelRatio,1.5));r.setSize(innerWidth,innerHeight);document.body.prepend(r.domElement);
-const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,2000);
-const comp=new EffectComposer(r);comp.addPass(new RenderPass(scene,cam));const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),.9,.5,.15);comp.addPass(bloom);comp.addPass(new OutputPass());
-// clusters
-const N=MOB?16000:32000, per=Math.floor(N/G.length);
-const centers=G.map((g,i)=>{const a=i/G.length*Math.PI*2+.3,R=220+(i%2)*60;return new THREE.Vector3(Math.cos(a)*R,Math.sin(a)*R*.62,(Math.random()-.5)*60)});
-const pos=new Float32Array(N*3),col=new Float32Array(N*3),cid=new Uint8Array(N),base=new THREE.Color(.07,.08,.11);
-function gauss(){return (Math.random()+Math.random()+Math.random()-1.5)/1.5}
-for(let i=0;i<N;i++){const k=Math.min(G.length-1,Math.floor(i/per));cid[i]=k;const c=centers[k],s=i%5==0?90:32;
-pos[i*3]=c.x+gauss()*s;pos[i*3+1]=c.y+gauss()*s*.8;pos[i*3+2]=c.z+gauss()*s*.6;col.set([base.r,base.g,base.b],i*3)}
-const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));pg.setAttribute('color',new THREE.BufferAttribute(col,3));
-const pm=new THREE.PointsMaterial({size:1.3,vertexColors:true,transparent:true,opacity:.6,depthWrite:false,blending:THREE.AdditiveBlending,sizeAttenuation:true});
-scene.add(new THREE.Points(pg,pm));document.getElementById('pc').textContent=N.toLocaleString();
-const lit=new Float32Array(G.length);const gcol=G.map(g=>new THREE.Color(g.c));
+const $=id=>document.getElementById(id);
+const r=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true});r.setPixelRatio(Math.min(devicePixelRatio,1.5));document.body.prepend(r.domElement);
+const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,3000);
+const comp=new EffectComposer(r);comp.addPass(new RenderPass(scene,cam));const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),RM?.6:.9,.5,.15);comp.addPass(bloom);comp.addPass(new OutputPass());
+// layout: guild centers on ring, subgenres as sub-clusters (phyllotaxis) sized by style count
+const subs=[];const centers=G.map((g,i)=>{const a=i/G.length*Math.PI*2+.3,R=300+(i%2)*70;return new THREE.Vector3(Math.cos(a)*R,Math.sin(a)*R*.62,(Math.random()-.5)*60)});
+G.forEach((g,gi)=>{const n=g.subgenres.length,spread=22+Math.sqrt(n)*17;g.subgenres.forEach((sg,j)=>{const ang=j*2.39996,rad=n==1?0:spread*Math.sqrt((j+.5)/n);
+subs.push({g:gi,sg,idx:subs.length,pos:centers[gi].clone().add(new THREE.Vector3(Math.cos(ang)*rad,Math.sin(ang)*rad*.8,(Math.random()-.5)*20)),size:5+Math.sqrt(sg.styles.length)*4})})});
+const NS=subs.length,N=MOB?16000:32000,totalW=subs.reduce((a,s)=>a+s.sg.styles.length+3,0);
+const pos=new Float32Array(N*3),col=new Float32Array(N*3),sid=new Float32Array(N),ph=new Float32Array(N);
+const gauss=()=>(Math.random()+Math.random()+Math.random()-1.5)/1.5;let p=0;
+subs.forEach((s,k)=>{const cnt=k==NS-1?N-p:Math.round(N*(s.sg.styles.length+3)/totalW),c=new THREE.Color(G[s.g].color);
+for(let q=0;q<cnt&&p<N;q++,p++){const halo=q%6==0,sp=halo?s.size*3.2:s.size;pos.set([s.pos.x+gauss()*sp,s.pos.y+gauss()*sp*.85,s.pos.z+gauss()*sp*.6],p*3);col.set([c.r,c.g,c.b],p*3);sid[p]=k;ph[p]=Math.random()*6.28}});
+// GPU-side lighting: per-subgenre lit level in a data texture
+const litData=new Float32Array(NS*4),litTex=new THREE.DataTexture(litData,NS,1,THREE.RGBAFormat,THREE.FloatType);litTex.needsUpdate=true;
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));pg.setAttribute('color',new THREE.BufferAttribute(col,3));pg.setAttribute('aSub',new THREE.BufferAttribute(sid,1));pg.setAttribute('aPh',new THREE.BufferAttribute(ph,1));
+const pm=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,uniforms:{uLit:{value:litTex},uN:{value:NS},uT:{value:0},uPx:{value:r.getPixelRatio()}},
+vertexShader:`attribute vec3 color;attribute float aSub;attribute float aPh;uniform sampler2D uLit;uniform float uN,uT,uPx;varying vec3 vC;
+void main(){float l=texture2D(uLit,vec2((aSub+.5)/uN,.5)).r;vec3 base=vec3(.07,.08,.11);vC=mix(base,color,l*(.45+.3*sin(uT*2.+aPh)))+color*.03;
+vec4 mv=modelViewMatrix*vec4(position,1.);gl_Position=projectionMatrix*mv;gl_PointSize=(1.3+l*.6)*uPx*(300./-mv.z);}`,
+fragmentShader:`varying vec3 vC;void main(){vec2 d=gl_PointCoord-.5;if(dot(d,d)>.25)discard;gl_FragColor=vec4(vC*.75,1.);}`});
+scene.add(new THREE.Points(pg,pm));$('pc').textContent=N.toLocaleString();
+const lit=new Float32Array(NS);
 // crawler
-const crawler=new THREE.Group();scene.add(crawler);
-crawler.add(new THREE.Mesh(new THREE.SphereGeometry(4,24,16),new THREE.MeshBasicMaterial({color:'#2ee6ff'})));
-crawler.add(new THREE.Mesh(new THREE.SphereGeometry(1.8,16,12),new THREE.MeshBasicMaterial({color:'#ff4fa8'})));
-const spk=[];for(let i=0;i<28;i++){const a=i/28*Math.PI*2,l=i%2?9:13;spk.push(Math.cos(a)*7,Math.sin(a)*7,0,Math.cos(a)*l,Math.sin(a)*l,0)}
-const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.Float32BufferAttribute(spk,3));const ring=new THREE.LineSegments(sg,new THREE.LineBasicMaterial({color:'#2ee6ff'}));crawler.add(ring);
-const TL=200,tp=new Float32Array(TL*3),tg=new THREE.BufferGeometry();tg.setAttribute('position',new THREE.BufferAttribute(tp,3));scene.add(new THREE.Line(tg,new THREE.LineBasicMaterial({color:'#2ee6ff',transparent:true,opacity:.35})));
-// tendrils
-let tendrils=[];const tagsEl=document.getElementById('tags');
-function clearT(){tendrils.forEach(t=>{scene.remove(t.line);t.el.remove()});tendrils=[]}
-function spawnT(k){clearT();const c=centers[k];G[k].t.forEach((name,j)=>{const a=j/G[k].t.length*Math.PI*2+Math.random()*.4,d=50+Math.random()*35;
-const end=new THREE.Vector3(c.x+Math.cos(a)*d,c.y+Math.sin(a)*d*.8,c.z+(Math.random()-.5)*30);
-const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(new Float32Array(32*3),3));
-const line=new THREE.Line(geo,new THREE.LineBasicMaterial({color:G[k].c,transparent:true,opacity:.85}));scene.add(line);
-const el=document.createElement('div');el.className='tag';el.style.setProperty('--c',G[k].c);el.textContent=name;el.style.opacity=0;tagsEl.appendChild(el);
-tendrils.push({line,el,end,born:now,delay:j*.18,wob:Math.random()*9})})}
+const crawler=new THREE.Group();scene.add(crawler);const coreM=new THREE.MeshBasicMaterial({color:'#2ee6ff'});
+crawler.add(new THREE.Mesh(new THREE.SphereGeometry(3,24,16),coreM));crawler.add(new THREE.Mesh(new THREE.SphereGeometry(1.4,16,12),new THREE.MeshBasicMaterial({color:'#ff4fa8'})));
+const spk=[];for(let i=0;i<28;i++){const a=i/28*Math.PI*2,l=i%2?7:10;spk.push(Math.cos(a)*5.5,Math.sin(a)*5.5,0,Math.cos(a)*l,Math.sin(a)*l,0)}
+const sgeo=new THREE.BufferGeometry();sgeo.setAttribute('position',new THREE.Float32BufferAttribute(spk,3));const ring=new THREE.LineSegments(sgeo,new THREE.LineBasicMaterial({color:'#2ee6ff'}));crawler.add(ring);
+const TL=160,tp=new Float32Array(TL*3),tg=new THREE.BufferGeometry();tg.setAttribute('position',new THREE.BufferAttribute(tp,3));scene.add(new THREE.Line(tg,new THREE.LineBasicMaterial({color:'#2ee6ff',transparent:true,opacity:.3})));
+let tendrils=[];const tagsEl=$('tags');
+function clearT(){tendrils.forEach(t=>{scene.remove(t.line);t.line.geometry.dispose();t.el.remove()});tendrils=[]}
+function spawnT(s,names){clearT();names.forEach((name,j)=>{const a=j/names.length*Math.PI*2+Math.random()*.4,d=(MOB?34:42)+Math.random()*20;
+const end=new THREE.Vector3(s.pos.x+Math.cos(a)*d*1.3,s.pos.y+Math.sin(a)*d*.8,s.pos.z);
+const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(new Float32Array(24*3),3));
+const line=new THREE.Line(geo,new THREE.LineBasicMaterial({color:G[s.g].color,transparent:true,opacity:.85}));scene.add(line);
+const el=document.createElement('div');el.className='tag';el.style.setProperty('--c',G[s.g].color);el.textContent=name;el.style.opacity=0;tagsEl.appendChild(el);
+tendrils.push({line,el,end,born:now,delay:j*.08,wob:Math.random()*9,done:false})})}
 // HUD
-const logEl=document.getElementById('log'),secsEl=document.getElementById('secs');
-G.forEach((g,i)=>{const d=document.createElement('div');d.innerHTML=`<span>${String(i+1).padStart(2,'0')} ${g.n}</span><span>0/${g.t.length}</span>`;secsEl.appendChild(d)});
-const prog=G.map(()=>0);
-function log(s){const d=document.createElement('div');d.textContent=`${(now).toFixed(1).padStart(6,'0')}  ${s}`;logEl.appendChild(d);while(logEl.children.length>(MOB?7:9))logEl.firstChild.remove()}
-const radar=document.getElementById('radar'),beat=document.getElementById('beat');let beatArr=Array(60).fill(0),score=0;
-function drawRadar(){let s='';for(let q=1;q<=3;q++){s+=`<polygon fill="none" stroke="#ffffff18" points="${G.map((_,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2;return [Math.cos(a)*q*16,Math.sin(a)*q*16]}).join(' ')}"/>`}
-const pts=G.map((_,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2,v=6+lit[i]*42;return [Math.cos(a)*v,Math.sin(a)*v]});
-s+=`<polygon fill="${G[cur%G.length].c}33" stroke="${G[cur%G.length].c}" points="${pts.join(' ')}"/>`;radar.innerHTML=s}
-function drawBeat(){const p=beatArr.map((v,i)=>`${i/(beatArr.length-1)*200},${105-v*95}`).join(' ');beat.innerHTML=`<polyline fill="none" stroke="${G[cur%G.length].c}" stroke-width="1.5" points="${p}"/>`}
-// timeline
-const STEP=RM?6:5.2, FINAL=7;let cur=0,stepStart=0,now=0,from=new THREE.Vector3(),camFrom=new THREE.Vector3(),camTo=new THREE.Vector3(),look=new THREE.Vector3(),lookFrom=new THREE.Vector3();
-const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
-function setStep(k){cur=k;stepStart=now;from.copy(crawler.position);camFrom.copy(cam.position);lookFrom.copy(look);
-const all=k>=G.length,c=all?new THREE.Vector3():centers[k];const colr=all?'#ffffff':G[k].c;
-document.getElementById('num').textContent=all?'09':String(k+1).padStart(2,'0');document.getElementById('title').textContent=all?'ALL GUILDS':G[k].n;
-document.getElementById('step').style.setProperty('--c',colr);document.getElementById('ring').setAttribute('stroke',colr);
-camTo.set(c.x*.8,c.y*.8-20,all?900:(MOB?260:190));
-[...secsEl.children].forEach((d,i)=>{d.className=i===k?'on':(i<k?'done':'');d.style.setProperty('--c',G[i].c)});
-if(all){clearT();log('zoom out · all guilds linked');G.forEach((_,i)=>lit[i]=1)}else{if(k===0){lit.fill(0);prog.fill(0);score=0}log(`route → ${G[k].n.toLowerCase()} guild`)}}
-setStep(0);cam.position.set(0,0,700);
-let last=performance.now(),fr=0,ft=0,spawned=false;
-let FIX=0;function frame(t,noloop){const dt=FIX||Math.min(.05,(t-last)/1000);last=t;now+=dt;fr++;ft+=dt;if(ft>.5){document.getElementById('fps').textContent=Math.round(fr/ft);fr=0;ft=0}
-const all=cur>=G.length,dur=all?FINAL:STEP,e=now-stepStart,mv=ease(Math.min(1,e/1.6));
-const target=all?new THREE.Vector3():centers[cur];crawler.position.lerpVectors(from,target,mv);
-cam.position.lerpVectors(camFrom,camTo,ease(Math.min(1,e/2)));look.lerpVectors(lookFrom,all?target:target,ease(Math.min(1,e/2)));cam.lookAt(look);
+const logEl=$('log'),secsEl=$('secs');
+G.forEach((g,i)=>{const d=document.createElement('div');d.innerHTML=`<span>${String(i+1).padStart(2,'0')} ${g.name}</span><span>0/${g.subgenres.length}</span>`;secsEl.appendChild(d)});
+const prog=G.map(()=>0);let score=0,beatArr=Array(60).fill(0);const MAXS=subs.reduce((a,s)=>a+s.sg.styles.length,0);
+function log(t){const d=document.createElement('div');d.textContent=`${now.toFixed(1).padStart(6,'0')}  ${t}`;logEl.appendChild(d);while(logEl.children.length>(MOB?7:9))logEl.firstChild.remove()}
+const radar=$('radar'),beat=$('beat');
+function cov(i){return prog[i]/G[i].subgenres.length}
+function drawRadar(c){let h='';for(let q=1;q<=3;q++)h+=`<polygon fill="none" stroke="#ffffff18" points="${G.map((_,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2;return [Math.cos(a)*q*16,Math.sin(a)*q*16]}).join(' ')}"/>`;
+h+=`<polygon fill="${c}33" stroke="${c}" points="${G.map((_,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2,v=6+cov(i)*42;return [Math.cos(a)*v,Math.sin(a)*v]}).join(' ')}"/>`;
+h+=G.map((g,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2;return `<circle r="1.6" fill="${g.color}" cx="${Math.cos(a)*50}" cy="${Math.sin(a)*50}"/>`}).join('');radar.innerHTML=h}
+function drawBeat(c){beat.innerHTML=`<polyline fill="none" stroke="${c}" stroke-width="1.5" points="${beatArr.map((v,i)=>`${i/(beatArr.length-1)*200},${105-v*95}`).join(' ')}"/>`}
+// timeline: stops = every subgenre, then ALL
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2,SP=RM?1.4:1;
+let cur=-1,stop=null,stepStart=0,now=0,dur=0,batch=0,nb=1;const from=new THREE.Vector3(),camFrom=new THREE.Vector3(),camTo=new THREE.Vector3(),look=new THREE.Vector3(),lookFrom=new THREE.Vector3(),lookTo=new THREE.Vector3();
+function setStep(k){clearT();cur=k;stepStart=now;from.copy(crawler.position);camFrom.copy(cam.position);lookFrom.copy(look);batch=-1;
+const all=k>=NS;stop=all?null:subs[k];const g=all?null:G[stop.g],c=all?'#ffffff':g.color;
+$('num').textContent=all?'09':String(stop.g+1).padStart(2,'0');$('title').textContent=all?'ALL GUILDS':g.name;
+$('subt').textContent=all?`${G.length} GUILDS · ${NS} SUBGENRES · ${MAXS} STYLES`:`${stop.sg.id} ${stop.sg.name.replace(/^\d+ /,'').toUpperCase()}`;
+$('step').style.setProperty('--c',c);$('ring').setAttribute('stroke',c);coreM.color.set(all?'#2ee6ff':c).lerp(new THREE.Color('#2ee6ff'),.5);
+if(all){clearT();lookTo.set(0,0,0);camTo.set(0,-20,MOB?1500:1050);dur=8;log(`zoom out · ${NS} subgenres linked`);lit.fill(1)}
+else{if(k==0){lit.fill(0);prog.fill(0);score=0}const first=k==0||subs[k-1].g!=stop.g;
+const gc=centers[stop.g];lookTo.copy(stop.pos).lerp(gc,.35);camTo.set(lookTo.x,lookTo.y-25,lookTo.z+(MOB?330:230));
+nb=Math.ceil(stop.sg.styles.length/CAP);dur=SP*((first?2.2:1.1)+.3+1.2*nb);
+if(first)log(`route → ${g.name.toLowerCase()} guild`);log(`enter ${stop.sg.name.replace(/^\d+ /,'').toLowerCase()}`)}
+[...secsEl.children].forEach((d,i)=>{const gi=all?99:stop.g;d.className=i===gi?'on':(i<gi?'done':'');d.style.setProperty('--c',G[i].color)})}
+let first0=true;setStep(0);cam.position.set(0,0,1100);
+let last=performance.now(),fr=0,ft=0,FIX=0;
+function frame(t,noloop){const dt=FIX||Math.min(.05,(t-last)/1000);last=t;now+=dt;fr++;ft+=dt;if(ft>.5&&!FIX){$('fps').textContent=Math.round(fr/ft);fr=0;ft=0}
+const all=cur>=NS,e=now-stepStart,travel=all?2.5:SP*((cur==0||subs[cur-1].g!=stop.g)?2.2:1.1),mv=ease(Math.min(1,e/travel));
+crawler.position.lerpVectors(from,all?centers[0].clone().multiplyScalar(0):stop.pos,mv);
+const cm=ease(Math.min(1,e/(travel*1.1)));cam.position.lerpVectors(camFrom,camTo,cm);look.lerpVectors(lookFrom,lookTo,cm);cam.lookAt(look);
 ring.rotation.z+=dt*(RM?.3:1.6);crawler.scale.setScalar(1+Math.sin(now*6)*.06);
-for(let i=TL-1;i>0;i--){tp[i*3]=tp[i*3-3];tp[i*3+1]=tp[i*3-2];tp[i*3+2]=tp[i*3-1]}tp[0]=crawler.position.x;tp[1]=crawler.position.y;tp[2]=crawler.position.z;tg.attributes.position.needsUpdate=true;
-if(!all&&e>1.5&&!spawned){spawned=true;spawnT(cur);log(`${VERBS[cur%VERBS.length]} · ${G[cur].n.toLowerCase()}`)}
-if(!all&&e>1.5)lit[cur]=Math.min(1,lit[cur]+dt*.8);
-// tendrils
-tendrils.forEach((td,j)=>{const a=Math.max(0,Math.min(1,(now-td.born-td.delay)/.9)),k=1-Math.pow(1-a,3)*(1)+Math.sin(a*Math.PI*3)*.08*(1-a);
-const p=td.line.geometry.attributes.position.array,s=crawler.position,mid=s.clone().lerp(td.end,.5).add(new THREE.Vector3(Math.sin(now*2+td.wob)*12,Math.cos(now*1.7+td.wob)*12,0));
-for(let q=0;q<32;q++){const u=q/31*k,a1=s.clone().lerp(mid,u),a2=mid.clone().lerp(s.clone().lerp(td.end,1),u),pt=a1.lerp(a2,u);p[q*3]=pt.x;p[q*3+1]=pt.y;p[q*3+2]=pt.z}
+tp.copyWithin(3,0,(TL-1)*3);tp[0]=crawler.position.x;tp[1]=crawler.position.y;tp[2]=crawler.position.z;tg.attributes.position.needsUpdate=true;
+if(!all&&e>travel){const b=Math.min(nb-1,Math.floor((e-travel)/(SP*1.2)));if(b!=batch){batch=b;spawnT(stop,stop.sg.styles.slice(b*CAP,b*CAP+CAP));if(b==0){prog[stop.g]++;secsEl.children[stop.g].lastChild.textContent=`${prog[stop.g]}/${G[stop.g].subgenres.length}`}}
+lit[cur]=Math.min(1,lit[cur]+dt*1.2)}
+tendrils.forEach((td,j)=>{const a=Math.max(0,Math.min(1,(now-td.born-td.delay)/.5)),k=1-Math.pow(1-a,3)+Math.sin(a*Math.PI*3)*.08*(1-a);
+const pa=td.line.geometry.attributes.position.array,s=crawler.position,mid=s.clone().lerp(td.end,.5).add(new THREE.Vector3(Math.sin(now*2+td.wob)*8,Math.cos(now*1.7+td.wob)*8,0));
+for(let q=0;q<24;q++){const u=q/23*k,a1=s.clone().lerp(mid,u),a2=mid.clone().lerp(td.end,u),pt=a1.lerp(a2,u);pa[q*3]=pt.x;pa[q*3+1]=pt.y;pa[q*3+2]=pt.z}
 td.line.geometry.attributes.position.needsUpdate=true;
-if(a>=1&&td.el.style.opacity!=='1'){td.el.style.opacity=1;prog[cur]++;score+=12+Math.round(Math.random()*8);secsEl.children[cur].lastChild.textContent=`${prog[cur]}/${G[cur].t.length}`;log(`${VERBS[(j+cur)%VERBS.length]} · ${td.el.textContent}`);beatArr[beatArr.length-1]=1}
-const v=td.end.clone().project(cam);td.el.style.left=Math.max(40,Math.min(innerWidth-40,(v.x+1)/2*innerWidth))+'px';td.el.style.top=((1-v.y)/2*innerHeight)+'px'});
-// colors
-for(let i=0;i<N;i++){const k=cid[i],l=lit[k]*(.35+.3*Math.sin(now*2+i));const c=gcol[k];col[i*3]=base.r+(c.r-base.r)*l;col[i*3+1]=base.g+(c.g-base.g)*l;col[i*3+2]=base.b+(c.b-base.b)*l}
-if(fr%2==0)pg.attributes.color.needsUpdate=true;
+if(a>=1&&!td.done){td.done=true;td.el.style.opacity=1;score++;log(`${VERBS[(j+cur)%VERBS.length]} · ${td.el.textContent}`);beatArr[beatArr.length-1]=1}
+const v=td.end.clone().project(cam);td.el.style.left=Math.max(MOB?55:70,Math.min(innerWidth-(MOB?55:70),(v.x+1)/2*innerWidth))+'px';td.el.style.top=Math.max(130,Math.min(innerHeight-(MOB?150:180),(1-v.y)/2*innerHeight))+'px'});
+for(let i=0;i<NS;i++)litData[i*4]=lit[i];litTex.needsUpdate=true;pm.uniforms.uT.value=now;
 if(fr%2==0){beatArr.push(Math.min(1,beatArr[beatArr.length-1]*.6+.08+Math.random()*.3*(all?.5:1)));beatArr.shift()}
-if(fr%3==0){drawRadar();drawBeat();const sc=Math.min(1000,score);document.getElementById('sval').textContent=sc;document.getElementById('ring').setAttribute('stroke-dashoffset',251*(1-sc/1000))}
-if(e>dur){spawned=false;setStep(all?0:cur+1)}
+if(fr%3==0){const c=all?'#2ee6ff':G[stop.g].color;drawRadar(c);drawBeat(c);const sc=Math.round(score/MAXS*1000);$('sval').textContent=sc;$('ring').setAttribute('stroke-dashoffset',251*(1-sc/1000))}
+if(e>dur)setStep(all?0:cur+1);
 if(!noloop){comp.render();requestAnimationFrame(frame)}}
-function rs(){cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();r.setSize(innerWidth,innerHeight);comp.setSize(innerWidth,innerHeight);document.getElementById('res').textContent=innerWidth+'×'+innerHeight}
-addEventListener('resize',rs);rs();if(RM)bloom.strength=.7;const SEEK=+new URLSearchParams(location.search).get('seek');if(SEEK){FIX=1/30;for(let i=0;i<SEEK*30;i++)frame(0,true);FIX=0;last=performance.now();comp.render()}requestAnimationFrame(frame);
+function rs(){cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();r.setSize(innerWidth,innerHeight);comp.setSize(innerWidth,innerHeight);$('res').textContent=innerWidth+'×'+innerHeight}
+addEventListener('resize',rs);rs();
+const SEEK=+new URLSearchParams(location.search).get('seek');if(SEEK){FIX=1/30;for(let i=0;i<SEEK*30;i++)frame(0,true);FIX=1e-6;comp.render()}
+requestAnimationFrame(frame);
 window.onerror=m=>console.error(m);
 </script></body></html>
