@@ -4,7 +4,7 @@ A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 aca
 
 **Live:** https://sip-coder.github.io/sip-guilds/
 
-- Controls: ⏮ / ⏸▶ / ⏭ buttons, keyboard ← → and Space; click a guild/academy in the GUILDS · ACADEMIES panel to jump there.
+- Controls: ⏪ previous academy (first press = start of current academy) / ⏮ previous stop / ⏯ / ⏭ next stop / ⏩ next academy; keyboard ← → (stop), Shift+← → or PageUp/PageDown (academy), Space; click a guild/academy in the GUILDS · ACADEMIES panel to jump there.
 - Data: [`data/guilds.json`](data/guilds.json) (guild > academy > subgenre > styles) · outline [`data/guilds.pdf`](data/guilds.pdf) · generator `build/taxonomy.py`.
 - Placement choices: sake, cider, perry and mead live in **Fermented Academy** (Culture Guild); NA beer/wine and zero-proof spirits sit inside the Beer/Wine/Spirits academies; club soda/tonic moved to Carbonated; yerba mate moved from Tea to Regional, guayusa to Energy.
 - Static files; Three.js 0.160.0 (unpkg) + UnrealBloomPass; GPU-side per-subgenre lighting; respects `prefers-reduced-motion`. Preview helpers: `?stop=<index>&t=<sec>` or `?seek=<sec>`.
