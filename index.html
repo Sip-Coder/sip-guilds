@@ -111,7 +111,7 @@ const p=td.line.geometry.attributes.position.array,s=crawler.position,mid=s.clon
 for(let q=0;q<32;q++){const u=q/31*k,a1=s.clone().lerp(mid,u),a2=mid.clone().lerp(s.clone().lerp(td.end,1),u),pt=a1.lerp(a2,u);p[q*3]=pt.x;p[q*3+1]=pt.y;p[q*3+2]=pt.z}
 td.line.geometry.attributes.position.needsUpdate=true;
 if(a>=1&&td.el.style.opacity!=='1'){td.el.style.opacity=1;prog[cur]++;score+=12+Math.round(Math.random()*8);secsEl.children[cur].lastChild.textContent=`${prog[cur]}/${G[cur].t.length}`;log(`${VERBS[(j+cur)%VERBS.length]} · ${td.el.textContent}`);beatArr[beatArr.length-1]=1}
-const v=td.end.clone().project(cam);td.el.style.left=((v.x+1)/2*innerWidth)+'px';td.el.style.top=((1-v.y)/2*innerHeight)+'px'});
+const v=td.end.clone().project(cam);td.el.style.left=Math.max(40,Math.min(innerWidth-40,(v.x+1)/2*innerWidth))+'px';td.el.style.top=((1-v.y)/2*innerHeight)+'px'});
 // colors
 for(let i=0;i<N;i++){const k=cid[i],l=lit[k]*(.35+.3*Math.sin(now*2+i));const c=gcol[k];col[i*3]=base.r+(c.r-base.r)*l;col[i*3+1]=base.g+(c.g-base.g)*l;col[i*3+2]=base.b+(c.b-base.b)*l}
 if(fr%2==0)pg.attributes.color.needsUpdate=true;
