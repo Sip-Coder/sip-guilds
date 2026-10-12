@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sip Studies — Guild Crawler</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;background:#05060a;color:#cfd8e3;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;overflow:hidden}
+canvas{position:fixed;inset:0;display:block}
+#top{position:fixed;top:0;left:0;right:0;height:22px;display:flex;gap:18px;align-items:center;padding:0 12px;font-size:10px;letter-spacing:.12em;color:#6c7a8c;border-bottom:1px solid #ffffff14;background:#05060acc;z-index:3}
+#top b{color:#9fb3c8;font-weight:400}#brand{margin-left:auto;color:#e8eef5;letter-spacing:.3em}#brand span{color:#2ee6ff}
+#step{position:fixed;top:40px;left:24px;z-index:3;pointer-events:none}
+#num{font-size:clamp(48px,9vw,110px);line-height:.9;font-weight:700;color:var(--c,#2ee6ff);text-shadow:0 0 24px var(--c,#2ee6ff)}
+#title{font-size:clamp(18px,3vw,34px);letter-spacing:.25em;color:#fff;margin-top:6px}#sub{font-size:11px;color:#7d8da0;margin-top:6px;letter-spacing:.15em}
+.tag{position:fixed;z-index:2;font-size:10px;letter-spacing:.1em;padding:2px 6px;border:1px solid var(--c);color:#fff;background:#05060ad0;transform:translate(-50%,-50%);white-space:nowrap;transition:opacity .4s;pointer-events:none}
+#dash{position:fixed;left:0;right:0;bottom:0;z-index:3;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr .9fr;gap:1px;background:#ffffff10;border-top:1px solid #ffffff18;height:170px}
+.p{background:#05060ae6;padding:8px 10px;overflow:hidden;font-size:10px}.p h4{font-weight:400;font-size:9px;letter-spacing:.2em;color:#6c7a8c;margin-bottom:6px}
+#log div{white-space:nowrap;color:#8fa1b5;line-height:1.45}#log div:last-child{color:#fff}
+#secs div{display:flex;justify-content:space-between;line-height:1.5;color:#55616f}#secs div.on{color:var(--c);}#secs div.done{color:#9fb3c8}
+#score{display:flex;align-items:center;gap:10px}#score svg{width:90px;height:90px}#sval{font-size:26px;color:#fff}
+@media(max-width:760px){#dash{grid-template-columns:1.5fr 1fr;height:140px}#score svg{width:64px;height:64px}#dash .hm{display:none}.tag{font-size:8px}#top .hm{display:none}}
+</style>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+</head><body>
+<div id="top"><span>FPS <b id="fps">--</b></span><span>PARTICLES <b id="pc">--</b></span><span class="hm">RES <b id="res">--</b></span><span class="hm">MODE <b>AUTOCRAWL</b></span><div id="brand">SIP <span>STUDIES</span></div></div>
+<div id="step"><div id="num">01</div><div id="title">WATER</div><div id="sub">BEVERAGE GUILD CRAWLER</div></div>
+<div id="tags"></div>
+<div id="dash">
+<div class="p"><h4>CRAWL LOG</h4><div id="log"></div></div>
+<div class="p hm"><h4>SECTIONS</h4><div id="secs"></div></div>
+<div class="p hm"><h4>COVERAGE RADAR</h4><svg id="radar" viewBox="-60 -60 120 120" width="100%" height="130"></svg></div>
+<div class="p hm"><h4>SIP BEAT · nodes/s</h4><svg id="beat" viewBox="0 0 200 110" preserveAspectRatio="none" width="100%" height="130"></svg></div>
+<div class="p"><h4>TASTING SCORE</h4><div id="score"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="#ffffff18" stroke-width="6" fill="none"/><circle id="ring" cx="50" cy="50" r="40" stroke="#2ee6ff" stroke-width="6" fill="none" stroke-dasharray="251" stroke-dashoffset="251" transform="rotate(-90 50 50)" stroke-linecap="round"/></svg><div><div id="sval">0</div><div style="color:#6c7a8c">/ 1000</div></div></div></div>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches, MOB=innerWidth<760;
+const G=[
+{n:'WATER',c:'#2ee6ff',t:['spring','mineral','sparkling','alkaline','artesian','TDS']},
+{n:'COFFEE',c:'#ff9a3c',t:['espresso','pour-over','cold brew','arabica','robusta','natural process']},
+{n:'TEA',c:'#7dff6a',t:['green','black','oolong','white','pu-erh','matcha']},
+{n:'WINE',c:'#ff3b7a',t:['red','white','rosé','sparkling','orange','fortified']},
+{n:'BEER',c:'#ffd23c',t:['lager','IPA','stout','sour','wheat','pilsner']},
+{n:'SPIRITS',c:'#b06bff',t:['whiskey','gin','rum','tequila','mezcal','brandy']},
+{n:'SAKE · CIDER',c:'#ff6af0',t:['junmai','ginjo','nigori','dry cider','perry','ice cider']},
+{n:'NON-ALC',c:'#3cffc8',t:['mocktail','kombucha','shrub','NA beer','dealc wine','tonic']}];
+const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
+const r=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true});r.setPixelRatio(Math.min(devicePixelRatio,1.5));r.setSize(innerWidth,innerHeight);document.body.prepend(r.domElement);
+const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,2000);
+const comp=new EffectComposer(r);comp.addPass(new RenderPass(scene,cam));const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),.9,.5,.15);comp.addPass(bloom);comp.addPass(new OutputPass());
+// clusters
+const N=MOB?16000:32000, per=Math.floor(N/G.length);
+const centers=G.map((g,i)=>{const a=i/G.length*Math.PI*2+.3,R=220+(i%2)*60;return new THREE.Vector3(Math.cos(a)*R,Math.sin(a)*R*.62,(Math.random()-.5)*60)});
+const pos=new Float32Array(N*3),col=new Float32Array(N*3),cid=new Uint8Array(N),base=new THREE.Color(.07,.08,.11);
+function gauss(){return (Math.random()+Math.random()+Math.random()-1.5)/1.5}
+for(let i=0;i<N;i++){const k=Math.min(G.length-1,Math.floor(i/per));cid[i]=k;const c=centers[k],s=i%5==0?90:32;
+pos[i*3]=c.x+gauss()*s;pos[i*3+1]=c.y+gauss()*s*.8;pos[i*3+2]=c.z+gauss()*s*.6;col.set([base.r,base.g,base.b],i*3)}
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));pg.setAttribute('color',new THREE.BufferAttribute(col,3));
+const pm=new THREE.PointsMaterial({size:1.3,vertexColors:true,transparent:true,opacity:.6,depthWrite:false,blending:THREE.AdditiveBlending,sizeAttenuation:true});
+scene.add(new THREE.Points(pg,pm));document.getElementById('pc').textContent=N.toLocaleString();
+const lit=new Float32Array(G.length);const gcol=G.map(g=>new THREE.Color(g.c));
+// crawler
+const crawler=new THREE.Group();scene.add(crawler);
+crawler.add(new THREE.Mesh(new THREE.SphereGeometry(4,24,16),new THREE.MeshBasicMaterial({color:'#2ee6ff'})));
+crawler.add(new THREE.Mesh(new THREE.SphereGeometry(1.8,16,12),new THREE.MeshBasicMaterial({color:'#ff4fa8'})));
+const spk=[];for(let i=0;i<28;i++){const a=i/28*Math.PI*2,l=i%2?9:13;spk.push(Math.cos(a)*7,Math.sin(a)*7,0,Math.cos(a)*l,Math.sin(a)*l,0)}
+const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.Float32BufferAttribute(spk,3));const ring=new THREE.LineSegments(sg,new THREE.LineBasicMaterial({color:'#2ee6ff'}));crawler.add(ring);
+const TL=200,tp=new Float32Array(TL*3),tg=new THREE.BufferGeometry();tg.setAttribute('position',new THREE.BufferAttribute(tp,3));scene.add(new THREE.Line(tg,new THREE.LineBasicMaterial({color:'#2ee6ff',transparent:true,opacity:.35})));
+// tendrils
+let tendrils=[];const tagsEl=document.getElementById('tags');
+function clearT(){tendrils.forEach(t=>{scene.remove(t.line);t.el.remove()});tendrils=[]}
+function spawnT(k){clearT();const c=centers[k];G[k].t.forEach((name,j)=>{const a=j/G[k].t.length*Math.PI*2+Math.random()*.4,d=50+Math.random()*35;
+const end=new THREE.Vector3(c.x+Math.cos(a)*d,c.y+Math.sin(a)*d*.8,c.z+(Math.random()-.5)*30);
+const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(new Float32Array(32*3),3));
+const line=new THREE.Line(geo,new THREE.LineBasicMaterial({color:G[k].c,transparent:true,opacity:.85}));scene.add(line);
+const el=document.createElement('div');el.className='tag';el.style.setProperty('--c',G[k].c);el.textContent=name;el.style.opacity=0;tagsEl.appendChild(el);
+tendrils.push({line,el,end,born:now,delay:j*.18,wob:Math.random()*9})})}
+// HUD
+const logEl=document.getElementById('log'),secsEl=document.getElementById('secs');
+G.forEach((g,i)=>{const d=document.createElement('div');d.innerHTML=`<span>${String(i+1).padStart(2,'0')} ${g.n}</span><span>0/${g.t.length}</span>`;secsEl.appendChild(d)});
+const prog=G.map(()=>0);
+function log(s){const d=document.createElement('div');d.textContent=`${(now).toFixed(1).padStart(6,'0')}  ${s}`;logEl.appendChild(d);while(logEl.children.length>(MOB?7:9))logEl.firstChild.remove()}
+const radar=document.getElementById('radar'),beat=document.getElementById('beat');let beatArr=Array(60).fill(0),score=0;
+function drawRadar(){let s='';for(let q=1;q<=3;q++){s+=`<polygon fill="none" stroke="#ffffff18" points="${G.map((_,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2;return [Math.cos(a)*q*16,Math.sin(a)*q*16]}).join(' ')}"/>`}
+const pts=G.map((_,i)=>{const a=i/G.length*Math.PI*2-Math.PI/2,v=6+lit[i]*42;return [Math.cos(a)*v,Math.sin(a)*v]});
+s+=`<polygon fill="${G[cur%G.length].c}33" stroke="${G[cur%G.length].c}" points="${pts.join(' ')}"/>`;radar.innerHTML=s}
+function drawBeat(){const p=beatArr.map((v,i)=>`${i/(beatArr.length-1)*200},${105-v*95}`).join(' ');beat.innerHTML=`<polyline fill="none" stroke="${G[cur%G.length].c}" stroke-width="1.5" points="${p}"/>`}
+// timeline
+const STEP=RM?6:5.2, FINAL=7;let cur=0,stepStart=0,now=0,from=new THREE.Vector3(),camFrom=new THREE.Vector3(),camTo=new THREE.Vector3(),look=new THREE.Vector3(),lookFrom=new THREE.Vector3();
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+function setStep(k){cur=k;stepStart=now;from.copy(crawler.position);camFrom.copy(cam.position);lookFrom.copy(look);
+const all=k>=G.length,c=all?new THREE.Vector3():centers[k];const colr=all?'#ffffff':G[k].c;
+document.getElementById('num').textContent=all?'09':String(k+1).padStart(2,'0');document.getElementById('title').textContent=all?'ALL GUILDS':G[k].n;
+document.getElementById('step').style.setProperty('--c',colr);document.getElementById('ring').setAttribute('stroke',colr);
+camTo.set(c.x*.8,c.y*.8-20,all?900:(MOB?260:190));
+[...secsEl.children].forEach((d,i)=>{d.className=i===k?'on':(i<k?'done':'');d.style.setProperty('--c',G[i].c)});
+if(all){clearT();log('zoom out · all guilds linked');G.forEach((_,i)=>lit[i]=1)}else{if(k===0){lit.fill(0);prog.fill(0);score=0}log(`route → ${G[k].n.toLowerCase()} guild`)}}
+setStep(0);cam.position.set(0,0,700);
+let last=performance.now(),fr=0,ft=0,spawned=false;
+let FIX=0;function frame(t,noloop){const dt=FIX||Math.min(.05,(t-last)/1000);last=t;now+=dt;fr++;ft+=dt;if(ft>.5){document.getElementById('fps').textContent=Math.round(fr/ft);fr=0;ft=0}
+const all=cur>=G.length,dur=all?FINAL:STEP,e=now-stepStart,mv=ease(Math.min(1,e/1.6));
+const target=all?new THREE.Vector3():centers[cur];crawler.position.lerpVectors(from,target,mv);
+cam.position.lerpVectors(camFrom,camTo,ease(Math.min(1,e/2)));look.lerpVectors(lookFrom,all?target:target,ease(Math.min(1,e/2)));cam.lookAt(look);
+ring.rotation.z+=dt*(RM?.3:1.6);crawler.scale.setScalar(1+Math.sin(now*6)*.06);
+for(let i=TL-1;i>0;i--){tp[i*3]=tp[i*3-3];tp[i*3+1]=tp[i*3-2];tp[i*3+2]=tp[i*3-1]}tp[0]=crawler.position.x;tp[1]=crawler.position.y;tp[2]=crawler.position.z;tg.attributes.position.needsUpdate=true;
+if(!all&&e>1.5&&!spawned){spawned=true;spawnT(cur);log(`${VERBS[cur%VERBS.length]} · ${G[cur].n.toLowerCase()}`)}
+if(!all&&e>1.5)lit[cur]=Math.min(1,lit[cur]+dt*.8);
+// tendrils
+tendrils.forEach((td,j)=>{const a=Math.max(0,Math.min(1,(now-td.born-td.delay)/.9)),k=1-Math.pow(1-a,3)*(1)+Math.sin(a*Math.PI*3)*.08*(1-a);
+const p=td.line.geometry.attributes.position.array,s=crawler.position,mid=s.clone().lerp(td.end,.5).add(new THREE.Vector3(Math.sin(now*2+td.wob)*12,Math.cos(now*1.7+td.wob)*12,0));
+for(let q=0;q<32;q++){const u=q/31*k,a1=s.clone().lerp(mid,u),a2=mid.clone().lerp(s.clone().lerp(td.end,1),u),pt=a1.lerp(a2,u);p[q*3]=pt.x;p[q*3+1]=pt.y;p[q*3+2]=pt.z}
+td.line.geometry.attributes.position.needsUpdate=true;
+if(a>=1&&td.el.style.opacity!=='1'){td.el.style.opacity=1;prog[cur]++;score+=12+Math.round(Math.random()*8);secsEl.children[cur].lastChild.textContent=`${prog[cur]}/${G[cur].t.length}`;log(`${VERBS[(j+cur)%VERBS.length]} · ${td.el.textContent}`);beatArr[beatArr.length-1]=1}
+const v=td.end.clone().project(cam);td.el.style.left=((v.x+1)/2*innerWidth)+'px';td.el.style.top=((1-v.y)/2*innerHeight)+'px'});
+// colors
+for(let i=0;i<N;i++){const k=cid[i],l=lit[k]*(.35+.3*Math.sin(now*2+i));const c=gcol[k];col[i*3]=base.r+(c.r-base.r)*l;col[i*3+1]=base.g+(c.g-base.g)*l;col[i*3+2]=base.b+(c.b-base.b)*l}
+if(fr%2==0)pg.attributes.color.needsUpdate=true;
+if(fr%2==0){beatArr.push(Math.min(1,beatArr[beatArr.length-1]*.6+.08+Math.random()*.3*(all?.5:1)));beatArr.shift()}
+if(fr%3==0){drawRadar();drawBeat();const sc=Math.min(1000,score);document.getElementById('sval').textContent=sc;document.getElementById('ring').setAttribute('stroke-dashoffset',251*(1-sc/1000))}
+if(e>dur){spawned=false;setStep(all?0:cur+1)}
+if(!noloop){comp.render();requestAnimationFrame(frame)}}
+function rs(){cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();r.setSize(innerWidth,innerHeight);comp.setSize(innerWidth,innerHeight);document.getElementById('res').textContent=innerWidth+'×'+innerHeight}
+addEventListener('resize',rs);rs();if(RM)bloom.strength=.7;const SEEK=+new URLSearchParams(location.search).get('seek');if(SEEK){FIX=1/30;for(let i=0;i<SEEK*30;i++)frame(0,true);FIX=0;last=performance.now();comp.render()}requestAnimationFrame(frame);
+window.onerror=m=>console.error(m);
+</script></body></html>
