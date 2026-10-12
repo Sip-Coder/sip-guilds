@@ -668,7 +668,7 @@
       },
       {
        "id": "1.1.48",
-       "name": "Spain: Generic Terms (Ley 24/2003)",
+       "name": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
        "styles": [
         "Noble · 18 mo",
         "Añejo · 24 mo",
@@ -681,7 +681,7 @@
         "Gran Reserva white/rosé · 4 yr (6 oak)"
        ],
        "parent": "Aging Requirements",
-       "standards": "Oak ≤330 L; DO rules may be stricter. Source: Ley 24/2003 de la Viña y del Vino, art. 3 (boe.es) [from memory — unverified]"
+       "standards": "Historical national minima from Ley 24/2003 art. 3 (oak ≤330 L for Crianza/Reserva/Gran Reserva; ≤600 L for Noble/Añejo/Viejo). Art. 3 was repealed by Ley 6/2015; binding rules now sit in each DO/DOP pliego (often matching or stricter). Source: BOE-A-2003-13864; BOE-A-2015-5288 [verified online 2026-10-12]"
       },
       {
        "id": "1.1.49",
@@ -719,10 +719,10 @@
         "Rosso di Montalcino · release Sep 1 after harvest",
         "Vino Nobile · 2 yr",
         "Vino Nobile Riserva · 3 yr (6 mo btl)",
-        "Chianti Riserva · 2 yr"
+        "Chianti Riserva · 24 mo (3 btl)"
        ],
        "parent": "Aging Requirements",
-       "standards": "Chianti Classico clock starts Jan 1 after harvest; Brunello release Jan 1 of 5th year after harvest (Riserva 6th), oak of any size. Sources: Disciplinare Chianti Classico (DM 22-06-2023); Disciplinare Brunello di Montalcino; Disciplinare Vino Nobile [verified online 2026-10-12]; Chianti (non-Classico) Riserva [from memory — unverified]"
+       "standards": "Chianti Classico clock starts Jan 1 after harvest; Brunello release Jan 1 of 5th year after harvest (Riserva 6th), oak of any size. Chianti DOCG (non-Classico) Riserva: ≥24 mo total, ≥3 mo bottle, clock from Jan 1 after harvest (WSET; consorzio guidance). Sources: Disciplinare Chianti Classico (DM 22-06-2023); Disciplinare Brunello di Montalcino; Disciplinare Vino Nobile; Chianti DOCG disciplinare [verified online 2026-10-12]"
       },
       {
        "id": "1.1.52",
@@ -761,11 +761,11 @@
         "Champagne NV · 15 mo from tirage",
         "Champagne Vintage · 36 mo from tirage",
         "Champagne NV lees · 12 mo",
-        "Crémant · 9 mo lees",
+        "Crémant · 9 mo lees (12 mo to consumer)",
         "Crémant du Jura · 12 mo before release"
        ],
        "parent": "Aging Requirements",
-       "standards": "Champagne minimums from tirage date (cahier des charges AOC Champagne, INAO) [verified online 2026-10-12]; 12 mo on lees within NV 15 mo (secondary sources); Crémant 9 mo on lees [from memory — unverified]; Crémant du Jura 12 mo (cahier des charges) [verified online 2026-10-12]"
+       "standards": "Champagne minimums from tirage date (cahier des charges AOC Champagne, INAO). Crémant AOC (e.g. Alsace, Bourgogne, Loire): ≥9 mo on lees in bottle; many also require ≥12 mo élevage from tirage before consumer release. Sources: INAO cahiers Crémant d'Alsace / de Bourgogne / de Loire; Crémant du Jura cahier [verified online 2026-10-12]"
       },
       {
        "id": "1.1.55",
@@ -786,11 +786,11 @@
         "Vintage · bottled by Jul 30, yr 3",
         "LBV · bottled yr 4–6",
         "Colheita · 7+ yr wood",
-        "Tawny 10/20/30/40 Years · indicated age",
-        "Reserve · IVDP panel-approved"
+        "Tawny Reserve · IVDP panel",
+        "Tawny 10/20/30/40/50/80 Years · indicated age"
        ],
        "parent": "Aging Requirements",
-       "standards": "Vintage: approved year 2; LBV: approved year 4, bottled by Dec 31 of year 6. Source: IVDP categorias especiais [verified online 2026-10-12]; Tawny indicated ages & Reserve [from memory — unverified]"
+       "standards": "Vintage: approved year 2; LBV: approved year 4, bottled by Dec 31 of year 6. Indicated-age Tawny/White and Reserve are IVDP special categories (sensory/style approval, not a guaranteed arithmetic age of every component). Source: IVDP Categorias Especiais / Special Categories [verified online 2026-10-12]"
       },
       {
        "id": "1.1.57",
@@ -801,7 +801,7 @@
         "5/10/15/20/30/40/50 Years · indicated age"
        ],
        "parent": "Aging Requirements",
-       "standards": "Frasqueira: single harvest, recommended variety, canteiro aging. Sources: IVBAM rules via MW research paper [verified online 2026-10-12]; indicated-age ladder [from memory — unverified]"
+       "standards": "Frasqueira: single harvest, recommended variety, canteiro aging. Indicated-age ladder (5–50+) is an IVBAM category matched to organoleptic character (Portaria / IVBAM rules), not necessarily the arithmetic age of every lot. Sources: IVBAM; Portaria 39/2015 [verified online 2026-10-12]"
       },
       {
        "id": "1.1.58",
@@ -809,13 +809,13 @@
        "styles": [
         "Tokaji Aszú · 18 mo wood, release yr 3",
         "Tokaji Eszencia · no fixed minimum",
-        "Austrian Sekt Klassik · 9 mo lees",
-        "Austrian Sekt Reserve · 18 mo lees",
-        "Austrian Sekt Große Reserve · 30 mo lees",
+        "Sekt Austria · 9 mo lees (6 mo Charmat)",
+        "Sekt Austria Reserve · 18 mo lees",
+        "Sekt Austria Große Reserve · 36 mo lees",
         "Germany · no general aging minimum"
        ],
        "parent": "Aging Requirements",
-       "standards": "Tokaj: release not before Jan 1 of 3rd year after harvest (Tokaj PDO specification, EU OJ C/2026/1380) [verified online 2026-10-12]; Austrian Sekt g.U. & Germany [from memory — unverified]"
+       "standards": "Tokaj: release not before Jan 1 of 3rd year after harvest (Tokaj PDO specification, EU OJ C/2026/1380). Austrian PDO: Sekt Austria / Reserve / Große Reserve per Sektbezeichnungsverordnung (Klassik no longer permitted for new labels); Reserve & Große Reserve = traditional method only. Source: RIS Sektbezeichnungsverordnung; austrianwine.com [verified online 2026-10-12]"
       }
      ]
     },
@@ -1336,7 +1336,7 @@
         "BJCP is a style guide, not law"
        ],
        "parent": "Aging Requirements",
-       "standards": "Beer style names carry no legally mandated aging periods in the US/EU [from memory — unverified]"
+       "standards": "US/EU beer style names (including barrel-aged styles) carry no legally mandated aging periods; BJCP and brewery trade guides are voluntary style references, not statute [verified online 2026-10-12]"
       }
      ]
     },
@@ -1754,14 +1754,14 @@
         "Scotch · 3 yr oak ≤700 L",
         "Japanese (JSLMA) · 3 yr wood ≤700 L",
         "Irish · 3 yr wood",
-        "Canadian · 3 yr small wood ≤700 L",
+        "Canadian · 3 yr small wood",
         "US Straight · 2 yr new charred oak",
         "US age statement · required under 4 yr",
         "Bottled-in-Bond · 4 yr, 100 proof",
         "Bourbon · no minimum (unless straight)"
        ],
        "parent": "Aging Requirements",
-       "standards": "Scotch: Scotch Whisky Regulations 2009; Japanese: JSLMA standard (mandatory for members from Apr 1 2024); US: 27 CFR 5.74 & 5.88 [verified online 2026-10-12]; Irish (Irish Whiskey Act 1980) & Canadian (Food and Drug Regulations B.02.020) [from memory — unverified]"
+       "standards": "Scotch: Scotch Whisky Regulations 2009; Japanese: JSLMA standard (mandatory for members from Apr 1 2024); Irish: Irish Whiskey Act 1980 §1(3)(b) (wooden casks, ≥3 yr in Ireland/NI); Canadian: Food and Drug Regulations B.02.023 (≥3 yr small wood for whisky sold in Canada, except Bourbon/Tennessee); age claims: B.02.020(2)–(3). US: 27 CFR 5.74 & 5.88 [verified online 2026-10-12]"
       },
       {
        "id": "1.3.31",
@@ -1781,21 +1781,21 @@
         "Calvados XO · 6 yr"
        ],
        "parent": "Aging Requirements",
-       "standards": "Age = youngest eau-de-vie, oak only. Sources: BNIC/cahier des charges Cognac (arrêté 08-11-2018); IDAC Calvados labels [verified online 2026-10-12]; Armagnac XO 10 yr (since 2010) [from memory — unverified]"
+       "standards": "Age = youngest eau-de-vie, oak only. Cognac: BNIC/cahier des charges (arrêté 08-11-2018). Armagnac XO: BNIA raised minimum from 6 to 10 yr effective 1 Apr 2018 (aligned with Cognac XO); VS/VSOP/Napoléon per BNIA age accounts. Calvados: IDAC/cahier labels. Sources: BNIC; BNIA; INAO [verified online 2026-10-12]"
       },
       {
        "id": "1.3.32",
        "name": "Other Brandy & Pomace",
        "styles": [
-        "Brandy de Jerez Solera · 6 mo",
-        "Brandy de Jerez Reserva · 1 yr",
-        "Brandy de Jerez Gran Reserva · 3 yr",
+        "Brandy de Jerez Solera · 6+ mo avg",
+        "Brandy de Jerez Solera Reserva · 1+ yr avg",
+        "Brandy de Jerez Solera Gran Reserva · 3+ yr avg",
         "Pisco (Peru) · 3 mo rest, no wood",
-        "Grappa Invecchiata · 12 mo wood",
+        "Grappa Invecchiata/Vecchia · 12 mo wood",
         "Grappa Riserva/Stravecchia · 18 mo wood"
        ],
        "parent": "Aging Requirements",
-       "standards": "Pisco: rest ≥3 months in glass, stainless steel or other neutral vessel (Reglamento DO Pisco) [verified online 2026-10-12]; Brandy de Jerez & grappa via secondary sources [from memory — unverified]"
+       "standards": "Brandy de Jerez: average age in criaderas y solera (pliego IG Brandy de Jerez, MAPA/Consejo Regulador). Pisco: rest ≥3 months in glass, stainless steel or other neutral vessel (Reglamento DO Pisco). Grappa IG: invecchiata/vecchia ≥12 mo wood; riserva/stravecchia ≥18 mo wood under fiscal warehouse (disciplinare Grappa IG / Gazzetta Ufficiale) [verified online 2026-10-12]"
       },
       {
        "id": "1.3.33",
@@ -1806,10 +1806,11 @@
         "VO · 3 yr",
         "VSOP · 4 yr",
         "XO · 6 yr",
-        "Jamaica/Barbados · no age minimum verified"
+        "Jamaica Rum GI · no age minimum",
+        "Barbados · no GI age minimum"
        ],
        "parent": "Aging Requirements",
-       "standards": "Continuous aging. Source: Cahier des charges AOC Rhum de la Martinique (INAO) [verified online 2026-10-12]; Jamaica GI / Barbados [from memory — unverified]"
+       "standards": "Martinique: continuous aging; cahier des charges AOC Rhum de la Martinique (INAO). Jamaica Rum GI: permits unaged rum or rum aged in approved wood ≤250 L in Jamaica; age statement = youngest component (JIPO/BSJ GI docs). Barbados: no adopted rum GI age floor as of verification date [verified online 2026-10-12]"
       }
      ]
     }
@@ -3942,11 +3943,11 @@
        "name": "Sake & Cider Aging",
        "styles": [
         "Sake · no legal aging minimum",
-        "Koshu (aged sake) · informal term",
+        "Koshu (aged sake) · informal/trade term",
         "Cider & perry · no legal aging minimum"
        ],
        "parent": "Aging Requirements",
-       "standards": "NTA sake labeling standards define grades, not aging periods [from memory — unverified]"
+       "standards": "Japan National Tax Agency tokutei meishoshu standards define grade by polishing ratio and process, not aging time. BJCP cider/mead guidelines are style guides, not law [verified online 2026-10-12]"
       }
      ]
     },
