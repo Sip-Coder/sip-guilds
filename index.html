@@ -12,8 +12,8 @@ body.still .tag,body.still #hub{transition:none!important}#step>div{width:fit-co
 #num{font-size:clamp(40px,7vw,84px);line-height:.95;font-weight:700;color:var(--c,#2ee6ff);text-shadow:0 0 22px var(--c,#2ee6ff)}
 #title{font-size:clamp(20px,3vw,34px);color:#f1e3c2;margin-top:2px}#tagline{font-style:italic;color:#c6a15b;font-size:clamp(12px,1.5vw,16px);margin-top:2px}
 #acad{font-size:clamp(15px,2vw,22px);color:#f1e3c2;margin-top:8px}#subt{font-size:clamp(11px,1.4vw,14px);letter-spacing:.16em;color:var(--c);margin-top:4px}
-.tag{position:fixed;z-index:2;font-size:var(--fs,10px);letter-spacing:.06em;padding:2px 6px;border:1px solid var(--c);color:#fff;background:#04141bd8;white-space:nowrap;transition:opacity .35s;line-height:1.25;pointer-events:none;border-radius:2px}
-#hub{position:fixed;z-index:3;transform:translate(-50%,0);pointer-events:none;text-align:center;padding:5px 12px;border:1px solid var(--c);background:#04141bee;box-shadow:0 0 18px -4px var(--c);border-radius:3px;white-space:nowrap;transition:opacity .3s}
+.tag{position:fixed;z-index:2;font-size:var(--fs,10px);letter-spacing:.06em;padding:2px 6px;border:1px solid var(--c);color:#fff;background:#04141bd8;white-space:nowrap;transition:opacity .35s;line-height:1.25;pointer-events:auto;cursor:pointer;border-radius:2px}.tag:hover,.tag:focus-visible{background:#0b2f3a;outline:2px solid #e9d9b4;outline-offset:1px}#hub:focus-visible{outline:2px solid #e9d9b4}
+#hub{position:fixed;z-index:3;transform:translate(-50%,0);pointer-events:auto;cursor:pointer;text-align:center;padding:5px 12px;border:1px solid var(--c);background:#04141bee;box-shadow:0 0 18px -4px var(--c);border-radius:3px;white-space:nowrap;transition:opacity .3s}
 #hub b{display:block;font-size:clamp(12px,1.5vw,16px);letter-spacing:.14em;color:#fff}#hub i{display:block;font-style:normal;font-size:clamp(10px,1.1vw,12px);color:#c6a15b;font-family:Georgia,serif}
 #ctrl{position:fixed;left:50%;transform:translateX(-50%);bottom:182px;z-index:5;display:flex;gap:8px;background:#041219e0;border:1px solid #c6a15b55;border-radius:28px;padding:5px}
 #ctrl button{flex:0 0 44px;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;border:1px solid #c6a15b88;background:#0a2a33;color:#f1e3c2;font-size:18px;cursor:pointer}#ctrl button:hover,#ctrl button:focus-visible{background:#c6a15b;color:#04141b;outline:2px solid #f1e3c2;outline-offset:2px}
@@ -24,12 +24,19 @@ body.still .tag,body.still #hub{transition:none!important}#step>div{width:fit-co
 #secs .ar{display:flex;justify-content:space-between;line-height:1.5;color:#5f7980;cursor:pointer;padding-left:8px;font-size:9.5px}#secs .ar.on{color:var(--c)}#secs .ar.done{color:#a9c2c7}#secs .ar:hover{text-decoration:underline}
 #score{display:flex;align-items:center;gap:10px}#score svg{width:84px;height:84px}#sval{font-size:24px;color:#fff}#stot{font-size:12px}
 @media(max-width:760px){#dash{grid-template-columns:1.5fr 1fr;height:132px}#dash .hm{display:none}#top .hm{display:none}#score svg{width:60px;height:60px}#sval{font-size:20px}#ctrl{bottom:140px}#step{top:32px;left:14px;max-width:90vw}#tagline{display:none}#brand{font-size:10px;letter-spacing:.12em}#brand .x{display:none}#top{gap:10px}}
+#defbg{position:fixed;inset:0;z-index:20;background:#020a0eb0;display:flex;align-items:center;justify-content:center}#defbg[hidden]{display:none}
+#def{position:relative;width:min(440px,92vw);max-height:80vh;overflow:auto;background:#06202a;border:1px solid var(--c,#c6a15b);border-radius:6px;padding:16px 18px 14px;box-shadow:0 10px 40px #000a;color:#d7e3e6;font-size:13px;line-height:1.45}
+#def h2{font-family:Georgia,serif;font-weight:400;font-size:20px;color:#fff;margin:0 28px 4px 0}#def .pth{font-size:10.5px;letter-spacing:.04em;color:#c6a15b;margin-bottom:10px}#def p{margin:0 0 10px;font-family:Helvetica,Arial,sans-serif}
+#def h3{font-size:10px;letter-spacing:.16em;color:#6f8c93;margin:8px 0 4px;font-weight:400}#def ul{margin:0 0 8px 16px;font-family:Helvetica,Arial,sans-serif;font-size:12px;color:#b9cbd0}#def .src{font-size:11px;color:#8fa9ae}#def .nr{font-size:10px;color:#6f8c93;margin-top:6px}
+#def .x{position:absolute;top:8px;right:8px;width:32px;height:32px;border:1px solid #c6a15b55;background:none;color:#e9d9b4;border-radius:50%;font-size:16px;cursor:pointer}#def .row{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}#def .row button{background:#0b2f3a;border:1px solid #c6a15b88;color:#e9d9b4;padding:7px 12px;border-radius:4px;font:inherit;cursor:pointer}
+#def button:focus-visible{outline:2px solid #e9d9b4}
+@media (max-width:759px){#defbg{align-items:flex-end}#def{width:100vw;max-height:72vh;border-radius:14px 14px 0 0;border-bottom:none;padding-bottom:calc(14px + env(safe-area-inset-bottom))}#def:before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:#c6a15b66;margin:-6px auto 10px}}
 </style>
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
 </head><body>
 <div id="top"><span>FPS <b id="fps">--</b></span><span>PARTICLES <b id="pc">--</b></span><span class="hm">RES <b id="res">--</b></span><span class="hm">STOP <b id="stopn">--</b></span><div id="brand" class="serif">Sip <span>Studies</span><span class="x"> · Sipopedia</span></div></div>
 <div id="step"><div id="kick">INTERACTIVE ACADEMY ATLAS</div><div id="num">01</div><div id="title" class="serif">Cask Guild</div><div id="tagline" class="serif"></div><div id="acad" class="serif"></div><div id="subt"></div></div>
-<div id="tags"></div><div id="hub"><b></b><i></i></div>
+<div id="tags"></div><div id="hub" role="button" tabindex="0"><b></b><i></i></div>
 <div id="ctrl" role="toolbar" aria-label="Crawler controls"><button id="bRew" aria-label="Previous academy" title="Rewind to academy start / previous academy (Shift+← or PageUp)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M11 6v12L3 12zM21 6v12l-8-6z"/></svg></button><button id="bPrev" aria-label="Previous stop" title="Previous stop (←)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button><button id="bPlay" aria-label="Pause" title="Pause/Play (Space)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button><button id="bNext" aria-label="Next stop" title="Next stop (→)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button><button id="bFF" aria-label="Next academy" title="Next academy (Shift+→ or PageDown)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 6v12l8-6zM3 6v12l8-6z"/></svg></button><button id="bSpd" aria-label="Playback speed 1x" title="Speed (S)" style="font-size:13px;font-family:inherit">1×</button></div>
 <div id="dash">
 <div class="p"><h4>CRAWL LOG</h4><div id="log" aria-live="off"></div></div>
@@ -38,6 +45,7 @@ body.still .tag,body.still #hub{transition:none!important}#step>div{width:fit-co
 <div class="p hm"><h4>SIP BEAT · nodes/s</h4><svg id="beat" viewBox="0 0 200 110" preserveAspectRatio="none" width="100%" height="130"></svg></div>
 <div class="p"><h4>STYLES EXPLORED</h4><div id="score"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="#ffffff18" stroke-width="6" fill="none"/><circle id="ring" cx="50" cy="50" r="40" stroke="#c6a15b" stroke-width="6" fill="none" stroke-dasharray="251" stroke-dashoffset="251" transform="rotate(-90 50 50)" stroke-linecap="round"/></svg><div><div id="sval">0</div><div id="stot" style="color:#6f8c93">/ 0</div></div></div></div>
 </div>
+<div id="defbg" hidden><div id="def" role="dialog" aria-modal="true" aria-labelledby="defT"><button class="x" id="defX" aria-label="Close definition">✕</button><h2 id="defT"></h2><div class="pth" id="defP"></div><div id="defB"></div><div class="row"><button id="defClose">Close</button><button id="defRes">Resume ▶</button></div></div></div>
 <script type="module">
 import * as THREE from 'three';
 import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
@@ -45,7 +53,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;let MOB=innerWidth<760;
-const VER='5be2fb894e';
+const VER='0f8c9dca93';
 try{const v=(await (await fetch('version.json?t='+Date.now(),{cache:'no-store'})).json()).v,q=new URLSearchParams(location.search);if(v&&v!==VER&&q.get('v')!==v){q.set('v',v);location.replace(location.pathname+'?'+q);await new Promise(()=>{})}}catch(e){}
 const DATA=await (await fetch('data/guilds.json?v='+VER,{cache:'no-cache'})).json();const G=DATA.guilds;
 const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
@@ -122,12 +130,12 @@ if(!ok)return null;placed.push(ok)}return placed}
 function spawnT(s,cx,cy,instant){clearT();const st=s.sg.styles;hub.style.left=cx+'px';hub.style.top=(cy+(MOB?16:22))+'px';
 // keep hub inside the free area
 let hb=R(hub);const top=R($('top')).y+R($('top')).h,ctl=R($('ctrl')).y;if(hb.y+hb.h>ctl-8)hub.style.top=(ctl-8-hb.h)+'px';if(hb.x<6)hub.style.left=(6+hb.w/2)+'px';if(hb.x+hb.w>innerWidth-6)hub.style.left=(innerWidth-6-hb.w/2)+'px';
-const Z=reserved(cx,cy);const els=st.map(name=>{const el=document.createElement('div');el.className='tag';el.style.setProperty('--c',s.A.a.color);el.textContent=name;el.style.opacity=0;el.style.left='-999px';el.style.top='0px';tagsEl.appendChild(el);return el});
+const Z=reserved(cx,cy);const els=st.map(name=>{const el=document.createElement('div');el.className='tag';el.setAttribute('role','button');el.tabIndex=0;el.setAttribute('aria-label',name+' — show definition');el.style.setProperty('--c',s.A.a.color);el.textContent=name;el.style.opacity=0;el.style.left='-999px';el.style.top='0px';tagsEl.appendChild(el);return el});
 let fs=MOB?(st.length>12?12:13):(st.length>20?12:14),pl=null;
 for(;fs>=10&&!pl;fs--){els.forEach(el=>el.style.setProperty('--fs',fs+'px'));pl=solve(els.map(el=>({w:el.offsetWidth,h:el.offsetHeight})),cx,cy,Z)}
 window.__fallback=window.__fallback||0;if(!pl){window.__fallback++;pl=els.map((el,i)=>({x:6,y:30+i*(el.offsetHeight+2),w:el.offsetWidth,h:el.offsetHeight}))}
 lock={cx,cy,fs:fs+1};
-st.forEach((name,j)=>{const el=els[j],b=pl[j];el.style.left=b.x+'px';el.style.top=b.y+'px';
+hub.dataset.id=s.sg.id;hub.setAttribute('aria-label',s.sg.name+' — show definition');st.forEach((name,j)=>{const el=els[j],b=pl[j];el.dataset.id=s.sg.id+'.'+(j+1);el.style.left=b.x+'px';el.style.top=b.y+'px';
 const ex=Math.max(b.x,Math.min(cx,b.x+b.w)),ey=Math.max(b.y,Math.min(cy,b.y+b.h));
 const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(new Float32Array(20*3),3));
 const line=new THREE.Line(geo,new THREE.LineBasicMaterial({color:s.A.a.color,transparent:true,opacity:.8}));scene.add(line);
@@ -181,7 +189,8 @@ let lastRew=-9;function rew(){const t=performance.now()/1000;if(cur>=NS){jump(ac
 function ff(){if(cur>=NS){jump(0);return}const A=subs[cur].A;if(A.idx==AN-1)jump(NS);else jump(acads[A.idx+1].first)}
 let SPEED=1;const SPEEDS=[.5,1,2,4];function cycleSpeed(d){const i=SPEEDS.indexOf(SPEED);SPEED=SPEEDS[(i+(d||1)+SPEEDS.length)%SPEEDS.length];const b=$('bSpd');b.textContent=(SPEED==.5?'½':SPEED)+'×';b.setAttribute('aria-label','Playback speed '+SPEED+'x')}
 $('bSpd').onclick=()=>cycleSpeed(1);$('bRew').onclick=rew;$('bFF').onclick=ff;
-addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('button,[role=button]')&&e.key==' ')return;if(e.key=='s'||e.key=='S'){cycleSpeed(e.shiftKey?-1:1);e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowLeft')||e.key=='PageUp'){rew();e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowRight')||e.key=='PageDown'){ff();e.preventDefault()}else if(e.key=='ArrowRight'){jump(cur+1);e.preventDefault()}else if(e.key=='ArrowLeft'){jump(cur>=NS?NS-1:cur-1);e.preventDefault()}else if(e.key==' '){setPaused(!paused);e.preventDefault()}});
+addEventListener('keydown',e=>{if(defOpen){if(e.key=='Escape'){closeDef(false);e.preventDefault()}else if(e.key=='Tab'){const f=[...$('def').querySelectorAll('button')];const i=f.indexOf(document.activeElement);if(e.shiftKey&&i<=0){f[f.length-1].focus();e.preventDefault()}else if(!e.shiftKey&&i==f.length-1){f[0].focus();e.preventDefault()}}return}
+if((e.key=='Enter'||e.key==' ')&&e.target.closest&&e.target.closest('.tag,#hub')){e.preventDefault();openDef(e.target.closest('.tag,#hub').dataset.id,e.target);return}if(e.target.closest&&e.target.closest('button,[role=button]')&&e.key==' ')return;if(e.key=='s'||e.key=='S'){cycleSpeed(e.shiftKey?-1:1);e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowLeft')||e.key=='PageUp'){rew();e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowRight')||e.key=='PageDown'){ff();e.preventDefault()}else if(e.key=='ArrowRight'){jump(cur+1);e.preventDefault()}else if(e.key=='ArrowLeft'){jump(cur>=NS?NS-1:cur-1);e.preventDefault()}else if(e.key==' '){setPaused(!paused);e.preventDefault()}});
 let last=performance.now(),fr=0,ft=0,FIX=0;const tmp=new THREE.Vector3();
 function frame(t,noloop){const rdt=FIX||Math.min(.05,(t-last)/1000);last=t;const dt=paused?0:rdt*SPEED;now+=dt;fr++;ft+=rdt;if(ft>.5&&!FIX){$('fps').textContent=Math.round(fr/ft);fr=0;ft=0}
 const all=cur>=NS,e=now-stepStart,mv=ease(Math.min(1,e/travel));
@@ -208,7 +217,16 @@ function rs(){MOB=innerWidth<760;cam.aspect=innerWidth/innerHeight;cam.updatePro
 addEventListener('resize',()=>{rs();if(spawned&&lock&&cur<NS){const p=crawler.position.clone().project(cam);spawnT(stop,(p.x+1)/2*innerWidth,(1-p.y)/2*innerHeight,true)}});rs();
 const Q=new URLSearchParams(location.search),SEEK=+Q.get('seek'),STOP=Q.get('stop');
 if(STOP!==null||SEEK||Q.has('check'))document.body.classList.add('still');
-if(STOP!==null){jump(+STOP);FIX=1/30;for(let i=0;i<(+Q.get('t')||8)*30;i++)frame(0,true);FIX=1e-6}
+let DEFS=null;const defP=fetch('data/definitions.json?v='+VER,{cache:'no-cache'}).then(r=>r.json()).then(j=>DEFS=j.definitions).catch(()=>{});
+let defOpen=false,defWas=false,defFrom=null;const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function openDef(id,from){if(!id)return;if(!DEFS)await defP;const d=DEFS&&DEFS[id];if(!d)return;if(!defOpen){defWas=paused;defFrom=from||document.activeElement}setPaused(true);defOpen=true;
+$('def').style.setProperty('--c',(stop&&stop.A&&stop.A.a.color)||'#c6a15b');$('defT').textContent=d.term;$('defP').textContent=d.path;
+$('defB').innerHTML='<p>'+esc(d.definition)+'</p>'+(d.facts&&d.facts.length?'<h3>KEY FACTS</h3><ul>'+d.facts.map(f=>'<li>'+esc(f)+'</li>').join('')+'</ul>':'')+(d.source?'<div class="src">Source: '+esc(d.source)+'</div>':'')+(d.needs_review?'<div class="nr">Draft definition · pending editorial review</div>':'');
+$('defbg').hidden=false;$('defX').focus()}
+function closeDef(resume){if(!defOpen)return;defOpen=false;$('defbg').hidden=true;if(resume)setPaused(false);else if(!defWas)setPaused(true);if(defFrom&&defFrom.focus&&document.contains(defFrom))defFrom.focus()}
+$('defX').onclick=()=>closeDef(false);$('defClose').onclick=()=>closeDef(false);$('defRes').onclick=()=>closeDef(true);$('defbg').addEventListener('click',e=>{if(e.target.id=='defbg')closeDef(false)});
+tagsEl.addEventListener('click',e=>{const t=e.target.closest('.tag');if(t)openDef(t.dataset.id,t)});hub.addEventListener('click',()=>openDef(hub.dataset.id,hub));
+if(STOP!==null){jump(+STOP);FIX=1/30;for(let i=0;i<(+Q.get('t')||8)*30;i++)frame(0,true);FIX=1e-6;if(Q.has('def')){await defP;openDef(Q.get('def'))}}
 else if(SEEK){FIX=1/30;for(let i=0;i<SEEK*30;i++)frame(0,true);FIX=1e-6}
 if(Q.has('check')){const res=[];FIX=1/30;for(let k=0;k<NS;k++){jump(k);let g=0;while(!spawned&&g++<600)frame(0,true);for(let i=0;i<30;i++)frame(0,true);
 const cp=crawler.position.clone().project(cam),cx=(cp.x+1)/2*innerWidth,cy=(1-cp.y)/2*innerHeight;

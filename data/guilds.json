@@ -1552,9 +1552,9 @@
        "id": "1.3.16",
        "name": "Agave Aging (NOM-006)",
        "styles": [
-        "Tequila Reposado (2–12 months in oak)",
+        "Tequila Reposado (≥2 months in oak)",
         "Tequila Añejo (≥1 year, ≤600 L oak)",
-        "Tequila Extra Añejo (≥3 years)",
+        "Tequila Extra Añejo (≥3 years, ≤600 L oak)",
         "Cristalino (aged, then filtered)"
        ],
        "parent": "Barrel Toasting & Aging"
@@ -1728,24 +1728,26 @@
        "id": "1.3.28",
        "name": "Tequila (NOM-006)",
        "styles": [
-        "Blanco/Plata · no aging required",
+        "Blanco/Plata · no aging (may rest <2 mo)",
+        "Joven/Oro · blend or abocado",
         "Reposado · 2+ mo oak",
         "Añejo · 1+ yr oak ≤600 L",
         "Extra Añejo · 3+ yr oak ≤600 L"
        ],
        "parent": "Aging Requirements",
-       "standards": "Oak or holm-oak (encino), direct contact. Reposado has NO vessel-size limit and no legal upper bound (the popular '2–12 months' reflects that ≥1 yr in ≤600 L qualifies as Añejo). Source: NOM-006-SCFI-2012 §4.36 (DOF 13-12-2012) [verified online 2026-10-12]"
+       "standards": "Blanco/Plata: no abocante, may mature <2 months in oak/encino (§4.36.1). Joven/Oro: blanco blended with reposado/añejo/extra añejo, or blanco mellowed with permitted abocado ingredients (§4.36.2). Aged classes: oak or holm-oak (encino), direct contact. Reposado has NO vessel-size limit and no legal upper bound (the popular '2–12 months' reflects that ≥1 yr in ≤600 L qualifies as Añejo). Source: NOM-006-SCFI-2012 §4.36 (DOF 13-12-2012) [verified online 2026-10-12]"
       },
       {
        "id": "1.3.29",
        "name": "Mezcal (NOM-070)",
        "styles": [
+        "Blanco/Joven · no aging",
         "Madurado en vidrio · 12+ mo glass",
         "Reposado · 2–12 mo wood",
         "Añejo · 12+ mo wood <1,000 L"
        ],
        "parent": "Aging Requirements",
-       "standards": "Source: NOM-070-SCFI-2016 (DOF 23-02-2017) [verified online 2026-10-12]"
+       "standards": "Blanco o Joven: colorless, no post-distillation treatment [partially verified — secondary sources; NOM-070 text not retrieved]. Others — Source: NOM-070-SCFI-2016 (DOF 23-02-2017) [verified online 2026-10-12]"
       },
       {
        "id": "1.3.30",
