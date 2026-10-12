@@ -28,4 +28,6 @@ A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 aca
 - Kombucha & fermented drinks: Kombucha Brewers International code of practice; BJCP 2025 cider and 2015 mead guidelines
 
 ## Label layout & overlap check
+The scene is a spiral nebula: one arm per guild (noisy log-like spiral, varied curvature/width), academies as knots along each arm, subgenres as knots within, plus color-blended dust, a bright core and soft gas haze that slowly swirl (disabled with reduced motion). The crawler travels along the arms (through the core between guilds). The dashboard counts STYLES EXPLORED (cumulative styles / total, recomputed on jump).
+
 Tags are placed per stop by a deterministic screen-space solver (rings/angles around the crawler, greedy placement with 4px padding) that treats the header, step title, center label, crawler core, controls and dashboard as reserved zones; font steps down (min 10px) if needed. Layout is locked per stop and recomputed on resize. `build/check_overlaps.sh` visits all 121 stops at 390×844, 768×1024 and 1440×900 (exact iframe viewports via `build/check.html` + `?check=1`) and fails on any intersection or offscreen label.
