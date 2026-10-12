@@ -8,15 +8,23 @@ def old(g,drop=(),edit={}):
     st=[x for x in st if x not in edit.get(n,[])]; out.append((n,'; '.join(st)))
   return out
 W=old('WATER',edit={'Sparkling Water':['Club soda','Tonic water']})+[("Tap & Treated","Municipal tap water; Private well water; Carbon-filtered; Boiled (point-of-use); UV-treated")]
-C=old('COFFEE')+[("Decaffeination","Swiss Water Process; CO2 (supercritical) process; Ethyl acetate (sugarcane) process; Methylene chloride (direct/indirect) process"),
+C=old('COFFEE')+[("Barrel-Aged Coffee","Green beans rested in bourbon barrels; Rum barrel-aged beans; Wine barrel-aged beans; Whiskey barrel-aged cold brew","Barrel Toasting & Aging"),("Decaffeination","Swiss Water Process; CO2 (supercritical) process; Ethyl acetate (sugarcane) process; Methylene chloride (direct/indirect) process"),
  ("Coffee Formats","Whole bean; Ground; Instant (freeze-dried); Instant (spray-dried); Single-serve pods/capsules; Coffee concentrate; Drip bags"),
  ("Iced & Blended Drinks","Iced coffee; Iced latte; Nitro cold brew; Frappé (Greek); Blended iced coffee (frappuccino-style); Espresso tonic; Dalgona coffee; Shakerato")]
 T=old('TEA',edit={'Herbal Tisanes':['Yerba mate','Guayusa']})+[("Scented & Blended","Jasmine tea; Earl Grey (bergamot); Lychee black; Rose black; Osmanthus oolong; Chai spice blend"),
  ("Tea Drinks","Iced tea; Sweet tea (US South); Milk tea; Chai latte; Matcha latte; London fog; Arnold Palmer (tea + lemonade)"),
  ("Tea Formats","Loose leaf; Tea bags; Pyramid sachets; Compressed cakes/bricks; Powdered (matcha/instant); RTD bottled tea")]
-WI=old('WINE')+[("Wine-Based Drinks","Sangria; Spritzer; Wine cooler; Mulled wine; Kalimotxo (wine + cola)"),("Dealcoholized Wine (≤0.5% ABV)","Dealcoholized red; Dealcoholized white; Dealcoholized sparkling; Dealcoholized rosé")]
-B=[(n,st) for n,st in old('BEER')]+[("Flavored Malt & Hard Seltzer (outside BJCP)","Hard seltzer; Flavored malt beverage; Malt liquor; Hard root beer/soda; Hard tea"),("NA & Low-Alcohol Beer (outside BJCP)","Non-alcoholic lager (≤0.5% ABV); Non-alcoholic IPA; Non-alcoholic stout; Radler/shandy")]
-SP=old('SPIRITS')+[("Other Regional Spirits","Aquavit (akvavit); Rakı; Arak; Pálinka; Slivovitz (šljivovica); Singani; Feni"),
+WI=old('WINE')+[("Oak & Other Woods","American white oak (Quercus alba); French sessile oak (Q. petraea); French pedunculate oak (Q. robur); Hungarian oak (Q. petraea); Oregon oak (Q. garryana); Mizunara (Q. mongolica, Japan); Acacia (black locust); Chestnut (Castanea sativa); Cherry (Prunus avium); Amburana (Brazil)","Barrel Toasting & Aging"),
+ ("French Oak Forests","Allier; Tronçais (Allier); Nevers; Bertranges; Vosges; Limousin (wide grain, Cognac); Jupilles","Barrel Toasting & Aging"),
+ ("Seasoning","Open-air seasoning (typically 24–36 months); Kiln-dried staves; Rain & sun leaching of harsh tannins","Barrel Toasting & Aging"),
+ ("Toast Levels","Light toast; Medium toast; Medium-plus toast; Heavy toast; Toasted heads; Untoasted heads; See Spirits Academy: char levels","Barrel Toasting & Aging"),
+ ("Barrel Sizes","Blood tub (~40 L); Quarter cask (~125 L); American standard barrel (200 L / 53 gal); Bordeaux barrique (225 L); Burgundy pièce (228 L); Hogshead (~250 L); Puncheon (~450–500 L); Sherry butt (~500 L); Port pipe (~550–650 L); Foudre / foeder (1,000 L+)","Barrel Toasting & Aging"),
+ ("New vs Used","New oak; First fill; Refill (second fill+); Neutral oak (3+ uses); Rejuvenated (re-toasted/re-charred); Percentage new oak (wine élevage)","Barrel Toasting & Aging"),("Wine-Based Drinks","Sangria; Spritzer; Wine cooler; Mulled wine; Kalimotxo (wine + cola)"),("Dealcoholized Wine (≤0.5% ABV)","Dealcoholized red; Dealcoholized white; Dealcoholized sparkling; Dealcoholized rosé")]
+B=[(n,st) for n,st in old('BEER')]+[("Barrel-Aged & Wood Beers","Bourbon barrel-aged imperial stout; Barrel-aged barleywine; Foeder-fermented beer; Wine-barrel sour; Brettanomyces aged in oak; Lambic in oak foudres; See Wine Academy: oak, toast, sizes","Barrel Toasting & Aging"),("Flavored Malt & Hard Seltzer (outside BJCP)","Hard seltzer; Flavored malt beverage; Malt liquor; Hard root beer/soda; Hard tea"),("NA & Low-Alcohol Beer (outside BJCP)","Non-alcoholic lager (≤0.5% ABV); Non-alcoholic IPA; Non-alcoholic stout; Radler/shandy")]
+SP=old('SPIRITS')+[("Char Levels","#1 char (light); #2 char; #3 char (common for bourbon); #4 char (alligator); Toast + char (two-step); See Wine Academy: oak, forests, sizes","Barrel Toasting & Aging"),
+ ("Cask Finishes","Ex-bourbon; Oloroso sherry; Pedro Ximénez (PX) sherry; Fino/Amontillado sherry; Port (ruby/tawny); Madeira; Sauternes; Red wine; Rum cask; Cognac cask; Beer/stout cask","Barrel Toasting & Aging"),
+ ("Maturation Systems","Solera (criaderas y solera); Angel's share (evaporation); Dunnage warehouse; Rickhouse (rackhouse); Palletized warehouse; Tropical maturation; Bottled-in-Bond (≥4 years, US)","Barrel Toasting & Aging"),
+ ("Agave Aging (NOM-006)","Tequila Reposado (2–12 months in oak); Tequila Añejo (≥1 year, ≤600 L oak); Tequila Extra Añejo (≥3 years); Cristalino (aged, then filtered)","Barrel Toasting & Aging"),("Other Regional Spirits","Aquavit (akvavit); Rakı; Arak; Pálinka; Slivovitz (šljivovica); Singani; Feni"),
  ("The Unforgettables","Old Fashioned; Manhattan; Dry Martini; Negroni; Daiquiri; Whiskey Sour; Sidecar; Sazerac; Boulevardier; Martinez","Cocktails (IBA)"),
  ("Contemporary Classics","Margarita; Mojito; Cosmopolitan; Moscow Mule; Mai Tai; Piña Colada; Bloody Mary; Caipirinha; Mimosa; French 75","Cocktails (IBA)"),
  ("New Era Drinks","Espresso Martini; Spritz Veneziano; Penicillin; Paper Plane; Tommy's Margarita; Naked and Famous","Cocktails (IBA)"),("Zero-Proof","Virgin cocktails (mocktails); Non-alcoholic gin alternatives; Non-alcoholic whiskey alternatives; Non-alcoholic aperitif/bitter alternatives; Shrub-based drinks")]
@@ -80,6 +88,7 @@ G=[
   ("Cordials & Squashes","Squash (UK fruit concentrate); Cordial; Drinking vinegar (shrub syrup); Soda syrup"),
   ("Carbonation Methods","Forced carbonation (CO2); Natural carbonation (bottle-conditioned); Nitrogenation (nitro); Post-mix (fountain); Pre-mix (bottle/can)")]),
  ("Fermented Academy","#ff6af0",SC+[
+  ("Barrel & Wood Aging","Taruzake (Japanese cedar, sugi); Barrel-aged cider (ex-bourbon/rum); Normandy/Asturian cider in oak vats; Barrel-aged mead; See Wine Academy: oak, toast, sizes","Barrel Toasting & Aging"),
   ("Fermented Milks","Milk kefir; Kumis (mare's milk); Drinkable yogurt; Lactobacillus fermented milk drink"),
   ("Grain & Rice Ferments","Kvass; Boza; Amazake; Makgeolli; Chicha de jora"),
   ("Plant & Fruit Ferments","Water kefir (tibicos); Tepache; Pulque; Ginger beer (ginger bug); Palm wine")]),

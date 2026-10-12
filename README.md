@@ -1,6 +1,6 @@
 # Sip Studies — Guild Crawler (Sipopedia academies)
 
-A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 142 subgenres → 774 styles (optional sub-subgenre `parent`, e.g. Milk › Cream & Cream Products › Fluid Creams)**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 16 min.
+A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 155 subgenres → 861 styles (optional sub-subgenre `parent`, e.g. Milk › Cream & Cream Products › Fluid Creams)**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 16 min.
 
 **Live:** https://sip-coder.github.io/sip-guilds/
 
@@ -21,6 +21,7 @@ A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 aca
 - Non-alc: US TTB/FDA definitions for dealcoholized (<0.5% ABV) beverages; common market categories
 - Juice: US FDA 21 CFR 101.30 (percentage juice declaration) and 21 CFR 120 (juice HACCP; unpasteurized warning)
 - Milk & cream: US FDA 21 CFR Part 131 standards of identity — milk §131.110, acidified §131.111, cultured §131.112, concentrated §131.115, sweetened condensed §131.120, nonfat dry §131.125, evaporated §131.130, dry whole §131.147, dry cream §131.149, heavy cream §131.150, light cream §131.155, light whipping §131.157, sour cream §131.160/.162, eggnog §131.170, half-and-half §131.180, sour half-and-half §131.185/.187, yogurt §131.200 — https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-131 ; reduced/low/fat-free naming per 21 CFR 101.62 & 130.10; Grade "A" Pasteurized Milk Ordinance; UK cream fat minimums per UK Dairy industry/Food Standards Agency guidance; USDA National Organic Program (organic)
+- Barrel Toasting & Aging (shared reference under Wine Academy; Spirits adds char levels, cask finishes, maturation systems, NOM-006 agave aging; Beer, Fermented and Coffee add barrel-aged styles and cross-reference the shared lists): Independent Stave Co. / ISC char & toast guides; Seguin Moreau and Tonnellerie François Frères cooperage references (forests, seasoning, toast); Scotch Whisky Association cask types; US 27 CFR 5.143 (bourbon new charred oak; bottled-in-bond); NOM-006-SCFI-2012 (tequila aging classes)
 - Cocktails: International Bartenders Association official list (Unforgettables / Contemporary Classics / New Era) — https://iba-world.com/cocktails/all-cocktails/
 - Decaffeination & coffee formats: SCA; Swiss Water Decaf Co. process notes
 - Health/medical drinks: WHO oral rehydration salts formula; IDDSI framework (thickened drinks)

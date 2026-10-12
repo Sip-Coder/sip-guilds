@@ -115,6 +115,91 @@
       },
       {
        "id": "1.1.8",
+       "name": "Oak & Other Woods",
+       "styles": [
+        "American white oak (Quercus alba)",
+        "French sessile oak (Q. petraea)",
+        "French pedunculate oak (Q. robur)",
+        "Hungarian oak (Q. petraea)",
+        "Oregon oak (Q. garryana)",
+        "Mizunara (Q. mongolica, Japan)",
+        "Acacia (black locust)",
+        "Chestnut (Castanea sativa)",
+        "Cherry (Prunus avium)",
+        "Amburana (Brazil)"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.1.9",
+       "name": "French Oak Forests",
+       "styles": [
+        "Allier",
+        "Tronçais (Allier)",
+        "Nevers",
+        "Bertranges",
+        "Vosges",
+        "Limousin (wide grain, Cognac)",
+        "Jupilles"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.1.10",
+       "name": "Seasoning",
+       "styles": [
+        "Open-air seasoning (typically 24–36 months)",
+        "Kiln-dried staves",
+        "Rain & sun leaching of harsh tannins"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.1.11",
+       "name": "Toast Levels",
+       "styles": [
+        "Light toast",
+        "Medium toast",
+        "Medium-plus toast",
+        "Heavy toast",
+        "Toasted heads",
+        "Untoasted heads",
+        "See Spirits Academy: char levels"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.1.12",
+       "name": "Barrel Sizes",
+       "styles": [
+        "Blood tub (~40 L)",
+        "Quarter cask (~125 L)",
+        "American standard barrel (200 L / 53 gal)",
+        "Bordeaux barrique (225 L)",
+        "Burgundy pièce (228 L)",
+        "Hogshead (~250 L)",
+        "Puncheon (~450–500 L)",
+        "Sherry butt (~500 L)",
+        "Port pipe (~550–650 L)",
+        "Foudre / foeder (1,000 L+)"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.1.13",
+       "name": "New vs Used",
+       "styles": [
+        "New oak",
+        "First fill",
+        "Refill (second fill+)",
+        "Neutral oak (3+ uses)",
+        "Rejuvenated (re-toasted/re-charred)",
+        "Percentage new oak (wine élevage)"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.1.14",
        "name": "Wine-Based Drinks",
        "styles": [
         "Sangria",
@@ -125,7 +210,7 @@
        ]
       },
       {
-       "id": "1.1.9",
+       "id": "1.1.15",
        "name": "Dealcoholized Wine (≤0.5% ABV)",
        "styles": [
         "Dealcoholized red",
@@ -469,6 +554,20 @@
       },
       {
        "id": "1.2.35",
+       "name": "Barrel-Aged & Wood Beers",
+       "styles": [
+        "Bourbon barrel-aged imperial stout",
+        "Barrel-aged barleywine",
+        "Foeder-fermented beer",
+        "Wine-barrel sour",
+        "Brettanomyces aged in oak",
+        "Lambic in oak foudres",
+        "See Wine Academy: oak, toast, sizes"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.2.36",
        "name": "Flavored Malt & Hard Seltzer (outside BJCP)",
        "styles": [
         "Hard seltzer",
@@ -479,7 +578,7 @@
        ]
       },
       {
-       "id": "1.2.36",
+       "id": "1.2.37",
        "name": "NA & Low-Alcohol Beer (outside BJCP)",
        "styles": [
         "Non-alcoholic lager (≤0.5% ABV)",
@@ -655,6 +754,62 @@
       },
       {
        "id": "1.3.13",
+       "name": "Char Levels",
+       "styles": [
+        "#1 char (light)",
+        "#2 char",
+        "#3 char (common for bourbon)",
+        "#4 char (alligator)",
+        "Toast + char (two-step)",
+        "See Wine Academy: oak, forests, sizes"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.3.14",
+       "name": "Cask Finishes",
+       "styles": [
+        "Ex-bourbon",
+        "Oloroso sherry",
+        "Pedro Ximénez (PX) sherry",
+        "Fino/Amontillado sherry",
+        "Port (ruby/tawny)",
+        "Madeira",
+        "Sauternes",
+        "Red wine",
+        "Rum cask",
+        "Cognac cask",
+        "Beer/stout cask"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.3.15",
+       "name": "Maturation Systems",
+       "styles": [
+        "Solera (criaderas y solera)",
+        "Angel's share (evaporation)",
+        "Dunnage warehouse",
+        "Rickhouse (rackhouse)",
+        "Palletized warehouse",
+        "Tropical maturation",
+        "Bottled-in-Bond (≥4 years, US)"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.3.16",
+       "name": "Agave Aging (NOM-006)",
+       "styles": [
+        "Tequila Reposado (2–12 months in oak)",
+        "Tequila Añejo (≥1 year, ≤600 L oak)",
+        "Tequila Extra Añejo (≥3 years)",
+        "Cristalino (aged, then filtered)"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "1.3.17",
        "name": "Other Regional Spirits",
        "styles": [
         "Aquavit (akvavit)",
@@ -667,7 +822,7 @@
        ]
       },
       {
-       "id": "1.3.14",
+       "id": "1.3.18",
        "name": "The Unforgettables",
        "styles": [
         "Old Fashioned",
@@ -684,7 +839,7 @@
        "parent": "Cocktails (IBA)"
       },
       {
-       "id": "1.3.15",
+       "id": "1.3.19",
        "name": "Contemporary Classics",
        "styles": [
         "Margarita",
@@ -701,7 +856,7 @@
        "parent": "Cocktails (IBA)"
       },
       {
-       "id": "1.3.16",
+       "id": "1.3.20",
        "name": "New Era Drinks",
        "styles": [
         "Espresso Martini",
@@ -714,7 +869,7 @@
        "parent": "Cocktails (IBA)"
       },
       {
-       "id": "1.3.17",
+       "id": "1.3.21",
        "name": "Zero-Proof",
        "styles": [
         "Virgin cocktails (mocktails)",
@@ -807,6 +962,17 @@
       },
       {
        "id": "2.1.6",
+       "name": "Barrel-Aged Coffee",
+       "styles": [
+        "Green beans rested in bourbon barrels",
+        "Rum barrel-aged beans",
+        "Wine barrel-aged beans",
+        "Whiskey barrel-aged cold brew"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "2.1.7",
        "name": "Decaffeination",
        "styles": [
         "Swiss Water Process",
@@ -816,7 +982,7 @@
        ]
       },
       {
-       "id": "2.1.7",
+       "id": "2.1.8",
        "name": "Coffee Formats",
        "styles": [
         "Whole bean",
@@ -829,7 +995,7 @@
        ]
       },
       {
-       "id": "2.1.8",
+       "id": "2.1.9",
        "name": "Iced & Blended Drinks",
        "styles": [
         "Iced coffee",
@@ -1673,6 +1839,18 @@
       },
       {
        "id": "5.2.6",
+       "name": "Barrel & Wood Aging",
+       "styles": [
+        "Taruzake (Japanese cedar, sugi)",
+        "Barrel-aged cider (ex-bourbon/rum)",
+        "Normandy/Asturian cider in oak vats",
+        "Barrel-aged mead",
+        "See Wine Academy: oak, toast, sizes"
+       ],
+       "parent": "Barrel Toasting & Aging"
+      },
+      {
+       "id": "5.2.7",
        "name": "Fermented Milks",
        "styles": [
         "Milk kefir",
@@ -1682,7 +1860,7 @@
        ]
       },
       {
-       "id": "5.2.7",
+       "id": "5.2.8",
        "name": "Grain & Rice Ferments",
        "styles": [
         "Kvass",
@@ -1693,7 +1871,7 @@
        ]
       },
       {
-       "id": "5.2.8",
+       "id": "5.2.9",
        "name": "Plant & Fruit Ferments",
        "styles": [
         "Water kefir (tibicos)",
