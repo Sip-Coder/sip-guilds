@@ -1,12 +1,13 @@
-# Sip Studies — Guild Crawler
+# Sip Studies — Guild Crawler (Sipopedia academies)
 
-A one-page WebGL demo: a crawler travels through 8 beverage guilds and **84 subgenres** (440 styles), visiting each subgenre sub-cluster and shooting tendrils to its style tags, then zooms out to show every guild lit. Loop ≈ 4.5 min.
+A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 121 subgenres → 633 styles**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 17 min.
 
 **Live:** https://sip-coder.github.io/sip-guilds/
 
-- Taxonomy data: [`data/guilds.json`](data/guilds.json) (guild > subgenre > styles) · readable outline: [`data/guilds.pdf`](data/guilds.pdf) · generator: `build/taxonomy.py`
-- Static files only. Three.js 0.160.0 (unpkg) with EffectComposer + UnrealBloomPass; particle lighting is GPU-side (per-subgenre data texture sampled in the vertex shader).
-- Autoplays; respects `prefers-reduced-motion`; dashboard collapses on mobile. `?seek=<seconds>` freezes at a timestamp (used for `previews/`).
+- Controls: ⏮ / ⏸▶ / ⏭ buttons, keyboard ← → and Space; click a guild/academy in the GUILDS · ACADEMIES panel to jump there.
+- Data: [`data/guilds.json`](data/guilds.json) (guild > academy > subgenre > styles) · outline [`data/guilds.pdf`](data/guilds.pdf) · generator `build/taxonomy.py`.
+- Placement choices: sake, cider, perry and mead live in **Fermented Academy** (Culture Guild); NA beer/wine and zero-proof spirits sit inside the Beer/Wine/Spirits academies; club soda/tonic moved to Carbonated; yerba mate moved from Tea to Regional, guayusa to Energy.
+- Static files; Three.js 0.160.0 (unpkg) + UnrealBloomPass; GPU-side per-subgenre lighting; respects `prefers-reduced-motion`. Preview helpers: `?stop=<index>&t=<sec>` or `?seek=<sec>`.
 
 ## Taxonomy sources
 - Beer: BJCP 2021 Beer Style Guidelines, categories 1–34 — https://www.bjcp.org/style/2021/beer/
@@ -18,3 +19,8 @@ A one-page WebGL demo: a crawler travels through 8 beverage guilds and **84 subg
 - Tea: ISO 20715:2023 tea classification by manufacturing process (white, yellow, green, oolong, black, dark)
 - Water: US FDA 21 CFR 165.110 bottled water standard of identity (spring, mineral, artesian, purified, sparkling)
 - Non-alc: US TTB/FDA definitions for dealcoholized (<0.5% ABV) beverages; common market categories
+- Juice: US FDA 21 CFR 101.30 (percentage juice declaration) and 21 CFR 120 (juice HACCP; unpasteurized warning)
+- Milk: US FDA Grade "A" Pasteurized Milk Ordinance; 21 CFR 131 (milk fat levels)
+- Health/medical drinks: WHO oral rehydration salts formula; IDDSI framework (thickened drinks)
+- Protein/energy: US FDA dietary supplement & caffeine guidance; EFSA scientific opinion on caffeine safety (2015)
+- Kombucha & fermented drinks: Kombucha Brewers International code of practice; BJCP 2025 cider and 2015 mead guidelines

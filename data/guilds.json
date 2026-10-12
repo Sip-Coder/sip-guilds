@@ -1,1003 +1,1513 @@
 {
- "title": "Sip Studies Beverage Guild Taxonomy",
- "version": "1.0",
+ "title": "Sip Studies × Sipopedia Beverage Taxonomy",
+ "version": "2.0",
+ "structure": "guild > academy > subgenre > styles",
  "guilds": [
   {
    "id": 1,
-   "name": "WATER",
-   "color": "#2ee6ff",
-   "subgenres": [
+   "name": "CASK GUILD",
+   "tagline": "Fermentation, transformation, and time",
+   "grouping": "Grouped by maturation, cellar craft, and cellar-to-service.",
+   "color": "#ff3b7a",
+   "academies": [
     {
-     "id": "01.1",
-     "name": "Spring Water",
-     "styles": [
-      "Natural spring",
-      "Artesian spring",
-      "Glacier/icecap water"
+     "id": "1.1",
+     "name": "Wine Academy",
+     "color": "#ff3b7a",
+     "subgenres": [
+      {
+       "id": "1.1.1",
+       "name": "Red",
+       "styles": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Pinot Noir",
+        "Syrah/Shiraz",
+        "Grenache/Garnacha",
+        "Tempranillo",
+        "Sangiovese",
+        "Nebbiolo",
+        "Malbec",
+        "Zinfandel/Primitivo",
+        "Cabernet Franc",
+        "Gamay",
+        "Barbera",
+        "Mourvèdre/Monastrell"
+       ]
+      },
+      {
+       "id": "1.1.2",
+       "name": "White",
+       "styles": [
+        "Chardonnay",
+        "Sauvignon Blanc",
+        "Riesling",
+        "Pinot Grigio/Gris",
+        "Chenin Blanc",
+        "Gewürztraminer",
+        "Viognier",
+        "Albariño",
+        "Grüner Veltliner",
+        "Sémillon",
+        "Torrontés",
+        "Assyrtiko"
+       ]
+      },
+      {
+       "id": "1.1.3",
+       "name": "Rosé",
+       "styles": [
+        "Provence rosé",
+        "Tavel",
+        "Rosado (Navarra)",
+        "Rosato",
+        "White Zinfandel"
+       ]
+      },
+      {
+       "id": "1.1.4",
+       "name": "Sparkling",
+       "styles": [
+        "Champagne",
+        "Crémant",
+        "Cava",
+        "Prosecco",
+        "Franciacorta",
+        "Sekt",
+        "Pét-nat (ancestral method)",
+        "Lambrusco",
+        "Moscato d'Asti"
+       ]
+      },
+      {
+       "id": "1.1.5",
+       "name": "Orange (Skin-Contact)",
+       "styles": [
+        "Georgian qvevri (Rkatsiteli)",
+        "Friulian Ribolla Gialla",
+        "Slovenian (Brda) skin-contact"
+       ]
+      },
+      {
+       "id": "1.1.6",
+       "name": "Fortified",
+       "styles": [
+        "Port (Ruby/Tawny/Vintage)",
+        "Sherry (Fino/Manzanilla/Amontillado/Oloroso/PX)",
+        "Madeira",
+        "Marsala",
+        "Vermouth",
+        "Vin doux naturel"
+       ]
+      },
+      {
+       "id": "1.1.7",
+       "name": "Dessert",
+       "styles": [
+        "Sauternes",
+        "Tokaji Aszú",
+        "Icewine/Eiswein",
+        "Beerenauslese/TBA",
+        "Vin Santo",
+        "Recioto",
+        "Late harvest"
+       ]
+      },
+      {
+       "id": "1.1.8",
+       "name": "Dealcoholized Wine (≤0.5% ABV)",
+       "styles": [
+        "Dealcoholized red",
+        "Dealcoholized white",
+        "Dealcoholized sparkling",
+        "Dealcoholized rosé"
+       ]
+      }
      ]
     },
     {
-     "id": "01.2",
-     "name": "Mineral Water",
-     "styles": [
-      "Low-mineral (<500 mg/L TDS)",
-      "Medium-mineral",
-      "High-mineral (>1500 mg/L TDS)",
-      "Naturally carbonated mineral"
+     "id": "1.2",
+     "name": "Beer Academy",
+     "color": "#ffd23c",
+     "subgenres": [
+      {
+       "id": "1.2.1",
+       "name": "1 Standard American Beer",
+       "styles": [
+        "American Light Lager",
+        "American Lager",
+        "Cream Ale",
+        "American Wheat Beer"
+       ]
+      },
+      {
+       "id": "1.2.2",
+       "name": "2 International Lager",
+       "styles": [
+        "International Pale Lager",
+        "International Amber Lager",
+        "International Dark Lager"
+       ]
+      },
+      {
+       "id": "1.2.3",
+       "name": "3 Czech Lager",
+       "styles": [
+        "Czech Pale Lager",
+        "Czech Premium Pale Lager",
+        "Czech Amber Lager",
+        "Czech Dark Lager"
+       ]
+      },
+      {
+       "id": "1.2.4",
+       "name": "4 Pale Malty European Lager",
+       "styles": [
+        "Munich Helles",
+        "Festbier",
+        "Helles Bock"
+       ]
+      },
+      {
+       "id": "1.2.5",
+       "name": "5 Pale Bitter European Beer",
+       "styles": [
+        "German Leichtbier",
+        "Kölsch",
+        "German Helles Exportbier",
+        "German Pils"
+       ]
+      },
+      {
+       "id": "1.2.6",
+       "name": "6 Amber Malty European Lager",
+       "styles": [
+        "Märzen",
+        "Rauchbier",
+        "Dunkles Bock"
+       ]
+      },
+      {
+       "id": "1.2.7",
+       "name": "7 Amber Bitter European Beer",
+       "styles": [
+        "Vienna Lager",
+        "Altbier"
+       ]
+      },
+      {
+       "id": "1.2.8",
+       "name": "8 Dark European Lager",
+       "styles": [
+        "Munich Dunkel",
+        "Schwarzbier"
+       ]
+      },
+      {
+       "id": "1.2.9",
+       "name": "9 Strong European Beer",
+       "styles": [
+        "Doppelbock",
+        "Eisbock",
+        "Baltic Porter"
+       ]
+      },
+      {
+       "id": "1.2.10",
+       "name": "10 German Wheat Beer",
+       "styles": [
+        "Weissbier",
+        "Dunkles Weissbier",
+        "Weizenbock"
+       ]
+      },
+      {
+       "id": "1.2.11",
+       "name": "11 British Bitter",
+       "styles": [
+        "Ordinary Bitter",
+        "Best Bitter",
+        "Strong Bitter"
+       ]
+      },
+      {
+       "id": "1.2.12",
+       "name": "12 Pale Commonwealth Beer",
+       "styles": [
+        "British Golden Ale",
+        "Australian Sparkling Ale",
+        "English IPA"
+       ]
+      },
+      {
+       "id": "1.2.13",
+       "name": "13 Brown British Beer",
+       "styles": [
+        "Dark Mild",
+        "British Brown Ale",
+        "English Porter"
+       ]
+      },
+      {
+       "id": "1.2.14",
+       "name": "14 Scottish Ale",
+       "styles": [
+        "Scottish Light",
+        "Scottish Heavy",
+        "Scottish Export"
+       ]
+      },
+      {
+       "id": "1.2.15",
+       "name": "15 Irish Beer",
+       "styles": [
+        "Irish Red Ale",
+        "Irish Stout",
+        "Irish Extra Stout"
+       ]
+      },
+      {
+       "id": "1.2.16",
+       "name": "16 Dark British Beer",
+       "styles": [
+        "Sweet Stout",
+        "Oatmeal Stout",
+        "Tropical Stout",
+        "Foreign Extra Stout"
+       ]
+      },
+      {
+       "id": "1.2.17",
+       "name": "17 Strong British Ale",
+       "styles": [
+        "British Strong Ale",
+        "Old Ale",
+        "Wee Heavy",
+        "English Barley Wine"
+       ]
+      },
+      {
+       "id": "1.2.18",
+       "name": "18 Pale American Ale",
+       "styles": [
+        "Blonde Ale",
+        "American Pale Ale"
+       ]
+      },
+      {
+       "id": "1.2.19",
+       "name": "19 Amber and Brown American Beer",
+       "styles": [
+        "American Amber Ale",
+        "California Common",
+        "American Brown Ale"
+       ]
+      },
+      {
+       "id": "1.2.20",
+       "name": "20 American Porter and Stout",
+       "styles": [
+        "American Porter",
+        "American Stout",
+        "Imperial Stout"
+       ]
+      },
+      {
+       "id": "1.2.21",
+       "name": "21 IPA",
+       "styles": [
+        "American IPA",
+        "Specialty IPA: Belgian IPA",
+        "Specialty IPA: Black IPA",
+        "Specialty IPA: Brown IPA",
+        "Specialty IPA: Red IPA",
+        "Specialty IPA: Rye IPA",
+        "Specialty IPA: White IPA",
+        "Specialty IPA: Brut IPA",
+        "Hazy IPA"
+       ]
+      },
+      {
+       "id": "1.2.22",
+       "name": "22 Strong American Ale",
+       "styles": [
+        "Double IPA",
+        "American Strong Ale",
+        "American Barleywine",
+        "Wheatwine"
+       ]
+      },
+      {
+       "id": "1.2.23",
+       "name": "23 European Sour Ale",
+       "styles": [
+        "Berliner Weisse",
+        "Flanders Red Ale",
+        "Oud Bruin",
+        "Lambic",
+        "Gueuze",
+        "Fruit Lambic",
+        "Gose"
+       ]
+      },
+      {
+       "id": "1.2.24",
+       "name": "24 Belgian Ale",
+       "styles": [
+        "Witbier",
+        "Belgian Pale Ale",
+        "Bière de Garde"
+       ]
+      },
+      {
+       "id": "1.2.25",
+       "name": "25 Strong Belgian Ale",
+       "styles": [
+        "Belgian Blond Ale",
+        "Saison",
+        "Belgian Golden Strong Ale"
+       ]
+      },
+      {
+       "id": "1.2.26",
+       "name": "26 Monastic Ale",
+       "styles": [
+        "Trappist Single",
+        "Belgian Dubbel",
+        "Belgian Tripel",
+        "Belgian Dark Strong Ale"
+       ]
+      },
+      {
+       "id": "1.2.27",
+       "name": "27 Historical Beer",
+       "styles": [
+        "Kellerbier",
+        "Kentucky Common",
+        "Lichtenhainer",
+        "London Brown Ale",
+        "Piwo Grodziskie",
+        "Pre-Prohibition Lager",
+        "Pre-Prohibition Porter",
+        "Roggenbier",
+        "Sahti"
+       ]
+      },
+      {
+       "id": "1.2.28",
+       "name": "28 American Wild Ale",
+       "styles": [
+        "Brett Beer",
+        "Mixed-Fermentation Sour Beer",
+        "Wild Specialty Beer",
+        "Straight Sour Beer"
+       ]
+      },
+      {
+       "id": "1.2.29",
+       "name": "29 Fruit Beer",
+       "styles": [
+        "Fruit Beer",
+        "Fruit and Spice Beer",
+        "Specialty Fruit Beer",
+        "Grape Ale"
+       ]
+      },
+      {
+       "id": "1.2.30",
+       "name": "30 Spiced Beer",
+       "styles": [
+        "Spice, Herb, or Vegetable Beer",
+        "Autumn Seasonal Beer",
+        "Winter Seasonal Beer",
+        "Specialty Spice Beer"
+       ]
+      },
+      {
+       "id": "1.2.31",
+       "name": "31 Alternative Fermentables Beer",
+       "styles": [
+        "Alternative Grain Beer",
+        "Alternative Sugar Beer"
+       ]
+      },
+      {
+       "id": "1.2.32",
+       "name": "32 Smoked Beer",
+       "styles": [
+        "Classic Style Smoked Beer",
+        "Specialty Smoked Beer"
+       ]
+      },
+      {
+       "id": "1.2.33",
+       "name": "33 Wood Beer",
+       "styles": [
+        "Wood-Aged Beer",
+        "Specialty Wood-Aged Beer"
+       ]
+      },
+      {
+       "id": "1.2.34",
+       "name": "34 Specialty Beer",
+       "styles": [
+        "Commercial Specialty Beer",
+        "Mixed-Style Beer",
+        "Experimental Beer"
+       ]
+      },
+      {
+       "id": "1.2.35",
+       "name": "NA & Low-Alcohol Beer (outside BJCP)",
+       "styles": [
+        "Non-alcoholic lager (≤0.5% ABV)",
+        "Non-alcoholic IPA",
+        "Non-alcoholic stout",
+        "Radler/shandy"
+       ]
+      }
      ]
     },
     {
-     "id": "01.3",
-     "name": "Sparkling Water",
-     "styles": [
-      "Carbonated (added CO2)",
-      "Seltzer",
-      "Club soda",
-      "Tonic water"
-     ]
-    },
-    {
-     "id": "01.4",
-     "name": "Purified Water",
-     "styles": [
-      "Distilled",
-      "Reverse osmosis",
-      "Deionized"
-     ]
-    },
-    {
-     "id": "01.5",
-     "name": "Functional Water",
-     "styles": [
-      "Alkaline (ionized)",
-      "Electrolyte-enhanced",
-      "Flavored/infused",
-      "Hydrogen water"
+     "id": "1.3",
+     "name": "Spirits Academy",
+     "color": "#b06bff",
+     "subgenres": [
+      {
+       "id": "1.3.1",
+       "name": "American Whiskey",
+       "styles": [
+        "Bourbon",
+        "Straight Bourbon",
+        "Bottled-in-Bond",
+        "Tennessee Whiskey",
+        "Rye Whiskey",
+        "Wheat Whiskey",
+        "Corn Whiskey",
+        "American Single Malt"
+       ]
+      },
+      {
+       "id": "1.3.2",
+       "name": "Scotch Whisky",
+       "styles": [
+        "Speyside",
+        "Highland",
+        "Lowland",
+        "Islay",
+        "Campbeltown",
+        "Islands (Highland sub-region)",
+        "Single Malt",
+        "Blended Malt",
+        "Single Grain",
+        "Blended Scotch"
+       ]
+      },
+      {
+       "id": "1.3.3",
+       "name": "Irish Whiskey",
+       "styles": [
+        "Single Pot Still",
+        "Single Malt",
+        "Single Grain",
+        "Blended"
+       ]
+      },
+      {
+       "id": "1.3.4",
+       "name": "Japanese Whisky",
+       "styles": [
+        "Single Malt",
+        "Blended",
+        "Grain"
+       ]
+      },
+      {
+       "id": "1.3.5",
+       "name": "Other Whisk(e)y",
+       "styles": [
+        "Canadian Whisky",
+        "Indian Single Malt",
+        "Taiwanese Single Malt",
+        "Welsh Whisky"
+       ]
+      },
+      {
+       "id": "1.3.6",
+       "name": "Gin",
+       "styles": [
+        "London Dry",
+        "Plymouth",
+        "Old Tom",
+        "Genever (Jenever)",
+        "Navy Strength",
+        "Contemporary/New Western",
+        "Sloe Gin (liqueur)"
+       ]
+      },
+      {
+       "id": "1.3.7",
+       "name": "Rum",
+       "styles": [
+        "Light/White",
+        "Gold",
+        "Dark",
+        "Overproof",
+        "Spiced",
+        "Rhum Agricole (AOC Martinique)",
+        "Cachaça",
+        "Jamaican pot-still",
+        "Demerara (Guyana)"
+       ]
+      },
+      {
+       "id": "1.3.8",
+       "name": "Agave",
+       "styles": [
+        "Tequila Blanco",
+        "Tequila Joven",
+        "Tequila Reposado",
+        "Tequila Añejo",
+        "Tequila Extra Añejo",
+        "Mezcal (Joven/Reposado/Añejo)",
+        "Mezcal Ancestral",
+        "Mezcal Artesanal",
+        "Raicilla",
+        "Sotol (Dasylirion)",
+        "Bacanora"
+       ]
+      },
+      {
+       "id": "1.3.9",
+       "name": "Brandy",
+       "styles": [
+        "Cognac VS",
+        "Cognac VSOP",
+        "Cognac XO",
+        "Armagnac",
+        "Brandy de Jerez",
+        "Pisco (Peru/Chile)",
+        "Calvados",
+        "Grappa",
+        "Eau-de-vie (Kirsch/Poire Williams)",
+        "American brandy"
+       ]
+      },
+      {
+       "id": "1.3.10",
+       "name": "Vodka",
+       "styles": [
+        "Grain vodka",
+        "Potato vodka",
+        "Grape vodka",
+        "Flavored vodka"
+       ]
+      },
+      {
+       "id": "1.3.11",
+       "name": "Liqueurs",
+       "styles": [
+        "Amaro",
+        "Orange liqueur (Triple sec/Curaçao)",
+        "Herbal (Chartreuse/Bénédictine)",
+        "Anise (Pastis/Ouzo/Sambuca/Absinthe)",
+        "Coffee liqueur",
+        "Cream liqueur",
+        "Nut liqueur (Amaretto/Frangelico)",
+        "Fruit liqueur (Limoncello/Crème de cassis)"
+       ]
+      },
+      {
+       "id": "1.3.12",
+       "name": "Asian Spirits",
+       "styles": [
+        "Baijiu: Strong aroma (nongxiang)",
+        "Baijiu: Light aroma (qingxiang)",
+        "Baijiu: Sauce aroma (jiangxiang)",
+        "Baijiu: Rice aroma (mixiang)",
+        "Shochu (honkaku)",
+        "Awamori",
+        "Soju",
+        "Arrack"
+       ]
+      },
+      {
+       "id": "1.3.13",
+       "name": "Zero-Proof",
+       "styles": [
+        "Virgin cocktails (mocktails)",
+        "Non-alcoholic gin alternatives",
+        "Non-alcoholic whiskey alternatives",
+        "Non-alcoholic aperitif/bitter alternatives",
+        "Shrub-based drinks"
+       ]
+      }
      ]
     }
    ]
   },
   {
    "id": 2,
-   "name": "COFFEE",
-   "color": "#ff9a3c",
-   "subgenres": [
+   "name": "STEEP GUILD",
+   "tagline": "Leaf, seed, culture, and extraction",
+   "grouping": "Grouped by extraction, infusion, sensory calibration, and ritual.",
+   "color": "#7dff6a",
+   "academies": [
     {
-     "id": "02.1",
-     "name": "Species",
-     "styles": [
-      "Arabica (Coffea arabica)",
-      "Robusta (Coffea canephora)",
-      "Liberica",
-      "Excelsa"
+     "id": "2.1",
+     "name": "Coffee Academy",
+     "color": "#ff9a3c",
+     "subgenres": [
+      {
+       "id": "2.1.1",
+       "name": "Species",
+       "styles": [
+        "Arabica (Coffea arabica)",
+        "Robusta (Coffea canephora)",
+        "Liberica",
+        "Excelsa"
+       ]
+      },
+      {
+       "id": "2.1.2",
+       "name": "Processing",
+       "styles": [
+        "Washed (wet)",
+        "Natural (dry)",
+        "Honey (pulped natural)",
+        "Wet-hulled (Giling Basah)",
+        "Anaerobic fermentation",
+        "Carbonic maceration"
+       ]
+      },
+      {
+       "id": "2.1.3",
+       "name": "Roast Level",
+       "styles": [
+        "Light (cinnamon/New England)",
+        "Medium (City/American)",
+        "Medium-dark (Full City)",
+        "Dark (Vienna/French/Italian)"
+       ]
+      },
+      {
+       "id": "2.1.4",
+       "name": "Espresso Drinks",
+       "styles": [
+        "Espresso",
+        "Ristretto",
+        "Lungo",
+        "Americano",
+        "Macchiato",
+        "Cortado",
+        "Flat white",
+        "Cappuccino",
+        "Latte",
+        "Mocha",
+        "Affogato"
+       ]
+      },
+      {
+       "id": "2.1.5",
+       "name": "Brew Methods",
+       "styles": [
+        "Pour-over (V60/Chemex/Kalita)",
+        "French press",
+        "AeroPress",
+        "Moka pot",
+        "Siphon",
+        "Drip (batch brew)",
+        "Turkish (cezve)",
+        "Cold brew",
+        "Cold drip (Kyoto)",
+        "Phin (Vietnamese)"
+       ]
+      }
      ]
     },
     {
-     "id": "02.2",
-     "name": "Processing",
-     "styles": [
-      "Washed (wet)",
-      "Natural (dry)",
-      "Honey (pulped natural)",
-      "Wet-hulled (Giling Basah)",
-      "Anaerobic fermentation",
-      "Carbonic maceration"
+     "id": "2.2",
+     "name": "Tea Academy",
+     "color": "#7dff6a",
+     "subgenres": [
+      {
+       "id": "2.2.1",
+       "name": "White Tea",
+       "styles": [
+        "Silver Needle (Bai Hao Yin Zhen)",
+        "White Peony (Bai Mu Dan)",
+        "Shou Mei",
+        "Darjeeling white"
+       ]
+      },
+      {
+       "id": "2.2.2",
+       "name": "Yellow Tea",
+       "styles": [
+        "Junshan Yinzhen",
+        "Meng Ding Huang Ya",
+        "Huoshan Huang Ya"
+       ]
+      },
+      {
+       "id": "2.2.3",
+       "name": "Green Tea",
+       "styles": [
+        "Longjing (Dragon Well)",
+        "Bi Luo Chun",
+        "Gunpowder",
+        "Sencha",
+        "Gyokuro",
+        "Matcha",
+        "Hojicha",
+        "Genmaicha",
+        "Bancha"
+       ]
+      },
+      {
+       "id": "2.2.4",
+       "name": "Oolong Tea",
+       "styles": [
+        "Tieguanyin",
+        "Da Hong Pao (Wuyi rock)",
+        "Dong Ding",
+        "Alishan high-mountain",
+        "Oriental Beauty",
+        "Dan Cong"
+       ]
+      },
+      {
+       "id": "2.2.5",
+       "name": "Black Tea",
+       "styles": [
+        "Assam",
+        "Darjeeling",
+        "Ceylon",
+        "Keemun",
+        "Dian Hong (Yunnan)",
+        "Lapsang Souchong",
+        "English Breakfast blend",
+        "Earl Grey"
+       ]
+      },
+      {
+       "id": "2.2.6",
+       "name": "Dark Tea",
+       "styles": [
+        "Sheng (raw) pu-erh",
+        "Shou (ripe) pu-erh",
+        "Liu Bao",
+        "Fu Zhuan (Anhua brick)"
+       ]
+      },
+      {
+       "id": "2.2.7",
+       "name": "Herbal Tisanes",
+       "styles": [
+        "Rooibos",
+        "Honeybush",
+        "Chamomile",
+        "Peppermint",
+        "Hibiscus",
+        "Ginger",
+        "Lemongrass"
+       ]
+      }
      ]
     },
     {
-     "id": "02.3",
-     "name": "Roast Level",
-     "styles": [
-      "Light (cinnamon/New England)",
-      "Medium (City/American)",
-      "Medium-dark (Full City)",
-      "Dark (Vienna/French/Italian)"
-     ]
-    },
-    {
-     "id": "02.4",
-     "name": "Espresso Drinks",
-     "styles": [
-      "Espresso",
-      "Ristretto",
-      "Lungo",
-      "Americano",
-      "Macchiato",
-      "Cortado",
-      "Flat white",
-      "Cappuccino",
-      "Latte",
-      "Mocha",
-      "Affogato"
-     ]
-    },
-    {
-     "id": "02.5",
-     "name": "Brew Methods",
-     "styles": [
-      "Pour-over (V60/Chemex/Kalita)",
-      "French press",
-      "AeroPress",
-      "Moka pot",
-      "Siphon",
-      "Drip (batch brew)",
-      "Turkish (cezve)",
-      "Cold brew",
-      "Cold drip (Kyoto)",
-      "Phin (Vietnamese)"
+     "id": "2.3",
+     "name": "Kombucha Academy",
+     "color": "#c8ff3c",
+     "subgenres": [
+      {
+       "id": "2.3.1",
+       "name": "Culture & Fermentation",
+       "styles": [
+        "SCOBY (bacterial cellulose pellicle)",
+        "Starter liquid (backslopping)",
+        "Primary fermentation (F1)",
+        "Secondary fermentation (F2, bottle conditioning)"
+       ]
+      },
+      {
+       "id": "2.3.2",
+       "name": "Base Teas",
+       "styles": [
+        "Black tea kombucha",
+        "Green tea kombucha",
+        "Oolong kombucha",
+        "White tea kombucha",
+        "Herbal/rooibos-base kombucha"
+       ]
+      },
+      {
+       "id": "2.3.3",
+       "name": "Kombucha Styles",
+       "styles": [
+        "Original/plain",
+        "Fruit-flavored",
+        "Ginger",
+        "Botanical/herbal",
+        "Hard kombucha (>0.5% ABV)"
+       ]
+      },
+      {
+       "id": "2.3.4",
+       "name": "Related Cultures",
+       "styles": [
+        "Jun (green tea and honey)",
+        "Kombucha vinegar"
+       ]
+      }
      ]
     }
    ]
   },
   {
    "id": 3,
-   "name": "TEA",
-   "color": "#7dff6a",
-   "subgenres": [
+   "name": "SOURCE GUILD",
+   "tagline": "Origin, nourishment, and custody",
+   "grouping": "Grouped by foundational ingredients, safe processing, freshness, and custody.",
+   "color": "#2ee6ff",
+   "academies": [
     {
-     "id": "03.1",
-     "name": "White Tea",
-     "styles": [
-      "Silver Needle (Bai Hao Yin Zhen)",
-      "White Peony (Bai Mu Dan)",
-      "Shou Mei",
-      "Darjeeling white"
+     "id": "3.1",
+     "name": "Water Academy",
+     "color": "#2ee6ff",
+     "subgenres": [
+      {
+       "id": "3.1.1",
+       "name": "Spring Water",
+       "styles": [
+        "Natural spring",
+        "Artesian spring",
+        "Glacier/icecap water"
+       ]
+      },
+      {
+       "id": "3.1.2",
+       "name": "Mineral Water",
+       "styles": [
+        "Low-mineral (<500 mg/L TDS)",
+        "Medium-mineral",
+        "High-mineral (>1500 mg/L TDS)",
+        "Naturally carbonated mineral"
+       ]
+      },
+      {
+       "id": "3.1.3",
+       "name": "Sparkling Water",
+       "styles": [
+        "Carbonated (added CO2)",
+        "Seltzer"
+       ]
+      },
+      {
+       "id": "3.1.4",
+       "name": "Purified Water",
+       "styles": [
+        "Distilled",
+        "Reverse osmosis",
+        "Deionized"
+       ]
+      },
+      {
+       "id": "3.1.5",
+       "name": "Functional Water",
+       "styles": [
+        "Alkaline (ionized)",
+        "Electrolyte-enhanced",
+        "Flavored/infused",
+        "Hydrogen water"
+       ]
+      }
      ]
     },
     {
-     "id": "03.2",
-     "name": "Yellow Tea",
-     "styles": [
-      "Junshan Yinzhen",
-      "Meng Ding Huang Ya",
-      "Huoshan Huang Ya"
+     "id": "3.2",
+     "name": "Juice Academy",
+     "color": "#ffb03c",
+     "subgenres": [
+      {
+       "id": "3.2.1",
+       "name": "Product Types (FDA)",
+       "styles": [
+        "100% juice",
+        "Juice from concentrate",
+        "Nectar",
+        "Juice drink/cocktail",
+        "Smoothie"
+       ]
+      },
+      {
+       "id": "3.2.2",
+       "name": "Processing",
+       "styles": [
+        "Not-from-concentrate (NFC)",
+        "Fresh-squeezed (unpasteurized, warning label)",
+        "Flash-pasteurized",
+        "Cold-pressed (HPP)",
+        "Frozen concentrate"
+       ]
+      },
+      {
+       "id": "3.2.3",
+       "name": "Citrus",
+       "styles": [
+        "Orange",
+        "Grapefruit",
+        "Lemon",
+        "Lime",
+        "Tangerine/mandarin",
+        "Blood orange"
+       ]
+      },
+      {
+       "id": "3.2.4",
+       "name": "Pome & Stone Fruit",
+       "styles": [
+        "Apple (cloudy/clear)",
+        "Pear",
+        "Tart cherry",
+        "Peach nectar",
+        "Apricot nectar"
+       ]
+      },
+      {
+       "id": "3.2.5",
+       "name": "Berry & Grape",
+       "styles": [
+        "Concord grape",
+        "Cranberry",
+        "Pomegranate",
+        "Blueberry",
+        "Açaí",
+        "Elderberry"
+       ]
+      },
+      {
+       "id": "3.2.6",
+       "name": "Tropical",
+       "styles": [
+        "Pineapple",
+        "Mango",
+        "Passion fruit",
+        "Guava",
+        "Papaya",
+        "Coconut water"
+       ]
+      },
+      {
+       "id": "3.2.7",
+       "name": "Vegetable",
+       "styles": [
+        "Tomato",
+        "Carrot",
+        "Beet",
+        "Celery",
+        "Green juice (kale/spinach/cucumber)",
+        "Mixed vegetable juice"
+       ]
+      }
      ]
     },
     {
-     "id": "03.3",
-     "name": "Green Tea",
-     "styles": [
-      "Longjing (Dragon Well)",
-      "Bi Luo Chun",
-      "Gunpowder",
-      "Sencha",
-      "Gyokuro",
-      "Matcha",
-      "Hojicha",
-      "Genmaicha",
-      "Bancha"
-     ]
-    },
-    {
-     "id": "03.4",
-     "name": "Oolong Tea",
-     "styles": [
-      "Tieguanyin",
-      "Da Hong Pao (Wuyi rock)",
-      "Dong Ding",
-      "Alishan high-mountain",
-      "Oriental Beauty",
-      "Dan Cong"
-     ]
-    },
-    {
-     "id": "03.5",
-     "name": "Black Tea",
-     "styles": [
-      "Assam",
-      "Darjeeling",
-      "Ceylon",
-      "Keemun",
-      "Dian Hong (Yunnan)",
-      "Lapsang Souchong",
-      "English Breakfast blend",
-      "Earl Grey"
-     ]
-    },
-    {
-     "id": "03.6",
-     "name": "Dark Tea",
-     "styles": [
-      "Sheng (raw) pu-erh",
-      "Shou (ripe) pu-erh",
-      "Liu Bao",
-      "Fu Zhuan (Anhua brick)"
-     ]
-    },
-    {
-     "id": "03.7",
-     "name": "Herbal Tisanes",
-     "styles": [
-      "Rooibos",
-      "Honeybush",
-      "Chamomile",
-      "Peppermint",
-      "Hibiscus",
-      "Yerba mate",
-      "Guayusa",
-      "Ginger",
-      "Lemongrass"
+     "id": "3.3",
+     "name": "Milk Academy",
+     "color": "#e8f4ff",
+     "subgenres": [
+      {
+       "id": "3.3.1",
+       "name": "By Species",
+       "styles": [
+        "Cow",
+        "Goat",
+        "Sheep",
+        "Water buffalo",
+        "Camel"
+       ]
+      },
+      {
+       "id": "3.3.2",
+       "name": "Fat Level (US)",
+       "styles": [
+        "Whole (3.25%)",
+        "Reduced-fat (2%)",
+        "Low-fat (1%)",
+        "Fat-free (skim)"
+       ]
+      },
+      {
+       "id": "3.3.3",
+       "name": "Processing",
+       "styles": [
+        "Raw (unpasteurized)",
+        "Pasteurized (HTST)",
+        "Ultra-pasteurized",
+        "UHT (shelf-stable)",
+        "Homogenized",
+        "Non-homogenized (cream-top)",
+        "Lactose-free",
+        "Ultra-filtered",
+        "A2 milk"
+       ]
+      },
+      {
+       "id": "3.3.4",
+       "name": "Milk Drinks",
+       "styles": [
+        "Chocolate milk",
+        "Strawberry milk",
+        "Eggnog",
+        "Milkshake",
+        "Cultured buttermilk"
+       ]
+      },
+      {
+       "id": "3.3.5",
+       "name": "Plant Milks",
+       "styles": [
+        "Oat",
+        "Almond",
+        "Soy",
+        "Coconut",
+        "Rice",
+        "Pea",
+        "Cashew",
+        "Hemp",
+        "Macadamia"
+       ]
+      }
      ]
     }
    ]
   },
   {
    "id": 4,
-   "name": "WINE",
-   "color": "#ff3b7a",
-   "subgenres": [
+   "name": "ENERGY GUILD",
+   "tagline": "Evidence, function, and stewardship",
+   "grouping": "Grouped by health, supplements, protein systems, and energy formulations.",
+   "color": "#ffd23c",
+   "academies": [
     {
-     "id": "04.1",
-     "name": "Red",
-     "styles": [
-      "Cabernet Sauvignon",
-      "Merlot",
-      "Pinot Noir",
-      "Syrah/Shiraz",
-      "Grenache/Garnacha",
-      "Tempranillo",
-      "Sangiovese",
-      "Nebbiolo",
-      "Malbec",
-      "Zinfandel/Primitivo",
-      "Cabernet Franc",
-      "Gamay",
-      "Barbera",
-      "Mourvèdre/Monastrell"
+     "id": "4.1",
+     "name": "Health Academy",
+     "color": "#3cffc8",
+     "subgenres": [
+      {
+       "id": "4.1.1",
+       "name": "Hydration & Electrolytes",
+       "styles": [
+        "Oral rehydration solution (WHO ORS)",
+        "Isotonic sports drinks",
+        "Hypotonic electrolyte drinks",
+        "Electrolyte powders/tablets"
+       ]
+      },
+      {
+       "id": "4.1.2",
+       "name": "Gut Health",
+       "styles": [
+        "Probiotic shots",
+        "Prebiotic/fiber drinks",
+        "Apple cider vinegar drinks"
+       ]
+      },
+      {
+       "id": "4.1.3",
+       "name": "Functional Wellness",
+       "styles": [
+        "Vitamin-enhanced water",
+        "Collagen drinks",
+        "Ginger/turmeric shots",
+        "Golden milk (turmeric latte)",
+        "Mushroom elixirs (reishi/chaga)"
+       ]
+      },
+      {
+       "id": "4.1.4",
+       "name": "Relaxation & Sleep",
+       "styles": [
+        "Magnesium drinks",
+        "L-theanine drinks",
+        "Melatonin drinks",
+        "Adaptogenic drinks (ashwagandha)"
+       ]
+      },
+      {
+       "id": "4.1.5",
+       "name": "Medical Nutrition",
+       "styles": [
+        "Oral nutritional supplements",
+        "Diabetes-specific formulas",
+        "Infant formula",
+        "Thickened liquids (IDDSI levels 1–4)"
+       ]
+      }
      ]
     },
     {
-     "id": "04.2",
-     "name": "White",
-     "styles": [
-      "Chardonnay",
-      "Sauvignon Blanc",
-      "Riesling",
-      "Pinot Grigio/Gris",
-      "Chenin Blanc",
-      "Gewürztraminer",
-      "Viognier",
-      "Albariño",
-      "Grüner Veltliner",
-      "Sémillon",
-      "Torrontés",
-      "Assyrtiko"
+     "id": "4.2",
+     "name": "Protein Academy",
+     "color": "#ff6a6a",
+     "subgenres": [
+      {
+       "id": "4.2.1",
+       "name": "Dairy Proteins",
+       "styles": [
+        "Whey protein concentrate",
+        "Whey protein isolate",
+        "Hydrolyzed whey",
+        "Micellar casein",
+        "Milk protein isolate"
+       ]
+      },
+      {
+       "id": "4.2.2",
+       "name": "Plant Proteins",
+       "styles": [
+        "Pea",
+        "Soy isolate",
+        "Brown rice",
+        "Hemp",
+        "Pumpkin seed",
+        "Blended plant protein"
+       ]
+      },
+      {
+       "id": "4.2.3",
+       "name": "Other Proteins",
+       "styles": [
+        "Egg white protein",
+        "Collagen peptides",
+        "Beef protein isolate"
+       ]
+      },
+      {
+       "id": "4.2.4",
+       "name": "Formats",
+       "styles": [
+        "Powder (mix-in)",
+        "Ready-to-drink (RTD) shake",
+        "Clear whey isolate drinks",
+        "Protein coffee",
+        "High-protein ultra-filtered milk",
+        "Meal replacement shake"
+       ]
+      },
+      {
+       "id": "4.2.5",
+       "name": "Use Cases",
+       "styles": [
+        "Post-workout recovery",
+        "Mass gainer",
+        "Weight management",
+        "Overnight (casein)"
+       ]
+      }
      ]
     },
     {
-     "id": "04.3",
-     "name": "Rosé",
-     "styles": [
-      "Provence rosé",
-      "Tavel",
-      "Rosado (Navarra)",
-      "Rosato",
-      "White Zinfandel"
-     ]
-    },
-    {
-     "id": "04.4",
-     "name": "Sparkling",
-     "styles": [
-      "Champagne",
-      "Crémant",
-      "Cava",
-      "Prosecco",
-      "Franciacorta",
-      "Sekt",
-      "Pét-nat (ancestral method)",
-      "Lambrusco",
-      "Moscato d'Asti"
-     ]
-    },
-    {
-     "id": "04.5",
-     "name": "Orange (Skin-Contact)",
-     "styles": [
-      "Georgian qvevri (Rkatsiteli)",
-      "Friulian Ribolla Gialla",
-      "Slovenian (Brda) skin-contact"
-     ]
-    },
-    {
-     "id": "04.6",
-     "name": "Fortified",
-     "styles": [
-      "Port (Ruby/Tawny/Vintage)",
-      "Sherry (Fino/Manzanilla/Amontillado/Oloroso/PX)",
-      "Madeira",
-      "Marsala",
-      "Vermouth",
-      "Vin doux naturel"
-     ]
-    },
-    {
-     "id": "04.7",
-     "name": "Dessert",
-     "styles": [
-      "Sauternes",
-      "Tokaji Aszú",
-      "Icewine/Eiswein",
-      "Beerenauslese/TBA",
-      "Vin Santo",
-      "Recioto",
-      "Late harvest"
+     "id": "4.3",
+     "name": "Energy Academy",
+     "color": "#ffd23c",
+     "subgenres": [
+      {
+       "id": "4.3.1",
+       "name": "Energy Drinks",
+       "styles": [
+        "Standard energy drink",
+        "Sugar-free/zero",
+        "Energy shots",
+        "Fitness/performance energy",
+        "Natural/organic energy"
+       ]
+      },
+      {
+       "id": "4.3.2",
+       "name": "Caffeine Sources",
+       "styles": [
+        "Caffeine anhydrous",
+        "Guarana",
+        "Green coffee extract",
+        "Green tea extract",
+        "Guayusa",
+        "Kola nut"
+       ]
+      },
+      {
+       "id": "4.3.3",
+       "name": "Pre-Workout",
+       "styles": [
+        "Stimulant pre-workout",
+        "Stim-free (pump) pre-workout",
+        "Beta-alanine",
+        "Creatine monohydrate",
+        "L-citrulline"
+       ]
+      },
+      {
+       "id": "4.3.4",
+       "name": "RTD Caffeinated",
+       "styles": [
+        "Canned cold brew",
+        "Nitro coffee",
+        "RTD tea",
+        "Caffeinated sparkling water"
+       ]
+      },
+      {
+       "id": "4.3.5",
+       "name": "Focus & Nootropic",
+       "styles": [
+        "Caffeine + L-theanine",
+        "Citicoline/Alpha-GPC drinks",
+        "Lion's mane drinks"
+       ]
+      }
      ]
     }
    ]
   },
   {
    "id": 5,
-   "name": "BEER",
-   "color": "#ffd23c",
-   "subgenres": [
-    {
-     "id": "05.1",
-     "name": "1 Standard American Beer",
-     "styles": [
-      "American Light Lager",
-      "American Lager",
-      "Cream Ale",
-      "American Wheat Beer"
-     ]
-    },
-    {
-     "id": "05.2",
-     "name": "2 International Lager",
-     "styles": [
-      "International Pale Lager",
-      "International Amber Lager",
-      "International Dark Lager"
-     ]
-    },
-    {
-     "id": "05.3",
-     "name": "3 Czech Lager",
-     "styles": [
-      "Czech Pale Lager",
-      "Czech Premium Pale Lager",
-      "Czech Amber Lager",
-      "Czech Dark Lager"
-     ]
-    },
-    {
-     "id": "05.4",
-     "name": "4 Pale Malty European Lager",
-     "styles": [
-      "Munich Helles",
-      "Festbier",
-      "Helles Bock"
-     ]
-    },
-    {
-     "id": "05.5",
-     "name": "5 Pale Bitter European Beer",
-     "styles": [
-      "German Leichtbier",
-      "Kölsch",
-      "German Helles Exportbier",
-      "German Pils"
-     ]
-    },
-    {
-     "id": "05.6",
-     "name": "6 Amber Malty European Lager",
-     "styles": [
-      "Märzen",
-      "Rauchbier",
-      "Dunkles Bock"
-     ]
-    },
-    {
-     "id": "05.7",
-     "name": "7 Amber Bitter European Beer",
-     "styles": [
-      "Vienna Lager",
-      "Altbier"
-     ]
-    },
-    {
-     "id": "05.8",
-     "name": "8 Dark European Lager",
-     "styles": [
-      "Munich Dunkel",
-      "Schwarzbier"
-     ]
-    },
-    {
-     "id": "05.9",
-     "name": "9 Strong European Beer",
-     "styles": [
-      "Doppelbock",
-      "Eisbock",
-      "Baltic Porter"
-     ]
-    },
-    {
-     "id": "05.10",
-     "name": "10 German Wheat Beer",
-     "styles": [
-      "Weissbier",
-      "Dunkles Weissbier",
-      "Weizenbock"
-     ]
-    },
-    {
-     "id": "05.11",
-     "name": "11 British Bitter",
-     "styles": [
-      "Ordinary Bitter",
-      "Best Bitter",
-      "Strong Bitter"
-     ]
-    },
-    {
-     "id": "05.12",
-     "name": "12 Pale Commonwealth Beer",
-     "styles": [
-      "British Golden Ale",
-      "Australian Sparkling Ale",
-      "English IPA"
-     ]
-    },
-    {
-     "id": "05.13",
-     "name": "13 Brown British Beer",
-     "styles": [
-      "Dark Mild",
-      "British Brown Ale",
-      "English Porter"
-     ]
-    },
-    {
-     "id": "05.14",
-     "name": "14 Scottish Ale",
-     "styles": [
-      "Scottish Light",
-      "Scottish Heavy",
-      "Scottish Export"
-     ]
-    },
-    {
-     "id": "05.15",
-     "name": "15 Irish Beer",
-     "styles": [
-      "Irish Red Ale",
-      "Irish Stout",
-      "Irish Extra Stout"
-     ]
-    },
-    {
-     "id": "05.16",
-     "name": "16 Dark British Beer",
-     "styles": [
-      "Sweet Stout",
-      "Oatmeal Stout",
-      "Tropical Stout",
-      "Foreign Extra Stout"
-     ]
-    },
-    {
-     "id": "05.17",
-     "name": "17 Strong British Ale",
-     "styles": [
-      "British Strong Ale",
-      "Old Ale",
-      "Wee Heavy",
-      "English Barley Wine"
-     ]
-    },
-    {
-     "id": "05.18",
-     "name": "18 Pale American Ale",
-     "styles": [
-      "Blonde Ale",
-      "American Pale Ale"
-     ]
-    },
-    {
-     "id": "05.19",
-     "name": "19 Amber and Brown American Beer",
-     "styles": [
-      "American Amber Ale",
-      "California Common",
-      "American Brown Ale"
-     ]
-    },
-    {
-     "id": "05.20",
-     "name": "20 American Porter and Stout",
-     "styles": [
-      "American Porter",
-      "American Stout",
-      "Imperial Stout"
-     ]
-    },
-    {
-     "id": "05.21",
-     "name": "21 IPA",
-     "styles": [
-      "American IPA",
-      "Specialty IPA: Belgian IPA",
-      "Specialty IPA: Black IPA",
-      "Specialty IPA: Brown IPA",
-      "Specialty IPA: Red IPA",
-      "Specialty IPA: Rye IPA",
-      "Specialty IPA: White IPA",
-      "Specialty IPA: Brut IPA",
-      "Hazy IPA"
-     ]
-    },
-    {
-     "id": "05.22",
-     "name": "22 Strong American Ale",
-     "styles": [
-      "Double IPA",
-      "American Strong Ale",
-      "American Barleywine",
-      "Wheatwine"
-     ]
-    },
-    {
-     "id": "05.23",
-     "name": "23 European Sour Ale",
-     "styles": [
-      "Berliner Weisse",
-      "Flanders Red Ale",
-      "Oud Bruin",
-      "Lambic",
-      "Gueuze",
-      "Fruit Lambic",
-      "Gose"
-     ]
-    },
-    {
-     "id": "05.24",
-     "name": "24 Belgian Ale",
-     "styles": [
-      "Witbier",
-      "Belgian Pale Ale",
-      "Bière de Garde"
-     ]
-    },
-    {
-     "id": "05.25",
-     "name": "25 Strong Belgian Ale",
-     "styles": [
-      "Belgian Blond Ale",
-      "Saison",
-      "Belgian Golden Strong Ale"
-     ]
-    },
-    {
-     "id": "05.26",
-     "name": "26 Monastic Ale",
-     "styles": [
-      "Trappist Single",
-      "Belgian Dubbel",
-      "Belgian Tripel",
-      "Belgian Dark Strong Ale"
-     ]
-    },
-    {
-     "id": "05.27",
-     "name": "27 Historical Beer",
-     "styles": [
-      "Kellerbier",
-      "Kentucky Common",
-      "Lichtenhainer",
-      "London Brown Ale",
-      "Piwo Grodziskie",
-      "Pre-Prohibition Lager",
-      "Pre-Prohibition Porter",
-      "Roggenbier",
-      "Sahti"
-     ]
-    },
-    {
-     "id": "05.28",
-     "name": "28 American Wild Ale",
-     "styles": [
-      "Brett Beer",
-      "Mixed-Fermentation Sour Beer",
-      "Wild Specialty Beer",
-      "Straight Sour Beer"
-     ]
-    },
-    {
-     "id": "05.29",
-     "name": "29 Fruit Beer",
-     "styles": [
-      "Fruit Beer",
-      "Fruit and Spice Beer",
-      "Specialty Fruit Beer",
-      "Grape Ale"
-     ]
-    },
-    {
-     "id": "05.30",
-     "name": "30 Spiced Beer",
-     "styles": [
-      "Spice, Herb, or Vegetable Beer",
-      "Autumn Seasonal Beer",
-      "Winter Seasonal Beer",
-      "Specialty Spice Beer"
-     ]
-    },
-    {
-     "id": "05.31",
-     "name": "31 Alternative Fermentables Beer",
-     "styles": [
-      "Alternative Grain Beer",
-      "Alternative Sugar Beer"
-     ]
-    },
-    {
-     "id": "05.32",
-     "name": "32 Smoked Beer",
-     "styles": [
-      "Classic Style Smoked Beer",
-      "Specialty Smoked Beer"
-     ]
-    },
-    {
-     "id": "05.33",
-     "name": "33 Wood Beer",
-     "styles": [
-      "Wood-Aged Beer",
-      "Specialty Wood-Aged Beer"
-     ]
-    },
-    {
-     "id": "05.34",
-     "name": "34 Specialty Beer",
-     "styles": [
-      "Commercial Specialty Beer",
-      "Mixed-Style Beer",
-      "Experimental Beer"
-     ]
-    }
-   ]
-  },
-  {
-   "id": 6,
-   "name": "SPIRITS",
-   "color": "#b06bff",
-   "subgenres": [
-    {
-     "id": "06.1",
-     "name": "American Whiskey",
-     "styles": [
-      "Bourbon",
-      "Straight Bourbon",
-      "Bottled-in-Bond",
-      "Tennessee Whiskey",
-      "Rye Whiskey",
-      "Wheat Whiskey",
-      "Corn Whiskey",
-      "American Single Malt"
-     ]
-    },
-    {
-     "id": "06.2",
-     "name": "Scotch Whisky",
-     "styles": [
-      "Speyside",
-      "Highland",
-      "Lowland",
-      "Islay",
-      "Campbeltown",
-      "Islands (Highland sub-region)",
-      "Single Malt",
-      "Blended Malt",
-      "Single Grain",
-      "Blended Scotch"
-     ]
-    },
-    {
-     "id": "06.3",
-     "name": "Irish Whiskey",
-     "styles": [
-      "Single Pot Still",
-      "Single Malt",
-      "Single Grain",
-      "Blended"
-     ]
-    },
-    {
-     "id": "06.4",
-     "name": "Japanese Whisky",
-     "styles": [
-      "Single Malt",
-      "Blended",
-      "Grain"
-     ]
-    },
-    {
-     "id": "06.5",
-     "name": "Other Whisk(e)y",
-     "styles": [
-      "Canadian Whisky",
-      "Indian Single Malt",
-      "Taiwanese Single Malt",
-      "Welsh Whisky"
-     ]
-    },
-    {
-     "id": "06.6",
-     "name": "Gin",
-     "styles": [
-      "London Dry",
-      "Plymouth",
-      "Old Tom",
-      "Genever (Jenever)",
-      "Navy Strength",
-      "Contemporary/New Western",
-      "Sloe Gin (liqueur)"
-     ]
-    },
-    {
-     "id": "06.7",
-     "name": "Rum",
-     "styles": [
-      "Light/White",
-      "Gold",
-      "Dark",
-      "Overproof",
-      "Spiced",
-      "Rhum Agricole (AOC Martinique)",
-      "Cachaça",
-      "Jamaican pot-still",
-      "Demerara (Guyana)"
-     ]
-    },
-    {
-     "id": "06.8",
-     "name": "Agave",
-     "styles": [
-      "Tequila Blanco",
-      "Tequila Joven",
-      "Tequila Reposado",
-      "Tequila Añejo",
-      "Tequila Extra Añejo",
-      "Mezcal (Joven/Reposado/Añejo)",
-      "Mezcal Ancestral",
-      "Mezcal Artesanal",
-      "Raicilla",
-      "Sotol (Dasylirion)",
-      "Bacanora"
-     ]
-    },
-    {
-     "id": "06.9",
-     "name": "Brandy",
-     "styles": [
-      "Cognac VS",
-      "Cognac VSOP",
-      "Cognac XO",
-      "Armagnac",
-      "Brandy de Jerez",
-      "Pisco (Peru/Chile)",
-      "Calvados",
-      "Grappa",
-      "Eau-de-vie (Kirsch/Poire Williams)",
-      "American brandy"
-     ]
-    },
-    {
-     "id": "06.10",
-     "name": "Vodka",
-     "styles": [
-      "Grain vodka",
-      "Potato vodka",
-      "Grape vodka",
-      "Flavored vodka"
-     ]
-    },
-    {
-     "id": "06.11",
-     "name": "Liqueurs",
-     "styles": [
-      "Amaro",
-      "Orange liqueur (Triple sec/Curaçao)",
-      "Herbal (Chartreuse/Bénédictine)",
-      "Anise (Pastis/Ouzo/Sambuca/Absinthe)",
-      "Coffee liqueur",
-      "Cream liqueur",
-      "Nut liqueur (Amaretto/Frangelico)",
-      "Fruit liqueur (Limoncello/Crème de cassis)"
-     ]
-    },
-    {
-     "id": "06.12",
-     "name": "Asian Spirits",
-     "styles": [
-      "Baijiu: Strong aroma (nongxiang)",
-      "Baijiu: Light aroma (qingxiang)",
-      "Baijiu: Sauce aroma (jiangxiang)",
-      "Baijiu: Rice aroma (mixiang)",
-      "Shochu (honkaku)",
-      "Awamori",
-      "Soju",
-      "Arrack"
-     ]
-    }
-   ]
-  },
-  {
-   "id": 7,
-   "name": "SAKE · CIDER · MEAD",
+   "name": "CULTURE GUILD",
+   "tagline": "Carbonation, living systems, and what comes next",
+   "grouping": "Grouped by living systems, carbonation, place, and shared traditions.",
    "color": "#ff6af0",
-   "subgenres": [
+   "academies": [
     {
-     "id": "07.1",
-     "name": "Sake Grades (Tokutei Meishoshu)",
-     "styles": [
-      "Junmai Daiginjo",
-      "Daiginjo",
-      "Junmai Ginjo",
-      "Ginjo",
-      "Tokubetsu Junmai",
-      "Tokubetsu Honjozo",
-      "Junmai",
-      "Honjozo"
+     "id": "5.1",
+     "name": "Carbonated Academy",
+     "color": "#6ab8ff",
+     "subgenres": [
+      {
+       "id": "5.1.1",
+       "name": "Classic Soda Styles",
+       "styles": [
+        "Cola",
+        "Lemon-lime",
+        "Root beer",
+        "Ginger ale (dry/golden)",
+        "Cream soda",
+        "Orange soda",
+        "Grape soda",
+        "Pepper-style soda",
+        "Birch beer",
+        "Sarsaparilla"
+       ]
+      },
+      {
+       "id": "5.1.2",
+       "name": "Mixers & Tonics",
+       "styles": [
+        "Tonic water",
+        "Club soda",
+        "Bitter lemon",
+        "Ginger beer (soft)"
+       ]
+      },
+      {
+       "id": "5.1.3",
+       "name": "Modern Sodas",
+       "styles": [
+        "Prebiotic soda",
+        "Probiotic soda",
+        "Craft cane-sugar soda",
+        "Diet/zero-sugar soda",
+        "Italian soda",
+        "Sparkling juice"
+       ]
+      },
+      {
+       "id": "5.1.4",
+       "name": "Carbonation Methods",
+       "styles": [
+        "Forced carbonation (CO2)",
+        "Natural carbonation (bottle-conditioned)",
+        "Nitrogenation (nitro)",
+        "Post-mix (fountain)",
+        "Pre-mix (bottle/can)"
+       ]
+      }
      ]
     },
     {
-     "id": "07.2",
-     "name": "Sake Styles",
-     "styles": [
-      "Futsushu (table sake)",
-      "Nigori",
-      "Namazake",
-      "Genshu",
-      "Koshu (aged)",
-      "Taruzake",
-      "Sparkling sake",
-      "Kimoto",
-      "Yamahai"
+     "id": "5.2",
+     "name": "Fermented Academy",
+     "color": "#ff6af0",
+     "subgenres": [
+      {
+       "id": "5.2.1",
+       "name": "Sake Grades (Tokutei Meishoshu)",
+       "styles": [
+        "Junmai Daiginjo",
+        "Daiginjo",
+        "Junmai Ginjo",
+        "Ginjo",
+        "Tokubetsu Junmai",
+        "Tokubetsu Honjozo",
+        "Junmai",
+        "Honjozo"
+       ]
+      },
+      {
+       "id": "5.2.2",
+       "name": "Sake Styles",
+       "styles": [
+        "Futsushu (table sake)",
+        "Nigori",
+        "Namazake",
+        "Genshu",
+        "Koshu (aged)",
+        "Taruzake",
+        "Sparkling sake",
+        "Kimoto",
+        "Yamahai"
+       ]
+      },
+      {
+       "id": "5.2.3",
+       "name": "Cider",
+       "styles": [
+        "Modern/standard cider",
+        "Heritage cider",
+        "English cider",
+        "French cidre (Normandy/Brittany)",
+        "Spanish sidra (Asturias/Basque)",
+        "Ice cider (cidre de glace)",
+        "Hopped cider"
+       ]
+      },
+      {
+       "id": "5.2.4",
+       "name": "Perry",
+       "styles": [
+        "Modern perry",
+        "Traditional perry (perry-pear varieties)"
+       ]
+      },
+      {
+       "id": "5.2.5",
+       "name": "Mead",
+       "styles": [
+        "Traditional mead (dry/semi-sweet/sweet)",
+        "Melomel (fruit)",
+        "Cyser (apple)",
+        "Pyment (grape)",
+        "Metheglin (spice)",
+        "Braggot (malt)",
+        "Sack mead",
+        "Hydromel (session)"
+       ]
+      },
+      {
+       "id": "5.2.6",
+       "name": "Fermented Milks",
+       "styles": [
+        "Milk kefir",
+        "Kumis (mare's milk)",
+        "Drinkable yogurt",
+        "Lactobacillus fermented milk drink"
+       ]
+      },
+      {
+       "id": "5.2.7",
+       "name": "Grain & Rice Ferments",
+       "styles": [
+        "Kvass",
+        "Boza",
+        "Amazake",
+        "Makgeolli",
+        "Chicha de jora"
+       ]
+      },
+      {
+       "id": "5.2.8",
+       "name": "Plant & Fruit Ferments",
+       "styles": [
+        "Water kefir (tibicos)",
+        "Tepache",
+        "Pulque",
+        "Ginger beer (ginger bug)",
+        "Palm wine"
+       ]
+      }
      ]
     },
     {
-     "id": "07.3",
-     "name": "Cider",
-     "styles": [
-      "Modern/standard cider",
-      "Heritage cider",
-      "English cider",
-      "French cidre (Normandy/Brittany)",
-      "Spanish sidra (Asturias/Basque)",
-      "Ice cider (cidre de glace)",
-      "Hopped cider"
-     ]
-    },
-    {
-     "id": "07.4",
-     "name": "Perry",
-     "styles": [
-      "Modern perry",
-      "Traditional perry (perry-pear varieties)"
-     ]
-    },
-    {
-     "id": "07.5",
-     "name": "Mead",
-     "styles": [
-      "Traditional mead (dry/semi-sweet/sweet)",
-      "Melomel (fruit)",
-      "Cyser (apple)",
-      "Pyment (grape)",
-      "Metheglin (spice)",
-      "Braggot (malt)",
-      "Sack mead",
-      "Hydromel (session)"
-     ]
-    }
-   ]
-  },
-  {
-   "id": 8,
-   "name": "NON-ALC",
-   "color": "#3cffc8",
-   "subgenres": [
-    {
-     "id": "08.1",
-     "name": "Mocktails",
-     "styles": [
-      "Virgin Mojito",
-      "Virgin Mary",
-      "Shirley Temple",
-      "Arnold Palmer",
-      "Nojito/spritz-style zero-proof",
-      "Shrub-based cocktails"
-     ]
-    },
-    {
-     "id": "08.2",
-     "name": "NA Beer",
-     "styles": [
-      "NA lager (dealcoholized)",
-      "NA IPA",
-      "NA stout",
-      "Radler (low-alc shandy)"
-     ]
-    },
-    {
-     "id": "08.3",
-     "name": "NA Wine",
-     "styles": [
-      "Dealcoholized red",
-      "Dealcoholized white",
-      "Dealcoholized sparkling"
-     ]
-    },
-    {
-     "id": "08.4",
-     "name": "NA Spirits",
-     "styles": [
-      "Gin alternatives",
-      "Whiskey alternatives",
-      "Aperitif/bitter alternatives",
-      "Agave alternatives"
-     ]
-    },
-    {
-     "id": "08.5",
-     "name": "Fermented",
-     "styles": [
-      "Kombucha",
-      "Water kefir",
-      "Kvass",
-      "Jun",
-      "Tepache"
-     ]
-    },
-    {
-     "id": "08.6",
-     "name": "Juices",
-     "styles": [
-      "Not-from-concentrate juice",
-      "From-concentrate juice",
-      "Cold-pressed (HPP) juice",
-      "Nectar",
-      "Smoothie"
-     ]
-    },
-    {
-     "id": "08.7",
-     "name": "Sodas",
-     "styles": [
-      "Cola",
-      "Lemon-lime",
-      "Root beer",
-      "Ginger ale",
-      "Ginger beer",
-      "Cream soda",
-      "Prebiotic soda"
-     ]
-    },
-    {
-     "id": "08.8",
-     "name": "Energy & Functional",
-     "styles": [
-      "Energy drinks",
-      "Sports drinks",
-      "Coconut water",
-      "Protein shakes",
-      "Adaptogenic drinks"
-     ]
-    },
-    {
-     "id": "08.9",
-     "name": "Dairy & Plant Milks",
-     "styles": [
-      "Milk",
-      "Kefir",
-      "Lassi",
-      "Oat milk",
-      "Almond milk",
-      "Soy milk",
-      "Horchata"
+     "id": "5.3",
+     "name": "Regional Academy",
+     "color": "#ff9ad5",
+     "subgenres": [
+      {
+       "id": "5.3.1",
+       "name": "Latin America",
+       "styles": [
+        "Horchata (Mexican rice)",
+        "Agua fresca",
+        "Chicha morada",
+        "Yerba mate",
+        "Tereré",
+        "Champurrado",
+        "Atole",
+        "Tejate",
+        "Aguapanela"
+       ]
+      },
+      {
+       "id": "5.3.2",
+       "name": "Asia",
+       "styles": [
+        "Bubble tea (boba)",
+        "Masala chai",
+        "Lassi",
+        "Thai iced tea",
+        "Vietnamese iced coffee (cà phê sữa đá)",
+        "Hong Kong milk tea",
+        "Teh tarik",
+        "Sikhye",
+        "Barley tea (mugicha/boricha)"
+       ]
+      },
+      {
+       "id": "5.3.3",
+       "name": "Middle East & Africa",
+       "styles": [
+        "Ayran",
+        "Doogh",
+        "Jallab",
+        "Sahlab",
+        "Moroccan mint tea",
+        "Qahwa (Arabic coffee)",
+        "Bissap/karkadé (hibiscus)",
+        "Sobia",
+        "Tamarind drink"
+       ]
+      },
+      {
+       "id": "5.3.4",
+       "name": "Europe",
+       "styles": [
+        "Horchata de chufa (Valencia)",
+        "Kompot",
+        "Sbiten",
+        "Elderflower cordial",
+        "Mulled wine (Glühwein)"
+       ]
+      },
+      {
+       "id": "5.3.5",
+       "name": "Caribbean & Pacific",
+       "styles": [
+        "Sorrel (Jamaica)",
+        "Mauby",
+        "Sea moss drink",
+        "Peanut punch",
+        "Kava (Fiji/Vanuatu/Tonga)"
+       ]
+      }
      ]
     }
    ]
