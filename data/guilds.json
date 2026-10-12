@@ -17,7 +17,7 @@
      "subgenres": [
       {
        "id": "1.1.1",
-       "name": "Red",
+       "name": "Testable Red",
        "styles": [
         "Cabernet Sauvignon",
         "Merlot",
@@ -37,7 +37,7 @@
       },
       {
        "id": "1.1.2",
-       "name": "White",
+       "name": "Testable White",
        "styles": [
         "Chardonnay",
         "Sauvignon Blanc",
@@ -115,6 +115,426 @@
       },
       {
        "id": "1.1.8",
+       "name": "France",
+       "styles": [
+        "Tannat",
+        "Petit Verdot",
+        "Carignan",
+        "Cinsault",
+        "Pinot Meunier",
+        "Négrette",
+        "Mondeuse",
+        "Poulsard",
+        "Trousseau",
+        "Fer Servadou"
+       ],
+       "parent": "Non-Testable Red"
+      },
+      {
+       "id": "1.1.9",
+       "name": "Italy",
+       "styles": [
+        "Aglianico",
+        "Nero d'Avola",
+        "Montepulciano",
+        "Dolcetto",
+        "Corvina",
+        "Lagrein",
+        "Sagrantino",
+        "Nerello Mascalese",
+        "Teroldego",
+        "Schiava"
+       ],
+       "parent": "Non-Testable Red"
+      },
+      {
+       "id": "1.1.10",
+       "name": "Spain & Portugal",
+       "styles": [
+        "Mencía",
+        "Bobal",
+        "Graciano",
+        "Prieto Picudo",
+        "Touriga Nacional",
+        "Touriga Franca",
+        "Baga",
+        "Castelão"
+       ],
+       "parent": "Non-Testable Red"
+      },
+      {
+       "id": "1.1.11",
+       "name": "Central & Eastern Europe",
+       "styles": [
+        "Blaufränkisch",
+        "Zweigelt",
+        "St. Laurent",
+        "Kadarka",
+        "Plavac Mali",
+        "Xinomavro",
+        "Agiorgitiko",
+        "Fetească Neagră",
+        "Mavrud"
+       ],
+       "parent": "Non-Testable Red"
+      },
+      {
+       "id": "1.1.12",
+       "name": "New World",
+       "styles": [
+        "Carménère (Chile)",
+        "País (Chile)",
+        "Pinotage (South Africa)",
+        "Bonarda (Argentina)"
+       ],
+       "parent": "Non-Testable Red"
+      },
+      {
+       "id": "1.1.13",
+       "name": "France",
+       "styles": [
+        "Marsanne",
+        "Roussanne",
+        "Melon de Bourgogne",
+        "Aligoté",
+        "Petit Manseng",
+        "Gros Manseng",
+        "Savagnin",
+        "Picpoul",
+        "Clairette",
+        "Mauzac"
+       ],
+       "parent": "Non-Testable White"
+      },
+      {
+       "id": "1.1.14",
+       "name": "Italy",
+       "styles": [
+        "Garganega",
+        "Vermentino",
+        "Fiano",
+        "Greco",
+        "Falanghina",
+        "Cortese",
+        "Arneis",
+        "Trebbiano",
+        "Verdicchio",
+        "Friulano"
+       ],
+       "parent": "Non-Testable White"
+      },
+      {
+       "id": "1.1.15",
+       "name": "Spain & Portugal",
+       "styles": [
+        "Verdejo",
+        "Godello",
+        "Macabeo (Viura)",
+        "Xarel·lo",
+        "Parellada",
+        "Palomino",
+        "Loureiro",
+        "Arinto",
+        "Encruzado"
+       ],
+       "parent": "Non-Testable White"
+      },
+      {
+       "id": "1.1.16",
+       "name": "Central & Eastern Europe",
+       "styles": [
+        "Furmint",
+        "Hárslevelű",
+        "Welschriesling",
+        "Silvaner",
+        "Müller-Thurgau",
+        "Kerner",
+        "Rkatsiteli",
+        "Moschofilero",
+        "Malagousia"
+       ],
+       "parent": "Non-Testable White"
+      },
+      {
+       "id": "1.1.17",
+       "name": "Other",
+       "styles": [
+        "Muscat of Alexandria",
+        "Colombard",
+        "Chasselas",
+        "Petite Arvine"
+       ],
+       "parent": "Non-Testable White"
+      },
+      {
+       "id": "1.1.18",
+       "name": "Vitis labrusca",
+       "styles": [
+        "Concord",
+        "Catawba",
+        "Niagara",
+        "Isabella",
+        "Ives"
+       ],
+       "parent": "Non-Vitis vinifera"
+      },
+      {
+       "id": "1.1.19",
+       "name": "Vitis riparia & rupestris",
+       "styles": [
+        "Vitis riparia (riverbank grape)",
+        "Vitis rupestris (rock grape)",
+        "Vitis berlandieri",
+        "Mainly rootstock parents — see Rootstocks"
+       ],
+       "parent": "Non-Vitis vinifera"
+      },
+      {
+       "id": "1.1.20",
+       "name": "Vitis rotundifolia (Muscadine)",
+       "styles": [
+        "Scuppernong",
+        "Carlos",
+        "Noble",
+        "Magnolia"
+       ],
+       "parent": "Non-Vitis vinifera"
+      },
+      {
+       "id": "1.1.21",
+       "name": "Vitis aestivalis",
+       "styles": [
+        "Norton (Cynthiana)"
+       ],
+       "parent": "Non-Vitis vinifera"
+      },
+      {
+       "id": "1.1.22",
+       "name": "Interspecific Hybrids",
+       "styles": [
+        "Seyval Blanc",
+        "Vidal Blanc",
+        "Chambourcin",
+        "Baco Noir",
+        "Maréchal Foch",
+        "Traminette",
+        "Marquette",
+        "Frontenac",
+        "La Crescent"
+       ],
+       "parent": "Non-Vitis vinifera"
+      },
+      {
+       "id": "1.1.23",
+       "name": "PIWI (Fungus-Resistant)",
+       "styles": [
+        "Regent",
+        "Solaris",
+        "Johanniter",
+        "Souvignier Gris",
+        "Cabernet Cortis",
+        "Muscaris",
+        "Divico"
+       ],
+       "parent": "Non-Vitis vinifera"
+      },
+      {
+       "id": "1.1.24",
+       "name": "Clones",
+       "styles": [
+        "Pinot Noir Dijon 115",
+        "Pinot Noir Dijon 667",
+        "Pinot Noir Dijon 777",
+        "Pinot Noir Pommard (UCD 4)",
+        "Pinot Noir Wädenswil (UCD 1A)",
+        "Chardonnay Dijon 76",
+        "Chardonnay Dijon 96",
+        "Chardonnay Wente",
+        "Cabernet Sauvignon 337",
+        "Sangiovese Grosso (Brunello)"
+       ],
+       "parent": "Vine Genetics"
+      },
+      {
+       "id": "1.1.25",
+       "name": "Mutations (Bud Sports)",
+       "styles": [
+        "Pinot Gris (from Pinot Noir)",
+        "Pinot Blanc",
+        "Pinot Meunier (chimera)",
+        "Grenache Blanc",
+        "Grenache Gris",
+        "Gewürztraminer (aromatic Savagnin Rose)",
+        "Chardonnay Musqué",
+        "Sauvignon Gris"
+       ],
+       "parent": "Vine Genetics"
+      },
+      {
+       "id": "1.1.26",
+       "name": "Teinturiers (Red-Fleshed)",
+       "styles": [
+        "Alicante Bouschet",
+        "Saperavi",
+        "Petit Bouschet",
+        "Grand Noir de la Calmette",
+        "Gamay de Bouze",
+        "Rubired"
+       ],
+       "parent": "Vine Genetics"
+      },
+      {
+       "id": "1.1.27",
+       "name": "Riparia & Rupestris Types",
+       "styles": [
+        "Riparia Gloire de Montpellier",
+        "Rupestris du Lot (St. George)",
+        "3309 Couderc",
+        "101-14 Millardet et de Grasset",
+        "Schwarzmann"
+       ],
+       "parent": "Rootstocks"
+      },
+      {
+       "id": "1.1.28",
+       "name": "Berlandieri × Riparia",
+       "styles": [
+        "5BB Kober",
+        "SO4",
+        "5C Teleki",
+        "420A Millardet et de Grasset"
+       ],
+       "parent": "Rootstocks"
+      },
+      {
+       "id": "1.1.29",
+       "name": "Berlandieri × Rupestris",
+       "styles": [
+        "110 Richter",
+        "1103 Paulsen",
+        "140 Ruggeri",
+        "99 Richter"
+       ],
+       "parent": "Rootstocks"
+      },
+      {
+       "id": "1.1.30",
+       "name": "Nematode-Resistant & Other",
+       "styles": [
+        "Freedom",
+        "Harmony",
+        "Dog Ridge",
+        "Ramsey (Salt Creek)",
+        "1616 Couderc",
+        "Own-rooted (ungrafted)"
+       ],
+       "parent": "Rootstocks"
+      },
+      {
+       "id": "1.1.31",
+       "name": "Training Systems",
+       "styles": [
+        "Single Guyot",
+        "Double Guyot",
+        "Bilateral cordon (spur-pruned)",
+        "Vertical shoot positioning (VSP)",
+        "Gobelet (bush vine)",
+        "Pergola",
+        "Lyre",
+        "Scott Henry",
+        "Smart-Dyson",
+        "Geneva Double Curtain",
+        "Sprawl"
+       ],
+       "parent": "Canopy Management"
+      },
+      {
+       "id": "1.1.32",
+       "name": "Canopy Practices",
+       "styles": [
+        "Cane pruning",
+        "Spur pruning",
+        "Shoot thinning",
+        "Shoot positioning",
+        "Leaf removal",
+        "Hedging (topping)",
+        "Green harvest (crop thinning)",
+        "Cover crops"
+       ],
+       "parent": "Canopy Management"
+      },
+      {
+       "id": "1.1.33",
+       "name": "Red Winemaking",
+       "styles": [
+        "Destemming",
+        "Whole-cluster fermentation",
+        "Cold soak",
+        "Carbonic maceration",
+        "Pump-over (remontage)",
+        "Punch-down (pigeage)",
+        "Délestage (rack & return)",
+        "Extended maceration",
+        "Saignée",
+        "Malolactic conversion"
+       ],
+       "parent": "Winemaking Techniques"
+      },
+      {
+       "id": "1.1.34",
+       "name": "White & Rosé Winemaking",
+       "styles": [
+        "Whole-bunch pressing",
+        "Skin contact",
+        "Cold settling (débourbage)",
+        "Cool fermentation",
+        "Lees aging (sur lie)",
+        "Bâtonnage",
+        "Direct-press rosé",
+        "Blocked malolactic"
+       ],
+       "parent": "Winemaking Techniques"
+      },
+      {
+       "id": "1.1.35",
+       "name": "Sparkling Methods",
+       "styles": [
+        "Traditional method",
+        "Tank (Charmat) method",
+        "Ancestral method",
+        "Transfer method",
+        "Riddling (remuage)",
+        "Disgorgement",
+        "Dosage",
+        "Carbonation"
+       ],
+       "parent": "Winemaking Techniques"
+      },
+      {
+       "id": "1.1.36",
+       "name": "Fortified & Oxidative",
+       "styles": [
+        "Mutage (fortification during fermentation)",
+        "Post-fermentation fortification",
+        "Flor (biological aging)",
+        "Oxidative aging",
+        "Estufagem (Madeira)"
+       ],
+       "parent": "Winemaking Techniques"
+      },
+      {
+       "id": "1.1.37",
+       "name": "Finishing",
+       "styles": [
+        "Fining",
+        "Filtration",
+        "Cold stabilization",
+        "Blending"
+       ],
+       "parent": "Winemaking Techniques"
+      },
+      {
+       "id": "1.1.38",
        "name": "Oak & Other Woods",
        "styles": [
         "American white oak (Quercus alba)",
@@ -131,7 +551,7 @@
        "parent": "Barrel Toasting & Aging"
       },
       {
-       "id": "1.1.9",
+       "id": "1.1.39",
        "name": "French Oak Forests",
        "styles": [
         "Allier",
@@ -145,7 +565,7 @@
        "parent": "Barrel Toasting & Aging"
       },
       {
-       "id": "1.1.10",
+       "id": "1.1.40",
        "name": "Seasoning",
        "styles": [
         "Open-air seasoning (typically 24–36 months)",
@@ -155,7 +575,7 @@
        "parent": "Barrel Toasting & Aging"
       },
       {
-       "id": "1.1.11",
+       "id": "1.1.41",
        "name": "Toast Levels",
        "styles": [
         "Light toast",
@@ -169,7 +589,7 @@
        "parent": "Barrel Toasting & Aging"
       },
       {
-       "id": "1.1.12",
+       "id": "1.1.42",
        "name": "Barrel Sizes",
        "styles": [
         "Blood tub (~40 L)",
@@ -186,7 +606,7 @@
        "parent": "Barrel Toasting & Aging"
       },
       {
-       "id": "1.1.13",
+       "id": "1.1.43",
        "name": "New vs Used",
        "styles": [
         "New oak",
@@ -199,7 +619,7 @@
        "parent": "Barrel Toasting & Aging"
       },
       {
-       "id": "1.1.14",
+       "id": "1.1.44",
        "name": "Wine-Based Drinks",
        "styles": [
         "Sangria",
@@ -210,7 +630,7 @@
        ]
       },
       {
-       "id": "1.1.15",
+       "id": "1.1.45",
        "name": "Dealcoholized Wine (≤0.5% ABV)",
        "styles": [
         "Dealcoholized red",
