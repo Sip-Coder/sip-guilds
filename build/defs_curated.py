@@ -288,3 +288,10 @@ C={
 "Ayran":"Salted yogurt drink of Turkey and nearby regions.",
 "Kompot":"Eastern European drink of fruit boiled in sweetened water.",
 }
+
+import os as _o,glob as _g
+for _f in _g.glob(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)),'defs','*.tsv')):
+  _a=_o.path.basename(_f)[:-4]+' Academy'
+  for _l in open(_f,encoding='utf-8'):
+    if '\t' in _l:
+      _t,_d=_l.rstrip('\n').split('\t',1);C[_a+'|'+_t]=_d
