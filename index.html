@@ -53,7 +53,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;let MOB=innerWidth<760;
-const VER='003a0b28d1';
+const VER='609fc55bb0';
 try{const v=(await (await fetch('version.json?t='+Date.now(),{cache:'no-store'})).json()).v,q=new URLSearchParams(location.search);if(v&&v!==VER&&q.get('v')!==v){q.set('v',v);location.replace(location.pathname+'?'+q);await new Promise(()=>{})}}catch(e){}
 const DATA=await (await fetch('data/guilds.json?v='+VER,{cache:'no-cache'})).json();const G=DATA.guilds;
 const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
