@@ -1,0 +1,6 @@
+<!doctype html><html><body style="margin:0"><pre id="out">running</pre><script>
+const sizes=[[390,844],[768,1024],[1440,900]],res=[];let i=0;
+function next(){if(i>=sizes.length){document.getElementById('out').textContent='RESULT '+JSON.stringify(res);return}
+const [w,h]=sizes[i++],f=document.createElement('iframe');f.style.cssText=`width:${w}px;height:${h}px;border:0;display:block`;f.src='../index.html?check=1';document.body.appendChild(f);
+const t=setInterval(()=>{const d=f.contentDocument&&f.contentDocument.getElementById('check');if(d){clearInterval(t);res.push(JSON.parse(d.textContent));f.remove();next()}},200)}
+next();</script></body></html>

@@ -24,3 +24,6 @@ A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 aca
 - Health/medical drinks: WHO oral rehydration salts formula; IDDSI framework (thickened drinks)
 - Protein/energy: US FDA dietary supplement & caffeine guidance; EFSA scientific opinion on caffeine safety (2015)
 - Kombucha & fermented drinks: Kombucha Brewers International code of practice; BJCP 2025 cider and 2015 mead guidelines
+
+## Label layout & overlap check
+Tags are placed per stop by a deterministic screen-space solver (rings/angles around the crawler, greedy placement with 4px padding) that treats the header, step title, center label, crawler core, controls and dashboard as reserved zones; font steps down (min 10px) if needed. Layout is locked per stop and recomputed on resize. `build/check_overlaps.sh` visits all 121 stops at 390×844, 768×1024 and 1440×900 (exact iframe viewports via `build/check.html` + `?check=1`) and fails on any intersection or offscreen label.
