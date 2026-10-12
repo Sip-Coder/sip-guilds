@@ -37,3 +37,6 @@ Tags are placed per stop by a deterministic screen-space solver (rings/angles ar
 
 ## Cache-busting
 `build/stamp.sh` writes a content hash into `index.html` (`VER`) and `version.json`. On load the page fetches `version.json` with `no-store`; if a phone has an older cached page it reloads once with `?v=<hash>`. Data is fetched as `data/guilds.json?v=<hash>`.
+
+## Aging Requirements sources
+`build/aging.py`: each entry's detail field names its regulation and is marked **[verified online 2026-10-12]** or **[from memory — unverified]**. Verified: DOCa Rioja pliego (2024), Ribera del Duero pliego (2023), DOP Cava pliego, DOP Jerez pliego (2024), Chianti Classico / Brunello / Vino Nobile / Barolo / Barbaresco / Amarone / Taurasi / Franciacorta / Trento disciplinari, INAO cahiers (Champagne, Crémant du Jura, Côtes du Jura, Banyuls GC, Rivesaltes, Cognac, Calvados, Rhum de la Martinique), IVDP (Port), Tokaj PDO, NOM-006-SCFI-2012, NOM-070-SCFI-2016, Scotch Whisky Regulations 2009, JSLMA standard, 27 CFR 5.74/5.88, Reglamento DO Pisco. Unverified: Ley 24/2003 generic terms, Chianti Riserva, Crémant 9 mo, Tawny/Madeira indicated ages, Port Reserve, Austrian Sekt, Irish/Canadian whisky, Armagnac XO, Brandy de Jerez, grappa, Jamaica/Barbados rum, beer, sake.
