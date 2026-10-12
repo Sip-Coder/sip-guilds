@@ -1,5 +1,7 @@
 # Hand-written plain-language definitions (key = term text before any " (" or " ·").
 C={
+"Spirits Academy|Reposado":"Mezcal or tequila class rested in wood; for mezcal, NOM-070 requires 2–12 months in wooden vessels of any size.",
+"Spirits Academy|Añejo":"Mezcal or tequila aged class; for mezcal, NOM-070 requires more than 12 months in wooden vessels under 1,000 L.",
 "Spirits Academy|Blanco/Plata":"Tequila class bottled without abocado (mellowing additives); it may rest under 2 months in oak or encino (NOM-006 §4.36.1).",
 "Spirits Academy|Joven/Oro":"Tequila class made by blending blanco with reposado, añejo or extra añejo tequila, or by mellowing blanco with permitted additives (abocado) (NOM-006 §4.36.2).",
 "Spirits Academy|Blanco/Joven":"Mezcal class that is colorless and receives no aging or post-distillation treatment (NOM-070).",
