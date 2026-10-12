@@ -23,7 +23,7 @@ for g in D['guilds']:
           d=(f"{L}: official/legal aging category." if R else t+'.')+(f" Requirement: {R}." if R else '')+' Times are minimums unless stated; see facts for barrel/bottle detail and source.'
           if std:facts.append(std)
           nr=flagged(std);d=d if L!=t else t+'.'
-          c=look(an,L)
+          c=C.get(f"{an}|{s['name']}|{L}") or look(an,L)
           if c and R:d=c+f" Requirement: {R}."
         elif d: pass
         elif an=='Beer Academy' and re.match(r'\d',s['name']):

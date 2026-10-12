@@ -1,12 +1,15 @@
 # Hand-written plain-language definitions (key = term text before any " (" or " ·").
 C={
-"Spirits Academy|Reposado":"Mezcal or tequila class rested in wood; for mezcal, NOM-070 requires 2–12 months in wooden vessels of any size.",
-"Spirits Academy|Añejo":"Mezcal or tequila aged class; for mezcal, NOM-070 requires more than 12 months in wooden vessels under 1,000 L.",
-"Spirits Academy|Blanco/Plata":"Tequila class bottled without abocado (mellowing additives); it may rest under 2 months in oak or encino (NOM-006 §4.36.1).",
-"Spirits Academy|Joven/Oro":"Tequila class made by blending blanco with reposado, añejo or extra añejo tequila, or by mellowing blanco with permitted additives (abocado) (NOM-006 §4.36.2).",
-"Spirits Academy|Blanco/Joven":"Mezcal class that is colorless and receives no aging or post-distillation treatment (NOM-070).",
-"Spirits Academy|Madurado en vidrio":"Mezcal class stored in glass for more than 12 months under controlled conditions (NOM-070).",
-"Spirits Academy|Extra Añejo":"Tequila class matured at least 3 years in oak or encino containers of up to 600 L (NOM-006).",
+"Spirits Academy|Tequila (NOM-006)|Blanco/Plata":"Tequila class bottled without abocado (mellowing additives); it may rest under 2 months in oak or encino (NOM-006-SCFI-2012 §4.36.1).",
+"Spirits Academy|Tequila (NOM-006)|Joven/Oro":"Tequila class made by blending blanco with reposado, añejo or extra añejo tequila, or by mellowing blanco with permitted additives (abocado) (NOM-006-SCFI-2012 §4.36.2).",
+"Spirits Academy|Tequila (NOM-006)|Reposado":"Tequila matured at least 2 months in direct contact with oak or encino wood, with no vessel-size limit (NOM-006-SCFI-2012 §4.36.3).",
+"Spirits Academy|Tequila (NOM-006)|Añejo":"Tequila matured at least 1 year in oak or encino containers of up to 600 L (NOM-006-SCFI-2012).",
+"Spirits Academy|Tequila (NOM-006)|Extra Añejo":"Tequila matured at least 3 years in oak or encino containers of up to 600 L (NOM-006-SCFI-2012).",
+"Spirits Academy|Mezcal (NOM-070)|Blanco/Joven":"Mezcal class that is colorless and translucent and receives no further process after distillation (NOM-070-SCFI-2016 §4.5).",
+"Spirits Academy|Mezcal (NOM-070)|Madurado en vidrio":"Mezcal class stabilized in glass for more than 12 months, underground or in a space with minimal light, temperature and humidity variation (NOM-070-SCFI-2016 §4.5).",
+"Spirits Academy|Mezcal (NOM-070)|Reposado":"Mezcal class rested 2–12 months in wooden vessels of any size or shape (NOM-070-SCFI-2016 §4.5).",
+"Spirits Academy|Mezcal (NOM-070)|Añejo":"Mezcal class aged more than 12 months in wooden vessels under 1,000 L; the label must state its age in whole years (NOM-070-SCFI-2016 §4.5).",
+
 # wine grapes
 "Cabernet Sauvignon":"Red wine grape of Bordeaux origin, a natural cross of Cabernet Franc and Sauvignon Blanc; thick-skinned and tannic, widely planted worldwide.",
 "Merlot":"Red wine grape from Bordeaux, softer and earlier-ripening than Cabernet Sauvignon; a major blending partner on Bordeaux's Right Bank.",
