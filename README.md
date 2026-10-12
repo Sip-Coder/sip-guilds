@@ -1,6 +1,6 @@
 # Sip Studies — Guild Crawler (Sipopedia academies)
 
-A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 121 subgenres → 633 styles**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 17 min.
+A one-page WebGL atlas matching Sipopedia.com's structure: **5 guilds → 15 academies → 121 subgenres → 633 styles**. The crawler sits at the center of each subgenre (center label, e.g. "SPARKLING · Wine Academy · Cask Guild") and shoots one arm per style, then zooms out to all guilds. Full loop ≈ 13.5 min.
 
 **Live:** https://sip-coder.github.io/sip-guilds/
 
