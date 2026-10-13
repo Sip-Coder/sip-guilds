@@ -53,7 +53,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;let MOB=innerWidth<760;
-const VER='094fee742d';
+const VER='9dc4b9f3b3';
 try{const v=(await (await fetch('version.json?t='+Date.now(),{cache:'no-store'})).json()).v,q=new URLSearchParams(location.search);if(v&&v!==VER&&q.get('v')!==v){q.set('v',v);location.replace(location.pathname+'?'+q);await new Promise(()=>{})}}catch(e){}
 const DATA=await (await fetch('data/guilds.json?v='+VER,{cache:'no-cache'})).json();const G=DATA.guilds;
 const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
@@ -163,13 +163,12 @@ if(!T){pts=pg==null?[S,new THREE.Vector3()]:armPts(pg,pt,0,24)}else if(pg==null)
 const E=T?T.pos.clone():new THREE.Vector3(),n=pts.length-1,d0=S.clone().sub(pts[0]),d1=E.clone().sub(pts[n]);path=pts.map((q,i)=>q.clone().add(d0.clone().multiplyScalar(1-i/n)).add(d1.clone().multiplyScalar(i/n)));
 plen=[0];for(let i=1;i<path.length;i++)plen.push(plen[i-1]+path[i].distanceTo(path[i-1]));prevS=T}
 function pathAt(u){const L=plen[plen.length-1]*u;let i=1;while(i<plen.length-1&&plen[i]<L)i++;const a=plen[i-1],b=plen[i],f=b>a?(L-a)/(b-a):1;return path[i-1].clone().lerp(path[i],Math.min(1,Math.max(0,f)))}
-function setStep(k,manual){k=(k+NS+1)%(NS+1);clearT();cur=k;stepStart=now;spawned=false;from.copy(crawler.position);camFrom.copy(cam.position);lookFrom.copy(look);
-const all=k>=NS;stop=all?null:subs[k];$('stopn').textContent=all?'ALL':`${k+1}/${NS}`;
+function setStep(k,manual){const intro=k===-1;if(!intro)k=k>NS?0:(k+NS+1)%(NS+1);clearT();cur=k;stepStart=now;spawned=false;from.copy(crawler.position);camFrom.copy(cam.position);lookFrom.copy(look);
+const all=intro||k>=NS;stop=all?null:subs[k];$('stopn').textContent=intro?'INTRO':all?'ALL':`${k+1}/${NS}`;if(intro){lit.fill(0);seen.fill(0);acads.forEach(a=>a.done=0);score=0;rows.forEach((d,i)=>{d.lastChild.textContent=`0/${acads[i].n}`})}
 if(all){$('num').textContent='✦';$('title').textContent='All Guilds';$('tagline').textContent=`${NG} guilds. ${AN} academies. ${NS} subgenres.`;$('acad').textContent=`${AN} Academies`;$('subt').textContent=`${NS} SUBGENRES · ${MAXS} STYLES`;
-$('step').style.setProperty('--c','#c6a15b');$('ring').setAttribute('stroke','#c6a15b');hub.style.opacity=0;{const rg=region(),th=Math.tan(27.5*Math.PI/180),asp=innerWidth/innerHeight,fh=(rg.bot-rg.top+120)/innerHeight;const dz=Math.max(RMAX*1.02/(th*asp),RMAX*YS*1.02/(th*fh));const sh=((rg.top+rg.bot)/2-innerHeight/2)/innerHeight*2*dz*th;lookTo.set(0,sh,0);camTo.set(0,sh,dz)}buildPath(null);travel=2.6;dur=9;log(`zoom out · ${NS} subgenres linked`);lit.fill(1);
+$('step').style.setProperty('--c','#c6a15b');$('ring').setAttribute('stroke','#c6a15b');hub.style.opacity=0;{const rg=region(),th=Math.tan(27.5*Math.PI/180),asp=innerWidth/innerHeight,fh=(rg.bot-rg.top+120)/innerHeight;const dz=Math.max(RMAX*1.02/(th*asp),RMAX*YS*1.02/(th*fh));const sh=((rg.top+rg.bot)/2-innerHeight/2)/innerHeight*2*dz*th;lookTo.set(0,sh,0);camTo.set(0,sh,dz)}buildPath(null);if(intro){travel=manual==='load'?.001:2.6;dur=travel+4;log(`overview · ${NS} subgenres · ${MAXS} styles`);rows.forEach(d=>d.className='ar');return}travel=2.6;dur=9;log(`zoom out · ${NS} subgenres linked`);lit.fill(1);
 rows.forEach(d=>d.className='ar done');return}
 const g=G[stop.g],A=stop.A,c=A.a.color,first=manual||k==0||subs[k-1].A!=A;
-if(k==0&&!manual){lit.fill(0);seen.fill(0);acads.forEach(a=>a.done=0);score=0}
 $('num').textContent=String(stop.g+1).padStart(2,'0');$('title').textContent=title(g.name);$('tagline').textContent=g.tagline;$('acad').textContent=A.a.name;
 const sn=stop.sg.name.replace(/^\d+ /,'');$('subt').textContent=`${stop.sg.id} ${stop.sg.parent?stop.sg.parent.toUpperCase()+' › ':''}${sn.toUpperCase()}`;
 $('step').style.setProperty('--c',c);$('ring').setAttribute('stroke',c);coreM.color.set(c).lerp(new THREE.Color('#2ee6ff'),.5);
@@ -179,21 +178,21 @@ const dist=MOB?260:200;lookTo.copy(stop.pos);lookTo.y+=offs*2*dist*Math.tan(27.5
 const cross=!prevS||prevS.g!=stop.g;travel=SP*(cross?3.4:first?2.4:1.4);dur=travel+dwell(stop.sg.styles.length);buildPath(stop);bump=cross?(MOB?380:300):first?90:25;
 if(first)log(`route → ${A.a.name.toLowerCase()}`);log(`enter ${sn.toLowerCase()}`);
 rows.forEach((d,i)=>d.className='ar'+(i==A.idx?' on':(acads[i].done==acads[i].n?' done':'')));const row=rows[A.idx];if(row&&!MOB)secsEl.scrollTop=row.offsetTop-secsEl.offsetTop-30}
-function updCount(){const ex=cur>=NS?MAXS:PRE[cur]+(spawned?stop.sg.styles.length:0);$('sval').textContent=ex;$('stot').textContent='/ '+MAXS;$('ring').setAttribute('stroke-dashoffset',251*(1-ex/MAXS))}
+function updCount(){const ex=cur<0?0:cur>=NS?MAXS:PRE[cur]+(spawned?stop.sg.styles.length:0);$('sval').textContent=ex;$('stot').textContent='/ '+MAXS;$('ring').setAttribute('stroke-dashoffset',251*(1-ex/MAXS))}
 function jump(k){setStep(k,true);updCount()}
-setStep(0);cam.position.set(0,0,1300);
+setStep(-1,'load');cam.position.copy(camTo);look.copy(lookTo);
 // controls
 const bPlay=$('bPlay');function setPaused(v){paused=v;bPlay.innerHTML=v?'<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>':'<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>';bPlay.setAttribute('aria-label',v?'Play':'Pause')}
-bPlay.onclick=()=>setPaused(!paused);$('bPrev').onclick=()=>jump(cur>=NS?NS-1:cur-1);$('bNext').onclick=()=>jump(cur+1);
-let lastRew=-9;function rew(){const t=performance.now()/1000;if(cur>=NS){jump(acads[AN-1].first);lastRew=t;return}const A=subs[cur].A;const atStart=cur==A.first;if(atStart||t-lastRew<1.5){const pi=(A.idx-1+AN)%AN;jump(acads[pi].first)}else jump(A.first);lastRew=t}
-function ff(){if(cur>=NS){jump(0);return}const A=subs[cur].A;if(A.idx==AN-1)jump(NS);else jump(acads[A.idx+1].first)}
+bPlay.onclick=()=>setPaused(!paused);const prevK=()=>cur<0?NS:cur>=NS?NS-1:cur-1;$('bPrev').onclick=()=>jump(prevK());$('bNext').onclick=()=>jump(cur+1);
+let lastRew=-9;function rew(){const t=performance.now()/1000;if(cur<0){jump(NS);lastRew=t;return}if(cur==0){jump(-1);lastRew=t;return}if(cur>=NS){jump(acads[AN-1].first);lastRew=t;return}const A=subs[cur].A;const atStart=cur==A.first;if(atStart||t-lastRew<1.5){const pi=(A.idx-1+AN)%AN;jump(acads[pi].first)}else jump(A.first);lastRew=t}
+function ff(){if(cur<0||cur>=NS){jump(0);return}const A=subs[cur].A;if(A.idx==AN-1)jump(NS);else jump(acads[A.idx+1].first)}
 let SPEED=1;const SPEEDS=[.5,1,2,4];function cycleSpeed(d){const i=SPEEDS.indexOf(SPEED);SPEED=SPEEDS[(i+(d||1)+SPEEDS.length)%SPEEDS.length];const b=$('bSpd');b.textContent=(SPEED==.5?'½':SPEED)+'×';b.setAttribute('aria-label','Playback speed '+SPEED+'x')}
 $('bSpd').onclick=()=>cycleSpeed(1);$('bRew').onclick=rew;$('bFF').onclick=ff;
 addEventListener('keydown',e=>{if(defOpen){if(e.key=='Escape'){closeDef(false);e.preventDefault()}else if(e.key=='Tab'){const f=[...$('def').querySelectorAll('button')];const i=f.indexOf(document.activeElement);if(e.shiftKey&&i<=0){f[f.length-1].focus();e.preventDefault()}else if(!e.shiftKey&&i==f.length-1){f[0].focus();e.preventDefault()}}return}
-if((e.key=='Enter'||e.key==' ')&&e.target.closest&&e.target.closest('.tag,#hub')){e.preventDefault();openDef(e.target.closest('.tag,#hub').dataset.id,e.target);return}if(e.target.closest&&e.target.closest('button,[role=button]')&&e.key==' ')return;if(e.key=='s'||e.key=='S'){cycleSpeed(e.shiftKey?-1:1);e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowLeft')||e.key=='PageUp'){rew();e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowRight')||e.key=='PageDown'){ff();e.preventDefault()}else if(e.key=='ArrowRight'){jump(cur+1);e.preventDefault()}else if(e.key=='ArrowLeft'){jump(cur>=NS?NS-1:cur-1);e.preventDefault()}else if(e.key==' '){setPaused(!paused);e.preventDefault()}});
+if((e.key=='Enter'||e.key==' ')&&e.target.closest&&e.target.closest('.tag,#hub')){e.preventDefault();openDef(e.target.closest('.tag,#hub').dataset.id,e.target);return}if(e.target.closest&&e.target.closest('button,[role=button]')&&e.key==' ')return;if(e.key=='s'||e.key=='S'){cycleSpeed(e.shiftKey?-1:1);e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowLeft')||e.key=='PageUp'){rew();e.preventDefault()}else if((e.shiftKey&&e.key=='ArrowRight')||e.key=='PageDown'){ff();e.preventDefault()}else if(e.key=='ArrowRight'){jump(cur+1);e.preventDefault()}else if(e.key=='ArrowLeft'){jump(prevK());e.preventDefault()}else if(e.key==' '){setPaused(!paused);e.preventDefault()}});
 let last=performance.now(),fr=0,ft=0,FIX=0;const tmp=new THREE.Vector3();
 function frame(t,noloop){const rdt=FIX||Math.min(.05,(t-last)/1000);last=t;const dt=paused?0:rdt*SPEED;now+=dt;fr++;ft+=rdt;if(ft>.5&&!FIX){$('fps').textContent=Math.round(fr/ft);fr=0;ft=0}
-const all=cur>=NS,e=now-stepStart,mv=ease(Math.min(1,e/travel));
+const all=cur<0||cur>=NS,e=now-stepStart,mv=ease(Math.min(1,e/travel));
 crawler.position.copy(pathAt(mv));
 const cm=ease(Math.min(1,e/(travel*1.05)));if(all){cam.position.lerpVectors(camFrom,camTo,cm);look.lerpVectors(lookFrom,lookTo,cm)}else{const lo=offFrom.clone().lerp(offTo,cm);look.copy(crawler.position).add(lo);const co=camOffFrom.clone().lerp(camOffTo,cm);co.z+=Math.sin(Math.PI*Math.min(1,e/travel))*bump;cam.position.copy(look).add(co)}cam.lookAt(look);cam.updateMatrixWorld();
 ring.rotation.z+=rdt*(RM?.3:1.6);crawler.scale.setScalar(1+Math.sin(now*6)*.06);
@@ -211,7 +210,7 @@ if(a>=1&&!td.done){td.done=true;td.el.style.opacity=1;score++;log(`${VERBS[(j+cu
 for(let i=0;i<NS;i++)litData[i*4]=lit[i];litTex.needsUpdate=true;pm.uniforms.uT.value=now;
 if(fr%2==0&&!paused){beatArr.push(Math.min(1,beatArr[beatArr.length-1]*.6+.08+Math.random()*.3*(all?.5:1)));beatArr.shift()}
 if(fr%3==0){const c=all?'#c6a15b':stop.A.a.color;drawRadar(c);drawBeat(c);updCount()}
-if(e>dur&&!paused)setStep(all?0:cur+1);
+if(e>dur&&!paused)setStep(cur<0?0:cur>=NS?-1:cur+1);
 if(!noloop){comp.render();requestAnimationFrame(frame)}}
 function rs(){MOB=innerWidth<760;cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();r.setSize(innerWidth,innerHeight);comp.setSize(innerWidth,innerHeight);$('res').textContent=innerWidth+'×'+innerHeight}
 addEventListener('resize',()=>{rs();if(spawned&&lock&&cur<NS){const p=crawler.position.clone().project(cam);spawnT(stop,(p.x+1)/2*innerWidth,(1-p.y)/2*innerHeight,true)}});rs();
