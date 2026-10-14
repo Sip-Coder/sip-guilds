@@ -5,7 +5,7 @@ const GI={1:'M12 3c-4 0-6 2-6 2v4c0 5 3 9 6 12 3-3 6-7 6-12V5s-2-2-6-2z',// cask
 4:'M13 2 5 13h6l-1 9 8-11h-6z',// energy: bolt
 5:'M12 4a8 8 0 1 0 8 8M12 8a4 4 0 1 0 4 4M12 12h.01'};// culture: spiral
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-let IDX=null;
+let IDX=null;let CV='';export const setVer=v=>CV=v;
 function index(G){IDX={};for(const g of G)for(const a of g.academies){const subs=a.subgenres;for(const s of subs){const r={g,a,s,subs};IDX[s.id]=r;s.styles.forEach((n,i)=>IDX[s.id+'.'+(i+1)]={...r,i,n})}}}
 const U={yr:12,yrs:12,year:12,years:12,mo:1,month:1,months:1};
 // Aging bars parsed only from explicit numbers in the term name, e.g. "Reserva · 3 yr (1 oak, 6 mo btl)". Ranges are skipped.
@@ -20,7 +20,7 @@ export function parseABV(t){const m=t.match(/(≤|≥|<|>|[Bb]elow |about |appro
 const fm=m=>m%12==0&&m>=12?m/12+' yr':m+' mo';
 export function renderIG(id,d,G,DEFS){if(!IDX)index(G);const r=IDX[id];if(!r)return'';const{g,a,s,subs}=r,c=a.color,isT=d.kind=='term'&&r.n!=null;
 const crumbs=[g.name.replace(/\b\w+/g,w=>w[0]+w.slice(1).toLowerCase()),a.name];if(s.parent)crumbs.push(s.parent);crumbs.push(s.name);if(isT)crumbs.push(r.n);
-let h=`<section class="ig" style="--ic:${c}" aria-label="Infographic"><h3>INFOGRAPHIC</h3>`;
+let h=`<section class="ig" style="--ic:${c}" aria-label="Infographic"><h3>INFOGRAPHIC</h3>`+(`<figure class="ig-card"><img src="cards/generated/${id}.svg?v=${CV}" alt="Illustrated card: ${esc(d.term)}" loading="lazy" decoding="async" width="640" height="640"></figure>`);
 // motif + path
 h+=`<div class="ig-top"><svg class="ig-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="${c}22" stroke="${c}"/><path d="${GI[g.id]||GI[1]}" fill="none" stroke="${c}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.6 3.6) scale(.7)"/></svg><ol class="ig-path">${crumbs.map((x,i)=>`<li${i==crumbs.length-1?' class="on"':''}><i style="background:${i==0?g.color:c};opacity:${.35+.65*(i+1)/crumbs.length}"></i>${esc(x)}</li>`).join('')}</ol></div>`;
 // position / size

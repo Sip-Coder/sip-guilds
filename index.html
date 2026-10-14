@@ -33,7 +33,7 @@ body.still .tag,body.still #hub{transition:none!important}#step>div{width:fit-co
 #def h3{font-size:0.625rem;letter-spacing:.16em;color:#6f8c93;margin:8px 0 4px;font-weight:400}#def ul{margin:0 0 8px 16px;font-family:Helvetica,Arial,sans-serif;font-size:0.75rem;color:#b9cbd0}#def .src{font-size:0.6875rem;color:#8fa9ae}#def .nr{font-size:0.625rem;color:#6f8c93;margin-top:6px}
 #def .x{position:absolute;top:8px;right:8px;width:32px;height:32px;border:1px solid #c6a15b55;background:none;color:#e9d9b4;border-radius:50%;font-size:1rem;cursor:pointer}#def .row{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}#def .row button{background:#0b2f3a;border:1px solid #c6a15b88;color:#e9d9b4;padding:7px 12px;border-radius:4px;font:inherit;cursor:pointer}
 #def .ig{margin:12px 0 4px;padding:10px 10px 8px;border:1px solid color-mix(in srgb,var(--ic) 40%,transparent);border-radius:6px;background:linear-gradient(160deg,color-mix(in srgb,var(--ic) 9%,#06202a),#06202a);font-family:Helvetica,Arial,sans-serif;max-width:100%;box-sizing:border-box;overflow:hidden}
-#def .ig h3{margin:0 0 8px}#def .ig-top{display:flex;gap:10px;align-items:flex-start}#def .ig-ico{width:34px;height:34px;flex:none}
+#def .ig h3{margin:0 0 8px}#def .ig-card{margin:0 auto 10px;width:100%;max-width:320px;aspect-ratio:1;border-radius:6px;overflow:hidden;background:#0b2f3a}#def .ig-card img{display:block;width:100%;height:100%;object-fit:cover}@media (min-width:760px) and (max-width:1199px){#def{width:min(560px,92vw)}#def .ig-card{max-width:360px}}#def .ig-top{display:flex;gap:10px;align-items:flex-start}#def .ig-ico{width:34px;height:34px;flex:none}
 #def .ig-path{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:3px 4px;font-size:0.6875rem;color:#b9cbd0;min-width:0}#def .ig-path li{display:flex;align-items:center;gap:4px;overflow-wrap:anywhere}#def .ig-path li+li:before{content:"›";color:#6f8c93;margin-right:2px}#def .ig-path i{width:7px;height:7px;border-radius:50%;flex:none}#def .ig-path li.on{color:#fff}
 #def .ig-sec{margin-top:10px}#def .ig-k{font-size:0.5625rem;letter-spacing:.16em;color:#6f8c93;margin:6px 0 4px}#def .ig-v{font-size:0.6562rem;color:#8fa9ae;margin-top:3px;overflow-wrap:anywhere}
 #def .ig-dots{display:flex;flex-wrap:wrap;gap:3px}#def .ig-dots b{width:9px;height:9px;border-radius:2px;background:color-mix(in srgb,var(--ic) 22%,#0b2f3a)}#def .ig-dots b.on{background:var(--ic);box-shadow:0 0 6px var(--ic)}
@@ -41,6 +41,8 @@ body.still .tag,body.still #hub{transition:none!important}#step>div{width:fit-co
 #def .ig-bar.abv{background:linear-gradient(90deg,#0b2f3a,color-mix(in srgb,var(--ic) 25%,#0b2f3a))}#def .ig-scale{display:flex;justify-content:space-between;font-size:0.5625rem;color:#6f8c93;margin-top:2px}#def .ig-scale b{font-weight:400}
 #def .ig-row{display:flex;align-items:center;gap:8px;margin:3px 0;font-size:0.6875rem}#def .ig-row>span{width:42px;color:#b9cbd0;flex:none}#def .ig-row em{font-style:normal;color:#e9d9b4;width:44px;text-align:right;flex:none}
 #def .ig-chips{display:flex;flex-wrap:wrap;gap:4px}#def .ig-chip{font:inherit;font-size:0.6875rem;color:#d7e3e6;background:#0b2f3a;border:1px solid color-mix(in srgb,var(--ic) 35%,transparent);border-radius:12px;padding:3px 8px;cursor:pointer;max-width:100%;overflow-wrap:anywhere;text-align:left}#def .ig-chip.on{background:color-mix(in srgb,var(--ic) 30%,#0b2f3a);border-color:var(--ic);color:#fff}#def .ig-more{font-size:0.6562rem;color:#6f8c93;align-self:center}
+@media (max-width:759px){#def .ig-top{flex-direction:column;gap:6px}#def .ig-path{font-size:0.8125rem}#def .ig-k{font-size:0.6875rem}#def .ig-v,#def .ig-row{font-size:0.75rem}#def .ig-dots b{width:12px;height:12px}#def .ig-row>span{width:48px}#def .ig-row em{width:48px}}
+@media (max-width:759px),(pointer:coarse){#def .ig-chip{min-height:36px;padding:6px 12px;font-size:0.8125rem;display:inline-flex;align-items:center}#def .ig-chips{gap:6px}}
 #def button:focus-visible{outline:2px solid #e9d9b4}
 @media (max-width:759px){#defbg{align-items:flex-end}#def{width:100vw;max-height:72vh;border-radius:14px 14px 0 0;border-bottom:none;padding-bottom:calc(14px + env(safe-area-inset-bottom))}#def:before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:#c6a15b66;margin:-6px auto 10px}}
 </style>
@@ -65,7 +67,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;let MOB=innerWidth<760;
-const VER='0f0376787a';
+const VER='feb7b67447';
 try{const v=(await (await fetch('version.json?t='+Date.now(),{cache:'no-store'})).json()).v,q=new URLSearchParams(location.search);if(v&&v!==VER&&q.get('v')!==v){q.set('v',v);location.replace(location.pathname+'?'+q);await new Promise(()=>{})}}catch(e){}
 const DATA=await (await fetch('data/guilds.json?v='+VER,{cache:'no-cache'})).json();const G=DATA.guilds;
 const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
@@ -229,7 +231,7 @@ function rs(){MOB=innerWidth<760;cam.aspect=innerWidth/innerHeight;cam.updatePro
 addEventListener('resize',()=>{rs();if(spawned&&lock&&cur<NS){const p=crawler.position.clone().project(cam);spawnT(stop,(p.x+1)/2*innerWidth,(1-p.y)/2*innerHeight,true)}});rs();
 const Q=new URLSearchParams(location.search),SEEK=+Q.get('seek'),STOP=Q.get('stop');
 if(STOP!==null||SEEK||Q.has('check')||Q.has('igcheck'))document.body.classList.add('still');
-const IGM=import('./js/infographic.js?v='+VER);let DEFS=null;const defP=fetch('data/definitions.json?v='+VER,{cache:'no-cache'}).then(r=>r.json()).then(j=>DEFS=j.definitions).catch(()=>{});
+const IGM=import('./js/infographic.js?v='+VER).then(m=>{m.setVer(VER);return m});let DEFS=null;const defP=fetch('data/definitions.json?v='+VER,{cache:'no-cache'}).then(r=>r.json()).then(j=>DEFS=j.definitions).catch(()=>{});
 let defOpen=false,defWas=false,defFrom=null;const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 async function openDef(id,from){if(!id)return;if(!DEFS)await defP;const d=DEFS&&DEFS[id];if(!d)return;if(!defOpen){defWas=paused;defFrom=from||document.activeElement}setPaused(true);defOpen=true;
 $('def').style.setProperty('--c',(stop&&stop.A&&stop.A.a.color)||'#c6a15b');$('defT').textContent=d.term;$('defP').textContent=d.path;
@@ -238,7 +240,7 @@ $('defbg').hidden=false;$('defX').focus()}
 function closeDef(resume){if(!defOpen)return;defOpen=false;$('defbg').hidden=true;if(resume)setPaused(false);else if(!defWas)setPaused(true);if(defFrom&&defFrom.focus&&document.contains(defFrom))defFrom.focus()}
 $('defX').onclick=()=>closeDef(false);$('defClose').onclick=()=>closeDef(false);$('defRes').onclick=()=>closeDef(true);$('defB').addEventListener('click',e=>{const c=e.target.closest('.ig-chip');if(c&&!c.classList.contains('on'))openDef(c.dataset.def)});$('defbg').addEventListener('click',e=>{if(e.target.id=='defbg')closeDef(false)});
 tagsEl.addEventListener('click',e=>{const t=e.target.closest('.tag');if(t)openDef(t.dataset.id,t)});hub.addEventListener('click',()=>openDef(hub.dataset.id,hub));
-if(STOP!==null){jump(+STOP);FIX=1/30;for(let i=0;i<(+Q.get('t')||8)*30;i++)frame(0,true);FIX=1e-6;if(Q.has('def')){await defP;openDef(Q.get('def'))}}
+if(STOP!==null){jump(+STOP);FIX=1/30;for(let i=0;i<(+Q.get('t')||8)*30;i++)frame(0,true);FIX=1e-6;if(Q.has('def')){await defP;await openDef(Q.get('def'));if(Q.has('igscroll')){const ig=$('defB').querySelector('.ig');if(ig)$('def').scrollTop=ig.offsetTop-8}}}
 else if(SEEK){FIX=1/30;for(let i=0;i<SEEK*30;i++)frame(0,true);FIX=1e-6}
 if(Q.has('igcheck')){await defP;const M=await IGM,bad=[],ids=Object.keys(DEFS),kinds={};let n=0;FIX=1e-6;
 for(const id of ids){await openDef(id);const ig=$('defB').querySelector('.ig'),dv=$('def'),dr=dv.getBoundingClientRect();
