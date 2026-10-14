@@ -28,10 +28,19 @@ body.still .tag,body.still #hub{transition:none!important}#step>div{width:fit-co
 #ctrl svg{width:1.125rem;height:1.125rem}#radar,#beat{height:8.125rem}
 @media(max-width:760px){#dash{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;height:132px;scrollbar-width:thin;scrollbar-color:#c6a15b66 transparent}#dash .p{flex:0 0 46%;scroll-snap-align:start}#dash .p:first-child{flex-basis:52%}#dash .p:last-child{order:1;flex-basis:36%}#dash .hm{order:2}#dash .p:nth-child(2) h4:after{content:" ‹ swipe";color:#6f8c93}#secs{height:100px}#radar,#beat{height:96px}#top .hm{display:inline}#top{gap:8px;letter-spacing:.06em;padding:0 8px}#score svg{width:60px;height:60px}#sval{font-size:20px}#ctrl{bottom:140px}#step{top:32px;left:14px;max-width:90vw}#brand{font-size:10px;letter-spacing:.08em}#brand .x{display:none}}
 #defbg{position:fixed;inset:0;z-index:20;background:#020a0eb0;display:flex;align-items:center;justify-content:center}#defbg[hidden]{display:none}
-#def{position:relative;width:min(440px,92vw);max-height:80vh;overflow:auto;background:#06202a;border:1px solid var(--c,#c6a15b);border-radius:6px;padding:16px 18px 14px;box-shadow:0 10px 40px #000a;color:#d7e3e6;font-size:0.8125rem;line-height:1.45}
+#def{position:relative;overflow-wrap:anywhere;width:min(440px,92vw);max-height:80vh;overflow:auto;background:#06202a;border:1px solid var(--c,#c6a15b);border-radius:6px;padding:16px 18px 14px;box-shadow:0 10px 40px #000a;color:#d7e3e6;font-size:0.8125rem;line-height:1.45}
 #def h2{font-family:Georgia,serif;font-weight:400;font-size:1.25rem;color:#fff;margin:0 28px 4px 0}#def .pth{font-size:0.6562rem;letter-spacing:.04em;color:#c6a15b;margin-bottom:10px}#def p{margin:0 0 10px;font-family:Helvetica,Arial,sans-serif}
 #def h3{font-size:0.625rem;letter-spacing:.16em;color:#6f8c93;margin:8px 0 4px;font-weight:400}#def ul{margin:0 0 8px 16px;font-family:Helvetica,Arial,sans-serif;font-size:0.75rem;color:#b9cbd0}#def .src{font-size:0.6875rem;color:#8fa9ae}#def .nr{font-size:0.625rem;color:#6f8c93;margin-top:6px}
 #def .x{position:absolute;top:8px;right:8px;width:32px;height:32px;border:1px solid #c6a15b55;background:none;color:#e9d9b4;border-radius:50%;font-size:1rem;cursor:pointer}#def .row{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}#def .row button{background:#0b2f3a;border:1px solid #c6a15b88;color:#e9d9b4;padding:7px 12px;border-radius:4px;font:inherit;cursor:pointer}
+#def .ig{margin:12px 0 4px;padding:10px 10px 8px;border:1px solid color-mix(in srgb,var(--ic) 40%,transparent);border-radius:6px;background:linear-gradient(160deg,color-mix(in srgb,var(--ic) 9%,#06202a),#06202a);font-family:Helvetica,Arial,sans-serif;max-width:100%;box-sizing:border-box;overflow:hidden}
+#def .ig h3{margin:0 0 8px}#def .ig-top{display:flex;gap:10px;align-items:flex-start}#def .ig-ico{width:34px;height:34px;flex:none}
+#def .ig-path{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:3px 4px;font-size:0.6875rem;color:#b9cbd0;min-width:0}#def .ig-path li{display:flex;align-items:center;gap:4px;overflow-wrap:anywhere}#def .ig-path li+li:before{content:"›";color:#6f8c93;margin-right:2px}#def .ig-path i{width:7px;height:7px;border-radius:50%;flex:none}#def .ig-path li.on{color:#fff}
+#def .ig-sec{margin-top:10px}#def .ig-k{font-size:0.5625rem;letter-spacing:.16em;color:#6f8c93;margin:6px 0 4px}#def .ig-v{font-size:0.6562rem;color:#8fa9ae;margin-top:3px;overflow-wrap:anywhere}
+#def .ig-dots{display:flex;flex-wrap:wrap;gap:3px}#def .ig-dots b{width:9px;height:9px;border-radius:2px;background:color-mix(in srgb,var(--ic) 22%,#0b2f3a)}#def .ig-dots b.on{background:var(--ic);box-shadow:0 0 6px var(--ic)}
+#def .ig-bar{position:relative;flex:1;height:8px;border-radius:4px;background:#0b2f3a;overflow:hidden;min-width:0}#def .ig-bar span{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--ic)}#def .ig-bar.wd span{background:#b07a43}#def .ig-bar.bt span{background:#6ab8ff}#def .ig-bar.ls span{background:#e9d9b4}
+#def .ig-bar.abv{background:linear-gradient(90deg,#0b2f3a,color-mix(in srgb,var(--ic) 25%,#0b2f3a))}#def .ig-scale{display:flex;justify-content:space-between;font-size:0.5625rem;color:#6f8c93;margin-top:2px}#def .ig-scale b{font-weight:400}
+#def .ig-row{display:flex;align-items:center;gap:8px;margin:3px 0;font-size:0.6875rem}#def .ig-row>span{width:42px;color:#b9cbd0;flex:none}#def .ig-row em{font-style:normal;color:#e9d9b4;width:44px;text-align:right;flex:none}
+#def .ig-chips{display:flex;flex-wrap:wrap;gap:4px}#def .ig-chip{font:inherit;font-size:0.6875rem;color:#d7e3e6;background:#0b2f3a;border:1px solid color-mix(in srgb,var(--ic) 35%,transparent);border-radius:12px;padding:3px 8px;cursor:pointer;max-width:100%;overflow-wrap:anywhere;text-align:left}#def .ig-chip.on{background:color-mix(in srgb,var(--ic) 30%,#0b2f3a);border-color:var(--ic);color:#fff}#def .ig-more{font-size:0.6562rem;color:#6f8c93;align-self:center}
 #def button:focus-visible{outline:2px solid #e9d9b4}
 @media (max-width:759px){#defbg{align-items:flex-end}#def{width:100vw;max-height:72vh;border-radius:14px 14px 0 0;border-bottom:none;padding-bottom:calc(14px + env(safe-area-inset-bottom))}#def:before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:#c6a15b66;margin:-6px auto 10px}}
 </style>
@@ -56,7 +65,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;let MOB=innerWidth<760;
-const VER='1f79ed171c';
+const VER='0f0376787a';
 try{const v=(await (await fetch('version.json?t='+Date.now(),{cache:'no-store'})).json()).v,q=new URLSearchParams(location.search);if(v&&v!==VER&&q.get('v')!==v){q.set('v',v);location.replace(location.pathname+'?'+q);await new Promise(()=>{})}}catch(e){}
 const DATA=await (await fetch('data/guilds.json?v='+VER,{cache:'no-cache'})).json();const G=DATA.guilds;
 const VERBS=['taste node','map terroir','link pairing','score aroma','trace origin','index style','sample body','tag finish'];
@@ -219,18 +228,26 @@ if(!noloop){comp.render();requestAnimationFrame(frame)}}
 function rs(){MOB=innerWidth<760;cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();r.setSize(innerWidth,innerHeight);comp.setSize(innerWidth,innerHeight);$('res').textContent=innerWidth+'×'+innerHeight}
 addEventListener('resize',()=>{rs();if(spawned&&lock&&cur<NS){const p=crawler.position.clone().project(cam);spawnT(stop,(p.x+1)/2*innerWidth,(1-p.y)/2*innerHeight,true)}});rs();
 const Q=new URLSearchParams(location.search),SEEK=+Q.get('seek'),STOP=Q.get('stop');
-if(STOP!==null||SEEK||Q.has('check'))document.body.classList.add('still');
-let DEFS=null;const defP=fetch('data/definitions.json?v='+VER,{cache:'no-cache'}).then(r=>r.json()).then(j=>DEFS=j.definitions).catch(()=>{});
+if(STOP!==null||SEEK||Q.has('check')||Q.has('igcheck'))document.body.classList.add('still');
+const IGM=import('./js/infographic.js?v='+VER);let DEFS=null;const defP=fetch('data/definitions.json?v='+VER,{cache:'no-cache'}).then(r=>r.json()).then(j=>DEFS=j.definitions).catch(()=>{});
 let defOpen=false,defWas=false,defFrom=null;const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 async function openDef(id,from){if(!id)return;if(!DEFS)await defP;const d=DEFS&&DEFS[id];if(!d)return;if(!defOpen){defWas=paused;defFrom=from||document.activeElement}setPaused(true);defOpen=true;
 $('def').style.setProperty('--c',(stop&&stop.A&&stop.A.a.color)||'#c6a15b');$('defT').textContent=d.term;$('defP').textContent=d.path;
-$('defB').innerHTML='<p>'+esc(d.definition)+'</p>'+(d.facts&&d.facts.length?'<h3>KEY FACTS</h3><ul>'+d.facts.map(f=>'<li>'+esc(f)+'</li>').join('')+'</ul>':'')+(d.source?'<div class="src">Source: '+esc(d.source)+'</div>':'')+(d.needs_review?'<div class="nr">Draft definition · pending editorial review</div>':'');
+$('defB').innerHTML='<p>'+esc(d.definition)+'</p>'+(d.facts&&d.facts.length?'<h3>KEY FACTS</h3><ul>'+d.facts.map(f=>'<li>'+esc(f)+'</li>').join('')+'</ul>':'')+(d.source?'<div class="src">Source: '+esc(d.source)+'</div>':'')+(d.needs_review?'<div class="nr">Draft definition · pending editorial review</div>':'')+(await IGM).renderIG(id,d,G,DEFS);
 $('defbg').hidden=false;$('defX').focus()}
 function closeDef(resume){if(!defOpen)return;defOpen=false;$('defbg').hidden=true;if(resume)setPaused(false);else if(!defWas)setPaused(true);if(defFrom&&defFrom.focus&&document.contains(defFrom))defFrom.focus()}
-$('defX').onclick=()=>closeDef(false);$('defClose').onclick=()=>closeDef(false);$('defRes').onclick=()=>closeDef(true);$('defbg').addEventListener('click',e=>{if(e.target.id=='defbg')closeDef(false)});
+$('defX').onclick=()=>closeDef(false);$('defClose').onclick=()=>closeDef(false);$('defRes').onclick=()=>closeDef(true);$('defB').addEventListener('click',e=>{const c=e.target.closest('.ig-chip');if(c&&!c.classList.contains('on'))openDef(c.dataset.def)});$('defbg').addEventListener('click',e=>{if(e.target.id=='defbg')closeDef(false)});
 tagsEl.addEventListener('click',e=>{const t=e.target.closest('.tag');if(t)openDef(t.dataset.id,t)});hub.addEventListener('click',()=>openDef(hub.dataset.id,hub));
 if(STOP!==null){jump(+STOP);FIX=1/30;for(let i=0;i<(+Q.get('t')||8)*30;i++)frame(0,true);FIX=1e-6;if(Q.has('def')){await defP;openDef(Q.get('def'))}}
 else if(SEEK){FIX=1/30;for(let i=0;i<SEEK*30;i++)frame(0,true);FIX=1e-6}
+if(Q.has('igcheck')){await defP;const M=await IGM,bad=[],ids=Object.keys(DEFS),kinds={};let n=0;FIX=1e-6;
+for(const id of ids){await openDef(id);const ig=$('defB').querySelector('.ig'),dv=$('def'),dr=dv.getBoundingClientRect();
+if(!ig){bad.push(id+'|missing');continue}n++;const need=['.ig-path li','.ig-ico','.ig-chip'];need.forEach(q=>{if(!ig.querySelector(q))bad.push(id+'|no '+q)});
+[...ig.querySelectorAll('.ig-sec .ig-k')].forEach(k=>kinds[k.textContent.replace(/ IN .*/,' IN …').replace(/ \(.*/,'')]=(kinds[k.textContent.replace(/ IN .*/,' IN …').replace(/ \(.*/,'')]||0)+1);
+if(ig.scrollWidth>ig.clientWidth+1||dv.scrollWidth>dv.clientWidth+1)bad.push(id+'|hscroll');
+const ir=ig.getBoundingClientRect();if(ir.left<dr.left-1||ir.right>dr.right+1)bad.push(id+'|outside');
+for(const el of ig.querySelectorAll('li,.ig-chip,.ig-row,.ig-dots,.ig-bar')){const r=el.getBoundingClientRect();if(r.right>ir.right+1||r.left<ir.left-1){bad.push(id+'|overflow:'+el.className+':'+el.textContent.slice(0,20));break}}}
+closeDef(false);const out=document.createElement('pre');out.id='igcheck';out.textContent=JSON.stringify({vp:innerWidth+'x'+innerHeight,terms:ids.length,rendered:n,fails:bad.length,kinds,detail:bad.slice(0,20)});document.body.appendChild(out)}
 if(Q.has('check')){const res=[];FIX=1/30;for(let k=0;k<NS;k++){jump(k);let g=0;while(!spawned&&g++<600)frame(0,true);for(let i=0;i<30;i++)frame(0,true);
 const cp=crawler.position.clone().project(cam),cx=(cp.x+1)/2*innerWidth,cy=(1-cp.y)/2*innerHeight;
 const T=[...tagsEl.children].map(el=>({n:el.textContent,...R(el)})),Z=[['hub',R(hub)],['top',R($('top'))],['ctrl',R($('ctrl'))],['dash',R($('dash'))],...[...$('step').children].filter(c=>c.offsetParent&&c.textContent).map(c=>['step:'+c.id,R(c)]),['crawler',{x:cx-10,y:cy-10,w:20,h:20}]];
