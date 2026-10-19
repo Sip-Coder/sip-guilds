@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wine Academy — Sip Guilds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/preview.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html"><span class="script">Sip</span> <span>Guilds</span></a>
+  <div class="crumb-label">Learn / <b>Academies</b></div>
+  <div class="search-wrap">
+    <input type="search" placeholder="Search the encyclopedia…" aria-label="Search the encyclopedia">
+    <span class="kbd">Ctrl K</span>
+  </div>
+  <button type="button" class="account">Account</button>
+</header>
+<nav class="nav" aria-label="Primary">
+  <a href="../index.html" aria-current="page">Learn</a>
+  <a href="../index.html#taste">Taste</a>
+  <a href="../index.html#read">Read</a>
+  <a href="../index.html#play">Play</a>
+</nav>
+<nav class="subnav" aria-label="Learn">
+  <a href="../index.html">Home</a>
+  <a href="wine.html" aria-current="page">Academies</a>
+  <a href="../encyclopedia/cabernet-sauvignon.html">Encyclopedia</a>
+  <a href="#regions">Regions</a>
+  <a href="#recipes">Recipes</a>
+  <a href="#equipment">Equipment</a>
+</nav>
+
+<main class="wrap">
+  <section class="hero" aria-labelledby="acad-title">
+    <div>
+      <p class="hero-kicker">Cask Guild · Academy 1.1</p>
+      <h1 id="acad-title" class="serif">Wine <em>Academy</em></h1>
+      <p class="hero-lead">Fermentation, transformation, and time — styles from Testable Red through aging, canopy and winemaking depth.</p>
+      <div class="stats-row" role="list">
+        <div class="stat" role="listitem"><b id="styleCount">392</b><span>Styles</span></div>
+        <div class="stat" role="listitem"><b id="subCount">58</b><span>Subgenres</span></div>
+        <div class="stat" role="listitem"><b>1</b><span>of 15</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true" style="background:
+      radial-gradient(circle at 40% 35%,#ff3b7a66 0%,transparent 45%),
+      radial-gradient(circle at 70% 60%,#c6a15b33 0%,transparent 40%),
+      linear-gradient(160deg,#0b2f3a,#04141b);">
+      <div class="mark">01<small>Cask Guild</small></div>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <input type="search" id="styleSearch" placeholder="Search styles…" aria-label="Search styles">
+    <span class="meta-count" id="shownCount">Showing 392 styles</span>
+  </div>
+  <div class="filters" id="filters" role="group" aria-label="Filter by subgenre"></div>
+
+  <div class="style-grid" id="styleGrid" aria-live="polite"></div>
+
+  <h2 class="section-title">Related terms</h2>
+  <div class="panel">
+    <p style="margin:0 0 .5rem;font-size:.8125rem;color:var(--muted)">Sample styles from this academy with encyclopedia entries in the preview.</p>
+    <div class="chips">
+      <a class="chip chip-link" href="../encyclopedia/cabernet-sauvignon.html">Cabernet Sauvignon</a>
+      <span class="chip">Merlot</span>
+      <span class="chip">Pinot Noir</span>
+      <span class="chip">Chardonnay</span>
+      <span class="chip">Champagne</span>
+      <span class="chip">Riesling</span>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="Academy pagination">
+    <span class="muted">← Previous academy · none (Wine is first)</span>
+    <span>Next academy · Beer Academy <span class="muted">(preview stub)</span></span>
+  </nav>
+</main>
+
+<nav class="mobile-tabs" aria-label="Mobile">
+  <a href="../index.html" aria-current="page">Learn</a>
+  <a href="../index.html#taste">Taste</a>
+  <a href="../index.html#read">Read</a>
+  <a href="../index.html#play">Play</a>
+</nav>
+<footer class="site">Preview only · Data from <code>data/guilds.json</code> Wine Academy</footer>
+<script src="../js/academy.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "guilds": [
+    {
+      "id": 1,
+      "name": "CASK GUILD",
+      "tagline": "Fermentation, transformation, and time",
+      "color": "#ff3b7a",
+      "styleCount": 858,
+      "academies": [
+        "Wine Academy",
+        "Beer Academy",
+        "Spirits Academy"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "STEEP GUILD",
+      "tagline": "Leaf, seed, culture, and extraction",
+      "color": "#7dff6a",
+      "styleCount": 415,
+      "academies": [
+        "Coffee Academy",
+        "Tea Academy",
+        "Kombucha Academy"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SOURCE GUILD",
+      "tagline": "Origin, nourishment, and custody",
+      "color": "#2ee6ff",
+      "styleCount": 267,
+      "academies": [
+        "Water Academy",
+        "Juice Academy",
+        "Milk Academy"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ENERGY GUILD",
+      "tagline": "Evidence, function, and stewardship",
+      "color": "#ffd23c",
+      "styleCount": 131,
+      "academies": [
+        "Health Academy",
+        "Protein Academy",
+        "Energy Academy"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "CULTURE GUILD",
+      "tagline": "Carbonation, living systems, and what comes next",
+      "color": "#ff6af0",
+      "styleCount": 222,
+      "academies": [
+        "Carbonated Academy",
+        "Fermented Academy",
+        "Regional Academy"
+      ]
+    }
+  ],
+  "totalStyles": 1893,
+  "totalAcademies": 15,
+  "totalGuilds": 5
+}

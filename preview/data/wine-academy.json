@@ -1,0 +1,3214 @@
+{
+  "academy": "Wine Academy",
+  "academyId": "1.1",
+  "guild": "Cask Guild",
+  "guildId": 1,
+  "color": "#ff3b7a",
+  "tagline": "Fermentation, transformation, and time",
+  "styleCount": 392,
+  "subgenreCount": 58,
+  "subgenres": [
+    "Testable Red",
+    "Testable White",
+    "Ros\u00e9",
+    "Sparkling",
+    "Orange (Skin-Contact)",
+    "Fortified",
+    "Dessert",
+    "France",
+    "Italy",
+    "Spain & Portugal",
+    "Central & Eastern Europe",
+    "New World",
+    "France",
+    "Italy",
+    "Spain & Portugal",
+    "Central & Eastern Europe",
+    "Other",
+    "Vitis labrusca",
+    "Vitis riparia & rupestris",
+    "Vitis rotundifolia (Muscadine)",
+    "Vitis aestivalis",
+    "Interspecific Hybrids",
+    "PIWI (Fungus-Resistant)",
+    "Clones",
+    "Mutations (Bud Sports)",
+    "Teinturiers (Red-Fleshed)",
+    "Riparia & Rupestris Types",
+    "Berlandieri \u00d7 Riparia",
+    "Berlandieri \u00d7 Rupestris",
+    "Nematode-Resistant & Other",
+    "Training Systems",
+    "Canopy Practices",
+    "Red Winemaking",
+    "White & Ros\u00e9 Winemaking",
+    "Sparkling Methods",
+    "Fortified & Oxidative",
+    "Finishing",
+    "Oak & Other Woods",
+    "French Oak Forests",
+    "Seasoning",
+    "Toast Levels",
+    "Barrel Sizes",
+    "New vs Used",
+    "Wine-Based Drinks",
+    "Dealcoholized Wine (\u22640.5% ABV)",
+    "Rioja (DOCa)",
+    "Ribera del Duero (DO)",
+    "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+    "Cava (DO)",
+    "Sherry (Jerez-X\u00e9r\u00e8s-Sherry)",
+    "Tuscany",
+    "Piedmont, Veneto & Campania",
+    "Italian Traditional-Method",
+    "Champagne & Cr\u00e9mant",
+    "Jura & Vins Doux Naturels",
+    "Port (IVDP)",
+    "Madeira (IVBAM)",
+    "Central Europe"
+  ],
+  "styles": [
+    {
+      "id": "1.1.1.1",
+      "name": "Cabernet Sauvignon",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": "cabernet-sauvignon",
+      "definition": "Red wine grape of Bordeaux origin, a natural cross of Cabernet Franc and Sauvignon Blanc; thick-skinned and tannic, widely planted worldwide."
+    },
+    {
+      "id": "1.1.1.2",
+      "name": "Merlot",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Red wine grape from Bordeaux, softer and earlier-ripening than Cabernet Sauvignon; a major blending partner on Bordeaux's Right Bank."
+    },
+    {
+      "id": "1.1.1.3",
+      "name": "Pinot Noir",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Thin-skinned red grape of Burgundy, also a core Champagne grape; known for light-to-medium body and sensitivity to site."
+    },
+    {
+      "id": "1.1.1.4",
+      "name": "Syrah/Shiraz",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Red grape from the northern Rh\u00f4ne (Syrah), called Shiraz in Australia; deeply colored with peppery, dark-fruit character."
+    },
+    {
+      "id": "1.1.1.5",
+      "name": "Grenache/Garnacha",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Warm-climate red grape (Garnacha in Spain), central to Southern Rh\u00f4ne blends and Priorat."
+    },
+    {
+      "id": "1.1.1.6",
+      "name": "Tempranillo",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Spain's leading red grape, the backbone of Rioja and Ribera del Duero (where it is called Tinto Fino)."
+    },
+    {
+      "id": "1.1.1.7",
+      "name": "Sangiovese",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Italy's most planted red grape and the base of Chianti, Brunello di Montalcino and Vino Nobile."
+    },
+    {
+      "id": "1.1.1.8",
+      "name": "Nebbiolo",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Late-ripening, high-tannin, high-acid red grape of Piedmont, used for Barolo and Barbaresco."
+    },
+    {
+      "id": "1.1.1.9",
+      "name": "Malbec",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Red grape originally from southwest France (Cahors), now best known from Argentina."
+    },
+    {
+      "id": "1.1.1.10",
+      "name": "Zinfandel/Primitivo",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Red grape genetically identical to Croatian Tribidrag; known as Zinfandel in California and Primitivo in Puglia."
+    },
+    {
+      "id": "1.1.1.11",
+      "name": "Cabernet Franc",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Red grape from Bordeaux and the Loire; a parent of Cabernet Sauvignon and Merlot."
+    },
+    {
+      "id": "1.1.1.12",
+      "name": "Gamay",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Red grape of Beaujolais, making light, fruity reds."
+    },
+    {
+      "id": "1.1.1.13",
+      "name": "Barbera",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "High-acid, low-tannin red grape of Piedmont, Italy (e.g. Barbera d'Asti, Barbera d'Alba)."
+    },
+    {
+      "id": "1.1.1.14",
+      "name": "Mourv\u00e8dre/Monastrell",
+      "subgenre": "Testable Red",
+      "parent": null,
+      "slug": null,
+      "definition": "Late-ripening red grape of Spain (Monastrell) and southern France (Mourv\u00e8dre, e.g. Bandol)."
+    },
+    {
+      "id": "1.1.2.1",
+      "name": "Chardonnay",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "White grape of Burgundy and Champagne; flexible in style from lean and unoaked to rich and barrel-fermented."
+    },
+    {
+      "id": "1.1.2.2",
+      "name": "Sauvignon Blanc",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Aromatic white grape from the Loire and Bordeaux, typically high in acidity with herbaceous or citrus aromas."
+    },
+    {
+      "id": "1.1.2.3",
+      "name": "Riesling",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Aromatic white grape most associated with Germany and Alsace; high acidity, made from bone-dry to very sweet."
+    },
+    {
+      "id": "1.1.2.4",
+      "name": "Pinot Grigio/Gris",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Grey-pink-skinned mutation of Pinot Noir; called Pinot Grigio in Italy and Pinot Gris in France."
+    },
+    {
+      "id": "1.1.2.5",
+      "name": "Chenin Blanc",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "High-acid white grape of the Loire Valley, made dry, sweet and sparkling; also important in South Africa."
+    },
+    {
+      "id": "1.1.2.6",
+      "name": "Gew\u00fcrztraminer",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Very aromatic, pink-skinned white grape (an aromatic form of Savagnin), notable in Alsace."
+    },
+    {
+      "id": "1.1.2.7",
+      "name": "Viognier",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Aromatic white grape of the northern Rh\u00f4ne (Condrieu)."
+    },
+    {
+      "id": "1.1.2.8",
+      "name": "Albari\u00f1o",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Aromatic, high-acid white grape of R\u00edas Baixas (Spain), called Alvarinho in Portugal."
+    },
+    {
+      "id": "1.1.2.9",
+      "name": "Gr\u00fcner Veltliner",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Austria's signature white grape, often with peppery notes."
+    },
+    {
+      "id": "1.1.2.10",
+      "name": "S\u00e9millon",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "White grape of Bordeaux, the main grape of Sauternes and prone to noble rot."
+    },
+    {
+      "id": "1.1.2.11",
+      "name": "Torront\u00e9s",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "Aromatic white grape and Argentina's signature white."
+    },
+    {
+      "id": "1.1.2.12",
+      "name": "Assyrtiko",
+      "subgenre": "Testable White",
+      "parent": null,
+      "slug": null,
+      "definition": "High-acid white grape originally from the Greek island of Santorini, making mineral, dry whites."
+    },
+    {
+      "id": "1.1.3.1",
+      "name": "Provence ros\u00e9",
+      "subgenre": "Ros\u00e9",
+      "parent": null,
+      "slug": null,
+      "definition": "Pale dry ros\u00e9 from Provence, France's largest ros\u00e9-producing region."
+    },
+    {
+      "id": "1.1.3.2",
+      "name": "Tavel",
+      "subgenre": "Ros\u00e9",
+      "parent": null,
+      "slug": null,
+      "definition": "Rh\u00f4ne appellation that makes only ros\u00e9."
+    },
+    {
+      "id": "1.1.3.3",
+      "name": "Rosado (Navarra)",
+      "subgenre": "Ros\u00e9",
+      "parent": null,
+      "slug": null,
+      "definition": "Spanish ros\u00e9 tradition of Navarra, typically made from Garnacha."
+    },
+    {
+      "id": "1.1.3.4",
+      "name": "Rosato",
+      "subgenre": "Ros\u00e9",
+      "parent": null,
+      "slug": null,
+      "definition": "Italian term for ros\u00e9."
+    },
+    {
+      "id": "1.1.3.5",
+      "name": "White Zinfandel",
+      "subgenre": "Ros\u00e9",
+      "parent": null,
+      "slug": null,
+      "definition": "Off-dry pink wine from Zinfandel, popularized in California in the 1970s\u201380s."
+    },
+    {
+      "id": "1.1.4.1",
+      "name": "Champagne",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "Traditional-method sparkling wine from the Champagne AOC in France."
+    },
+    {
+      "id": "1.1.4.2",
+      "name": "Cr\u00e9mant",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "French traditional-method sparkling wine made outside Champagne (e.g. Alsace, Loire, Burgundy, Jura)."
+    },
+    {
+      "id": "1.1.4.3",
+      "name": "Cava",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "Spanish traditional-method sparkling wine (DO Cava), mostly from Catalonia."
+    },
+    {
+      "id": "1.1.4.4",
+      "name": "Prosecco",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "Italian sparkling wine from Glera grapes, usually made by the tank method."
+    },
+    {
+      "id": "1.1.4.5",
+      "name": "Franciacorta",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "Traditional-method sparkling wine DOCG from Lombardy, Italy. It is made mainly from Chardonnay and Pinot Noir."
+    },
+    {
+      "id": "1.1.4.6",
+      "name": "Sekt",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "German and Austrian term for sparkling wine."
+    },
+    {
+      "id": "1.1.4.7",
+      "name": "P\u00e9t-nat (ancestral method)",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "'P\u00e9tillant naturel', a sparkling wine made by the ancestral method."
+    },
+    {
+      "id": "1.1.4.8",
+      "name": "Lambrusco",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "Family of red grapes and frizzante wines from Emilia-Romagna."
+    },
+    {
+      "id": "1.1.4.9",
+      "name": "Moscato d'Asti",
+      "subgenre": "Sparkling",
+      "parent": null,
+      "slug": null,
+      "definition": "Lightly sparkling, sweet, low-alcohol wine from Moscato Bianco grapes in Piedmont."
+    },
+    {
+      "id": "1.1.5.1",
+      "name": "Georgian qvevri (Rkatsiteli)",
+      "subgenre": "Orange (Skin-Contact)",
+      "parent": null,
+      "slug": null,
+      "definition": "Georgian tradition of fermenting and aging wine, often with skins, in large buried clay vessels (qvevri). It is on UNESCO's intangible-heritage list."
+    },
+    {
+      "id": "1.1.5.2",
+      "name": "Friulian Ribolla Gialla",
+      "subgenre": "Orange (Skin-Contact)",
+      "parent": null,
+      "slug": null,
+      "definition": "White grape of Friuli and Slovenia (Rebula), often made in skin-contact amber styles."
+    },
+    {
+      "id": "1.1.5.3",
+      "name": "Slovenian (Brda) skin-contact",
+      "subgenre": "Orange (Skin-Contact)",
+      "parent": null,
+      "slug": null,
+      "definition": "Amber or orange wines from Gori\u0161ka Brda, Slovenia, made from white grapes macerated on their skins."
+    },
+    {
+      "id": "1.1.6.1",
+      "name": "Port (Ruby/Tawny/Vintage)",
+      "subgenre": "Fortified",
+      "parent": null,
+      "slug": null,
+      "definition": "Fortified wine from the Douro Valley, Portugal. Ruby styles keep fresh fruit, Tawny styles are aged oxidatively in wood, and Vintage Port comes from a single de"
+    },
+    {
+      "id": "1.1.6.2",
+      "name": "Sherry (Fino/Manzanilla/Amontillado/Oloroso/PX)",
+      "subgenre": "Fortified",
+      "parent": null,
+      "slug": null,
+      "definition": "Fortified wines from the Jerez area of Andalusia, aged in soleras. Fino and Manzanilla age under flor, Oloroso ages oxidatively, Amontillado does both, and PX i"
+    },
+    {
+      "id": "1.1.6.3",
+      "name": "Madeira",
+      "subgenre": "Fortified",
+      "parent": null,
+      "slug": null,
+      "definition": "Fortified wine from the Portuguese island of Madeira. It is aged with heat and oxygen, making it very long-lived."
+    },
+    {
+      "id": "1.1.6.4",
+      "name": "Marsala",
+      "subgenre": "Fortified",
+      "parent": null,
+      "slug": null,
+      "definition": "Fortified wine from western Sicily, made dry to sweet in several aging categories."
+    },
+    {
+      "id": "1.1.6.5",
+      "name": "Vermouth",
+      "subgenre": "Fortified",
+      "parent": null,
+      "slug": null,
+      "definition": "Aromatized wine flavored with botanicals, traditionally including wormwood."
+    },
+    {
+      "id": "1.1.6.6",
+      "name": "Vin doux naturel",
+      "subgenre": "Fortified",
+      "parent": null,
+      "slug": null,
+      "definition": "French fortified sweet wine made by mutage (adding spirit during fermentation), e.g. Banyuls."
+    },
+    {
+      "id": "1.1.7.1",
+      "name": "Sauternes",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "Sweet white Bordeaux wine from S\u00e9millon and Sauvignon Blanc affected by noble rot."
+    },
+    {
+      "id": "1.1.7.2",
+      "name": "Tokaji Asz\u00fa",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "Hungarian sweet wine made by adding botrytized (asz\u00fa) berries to base wine or must."
+    },
+    {
+      "id": "1.1.7.3",
+      "name": "Icewine/Eiswein",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "Sweet wine made from grapes frozen naturally on the vine and pressed while frozen."
+    },
+    {
+      "id": "1.1.7.4",
+      "name": "Beerenauslese/TBA",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "German/Austrian Pr\u00e4dikat levels for sweet wines from individually selected overripe berries, often affected by noble rot. Trockenbeerenauslese (TBA) uses shrive"
+    },
+    {
+      "id": "1.1.7.5",
+      "name": "Vin Santo",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "Tuscan dessert wine made from dried grapes and aged in small casks (caratelli)."
+    },
+    {
+      "id": "1.1.7.6",
+      "name": "Recioto",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "Sweet wine of the Veneto made from dried grapes (appassimento), e.g. Recioto della Valpolicella."
+    },
+    {
+      "id": "1.1.7.7",
+      "name": "Late harvest",
+      "subgenre": "Dessert",
+      "parent": null,
+      "slug": null,
+      "definition": "Grapes picked later than normal for higher sugar, used to make sweeter wines."
+    },
+    {
+      "id": "1.1.8.1",
+      "name": "Tannat",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Very tannic red grape of Madiran, France, and Uruguay's signature grape."
+    },
+    {
+      "id": "1.1.8.2",
+      "name": "Petit Verdot",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Late-ripening red Bordeaux grape, used in small amounts for color and tannin."
+    },
+    {
+      "id": "1.1.8.3",
+      "name": "Carignan",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Late-ripening, high-acid, high-tannin red grape (Cari\u00f1ena/Mazuelo in Spain). It is common in southern France, Priorat and Sardinia."
+    },
+    {
+      "id": "1.1.8.4",
+      "name": "Cinsault",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Heat-tolerant red grape of southern France, used widely in ros\u00e9 and light reds. It is a parent of Pinotage."
+    },
+    {
+      "id": "1.1.8.5",
+      "name": "Pinot Meunier",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape related to Pinot Noir, with downy leaves. It is one of Champagne's three main grapes."
+    },
+    {
+      "id": "1.1.8.6",
+      "name": "N\u00e9grette",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Fronton, southwest France."
+    },
+    {
+      "id": "1.1.8.7",
+      "name": "Mondeuse",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Savoie, France."
+    },
+    {
+      "id": "1.1.8.8",
+      "name": "Poulsard",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Pale-skinned red grape of the Jura (also called Ploussard)."
+    },
+    {
+      "id": "1.1.8.9",
+      "name": "Trousseau",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of the Jura, also grown in Portugal as Bastardo."
+    },
+    {
+      "id": "1.1.8.10",
+      "name": "Fer Servadou",
+      "subgenre": "France",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of southwest France (e.g. Marcillac), also called Mansois or Braucol."
+    },
+    {
+      "id": "1.1.9.1",
+      "name": "Aglianico",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Tannic southern Italian red grape used for Taurasi and Aglianico del Vulture."
+    },
+    {
+      "id": "1.1.9.2",
+      "name": "Nero d'Avola",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Sicily's leading red grape."
+    },
+    {
+      "id": "1.1.9.3",
+      "name": "Montepulciano",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape widely planted in central Italy (e.g. Montepulciano d'Abruzzo). It is not related to the Tuscan town of Montepulciano."
+    },
+    {
+      "id": "1.1.9.4",
+      "name": "Dolcetto",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Early-ripening red grape of Piedmont, making soft, fruity reds for early drinking."
+    },
+    {
+      "id": "1.1.9.5",
+      "name": "Corvina",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Main red grape of Valpolicella, Bardolino and Amarone."
+    },
+    {
+      "id": "1.1.9.6",
+      "name": "Lagrein",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Alto Adige, Italy."
+    },
+    {
+      "id": "1.1.9.7",
+      "name": "Sagrantino",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Very tannic red grape of Montefalco, Umbria."
+    },
+    {
+      "id": "1.1.9.8",
+      "name": "Nerello Mascalese",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Etna, Sicily, making pale, perfumed reds."
+    },
+    {
+      "id": "1.1.9.9",
+      "name": "Teroldego",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Trentino, Italy."
+    },
+    {
+      "id": "1.1.9.10",
+      "name": "Schiava",
+      "subgenre": "Italy",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Alto Adige (Vernatsch, Trollinger), making light reds."
+    },
+    {
+      "id": "1.1.10.1",
+      "name": "Menc\u00eda",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of northwest Spain (Bierzo, Ribeira Sacra), identical to Portugal's Jaen."
+    },
+    {
+      "id": "1.1.10.2",
+      "name": "Bobal",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Utiel-Requena in Valencia, Spain. It is deeply colored and used for reds and ros\u00e9s."
+    },
+    {
+      "id": "1.1.10.3",
+      "name": "Graciano",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Rioja, used in small amounts for acidity, color and aroma."
+    },
+    {
+      "id": "1.1.10.4",
+      "name": "Prieto Picudo",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Le\u00f3n, Spain."
+    },
+    {
+      "id": "1.1.10.5",
+      "name": "Touriga Nacional",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Portuguese red grape, a key Port and Douro variety."
+    },
+    {
+      "id": "1.1.10.6",
+      "name": "Touriga Franca",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Widely planted Port and Douro red grape."
+    },
+    {
+      "id": "1.1.10.7",
+      "name": "Baga",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Thick-skinned, high-acid, tannic red grape of Bairrada, Portugal. It is also used for sparkling wine."
+    },
+    {
+      "id": "1.1.10.8",
+      "name": "Castel\u00e3o",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Widely planted red grape of southern Portugal, also called Periquita."
+    },
+    {
+      "id": "1.1.11.1",
+      "name": "Blaufr\u00e4nkisch",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Central European red grape, Austria's leading red in Burgenland and called K\u00e9kfrankos in Hungary. It typically makes peppery, dark-fruited, fresh reds."
+    },
+    {
+      "id": "1.1.11.2",
+      "name": "Zweigelt",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Austria's most planted red grape, a cross of Blaufr\u00e4nkisch and St. Laurent."
+    },
+    {
+      "id": "1.1.11.3",
+      "name": "St. Laurent",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Austrian red grape related to the Pinot family, a parent of Zweigelt."
+    },
+    {
+      "id": "1.1.11.4",
+      "name": "Kadarka",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Hungary and the Balkans, traditionally used in Bikav\u00e9r."
+    },
+    {
+      "id": "1.1.11.5",
+      "name": "Plavac Mali",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Croatian red grape of the Dalmatian coast, an offspring of Tribidrag (Zinfandel)."
+    },
+    {
+      "id": "1.1.11.6",
+      "name": "Xinomavro",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "High-acid, tannic red grape of Naoussa, northern Greece."
+    },
+    {
+      "id": "1.1.11.7",
+      "name": "Agiorgitiko",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red grape of Nemea in the Peloponnese, Greece. It makes soft, fruity reds as well as ros\u00e9s."
+    },
+    {
+      "id": "1.1.11.8",
+      "name": "Feteasc\u0103 Neagr\u0103",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Indigenous red grape of Romania and Moldova."
+    },
+    {
+      "id": "1.1.11.9",
+      "name": "Mavrud",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Indigenous red grape of Bulgaria (Thracian Valley)."
+    },
+    {
+      "id": "1.1.12.1",
+      "name": "Carm\u00e9n\u00e8re (Chile)",
+      "subgenre": "New World",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Red Bordeaux grape that is now rare in France. It survived in Chile, where it was long mistaken for Merlot until identified in 1994."
+    },
+    {
+      "id": "1.1.12.2",
+      "name": "Pa\u00eds (Chile)",
+      "subgenre": "New World",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Historic red grape of Chile, brought by Spanish settlers (List\u00e1n Prieto in Spain)."
+    },
+    {
+      "id": "1.1.12.3",
+      "name": "Pinotage (South Africa)",
+      "subgenre": "New World",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "South African red cross of Pinot Noir and Cinsault (then called Hermitage), created in 1925."
+    },
+    {
+      "id": "1.1.12.4",
+      "name": "Bonarda (Argentina)",
+      "subgenre": "New World",
+      "parent": "Non-Testable Red",
+      "slug": null,
+      "definition": "Argentina's widely planted red Bonarda, identified as Douce Noir (Corbeau) from Savoie. It is not the same as Italian Bonarda."
+    },
+    {
+      "id": "1.1.13.1",
+      "name": "Marsanne",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of the northern Rh\u00f4ne (Hermitage, Saint-Joseph), often blended with Roussanne."
+    },
+    {
+      "id": "1.1.13.2",
+      "name": "Roussanne",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Aromatic white grape of the northern Rh\u00f4ne, often blended with Marsanne."
+    },
+    {
+      "id": "1.1.13.3",
+      "name": "Melon de Bourgogne",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Muscadet in the western Loire, often aged on its lees (sur lie)."
+    },
+    {
+      "id": "1.1.13.4",
+      "name": "Aligot\u00e9",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Burgundy, typically high in acidity. It is used for Bourgogne Aligot\u00e9 and, traditionally, for the Kir cocktail."
+    },
+    {
+      "id": "1.1.13.5",
+      "name": "Petit Manseng",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Juran\u00e7on with small, thick-skinned berries, used for sweet and dry wines."
+    },
+    {
+      "id": "1.1.13.6",
+      "name": "Gros Manseng",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of southwest France (Juran\u00e7on, Gascony), used for dry and sweet wines."
+    },
+    {
+      "id": "1.1.13.7",
+      "name": "Savagnin",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Jura white grape used for Vin Jaune. It is the same variety as Traminer."
+    },
+    {
+      "id": "1.1.13.8",
+      "name": "Picpoul",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Grape of the Languedoc, best known for high-acid Picpoul de Pinet whites."
+    },
+    {
+      "id": "1.1.13.9",
+      "name": "Clairette",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of southern France, used for Clairette de Die sparkling wine and in Rh\u00f4ne blends."
+    },
+    {
+      "id": "1.1.13.10",
+      "name": "Mauzac",
+      "subgenre": "France",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Gaillac and Limoux, used in Blanquette de Limoux."
+    },
+    {
+      "id": "1.1.14.1",
+      "name": "Garganega",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Main white grape of Soave, Veneto."
+    },
+    {
+      "id": "1.1.14.2",
+      "name": "Vermentino",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Sardinia, Liguria and Provence (Rolle)."
+    },
+    {
+      "id": "1.1.14.3",
+      "name": "Fiano",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Campania, Italy, best known for Fiano di Avellino."
+    },
+    {
+      "id": "1.1.14.4",
+      "name": "Greco",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Campania, Italy (e.g. Greco di Tufo)."
+    },
+    {
+      "id": "1.1.14.5",
+      "name": "Falanghina",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Ancient white grape of Campania, Italy."
+    },
+    {
+      "id": "1.1.14.6",
+      "name": "Cortese",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Piedmont, used for Gavi."
+    },
+    {
+      "id": "1.1.14.7",
+      "name": "Arneis",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Roero in Piedmont, Italy, making aromatic, medium-bodied dry whites."
+    },
+    {
+      "id": "1.1.14.8",
+      "name": "Trebbiano",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Family of high-yield white Italian grapes (Ugni Blanc in France)."
+    },
+    {
+      "id": "1.1.14.9",
+      "name": "Verdicchio",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of the Marche, Italy."
+    },
+    {
+      "id": "1.1.14.10",
+      "name": "Friulano",
+      "subgenre": "Italy",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Friuli, Italy, formerly called Tocai Friulano (identical to Sauvignonasse)."
+    },
+    {
+      "id": "1.1.15.1",
+      "name": "Verdejo",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Rueda, Spain."
+    },
+    {
+      "id": "1.1.15.2",
+      "name": "Godello",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of northwest Spain (Valdeorras, Bierzo)."
+    },
+    {
+      "id": "1.1.15.3",
+      "name": "Macabeo (Viura)",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of Spain (called Viura in Rioja), one of the classic Cava grapes."
+    },
+    {
+      "id": "1.1.15.4",
+      "name": "Xarel\u00b7lo",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Catalan white grape, one of the three traditional Cava grapes."
+    },
+    {
+      "id": "1.1.15.5",
+      "name": "Parellada",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White Catalan grape, one of the three traditional Cava grapes."
+    },
+    {
+      "id": "1.1.15.6",
+      "name": "Palomino",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape that makes most Sherry."
+    },
+    {
+      "id": "1.1.15.7",
+      "name": "Loureiro",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Aromatic white grape of Vinho Verde, Portugal."
+    },
+    {
+      "id": "1.1.15.8",
+      "name": "Arinto",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Portuguese white grape that keeps high acidity even in warm climates. It is important in Bucelas and Vinho Verde (as Pedern\u00e3)."
+    },
+    {
+      "id": "1.1.15.9",
+      "name": "Encruzado",
+      "subgenre": "Spain & Portugal",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of the D\u00e3o region, Portugal, used for structured dry whites."
+    },
+    {
+      "id": "1.1.16.1",
+      "name": "Furmint",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "High-acid white grape that is the main variety of Tokaji."
+    },
+    {
+      "id": "1.1.16.2",
+      "name": "H\u00e1rslevel\u0171",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Hungarian white grape, the second main grape of Tokaji."
+    },
+    {
+      "id": "1.1.16.3",
+      "name": "Welschriesling",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Central European white grape (Gra\u0161evina, Olaszrizling), unrelated to Riesling."
+    },
+    {
+      "id": "1.1.16.4",
+      "name": "Silvaner",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape grown mainly in Franken and Rheinhessen, Germany, and in Alsace (Sylvaner)."
+    },
+    {
+      "id": "1.1.16.5",
+      "name": "M\u00fcller-Thurgau",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White cross of Riesling and Madeleine Royale, bred in Geisenheim in 1882. It is high-yielding and early-ripening."
+    },
+    {
+      "id": "1.1.16.6",
+      "name": "Kerner",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "German white cross of Trollinger (Schiava) and Riesling."
+    },
+    {
+      "id": "1.1.16.7",
+      "name": "Rkatsiteli",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "High-acid white grape of Georgia, widely planted across the former USSR."
+    },
+    {
+      "id": "1.1.16.8",
+      "name": "Moschofilero",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Pink-skinned aromatic Greek grape of Mantinia, Peloponnese."
+    },
+    {
+      "id": "1.1.16.9",
+      "name": "Malagousia",
+      "subgenre": "Central & Eastern Europe",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Aromatic Greek white grape revived from near-extinction in the late 20th century."
+    },
+    {
+      "id": "1.1.17.1",
+      "name": "Muscat of Alexandria",
+      "subgenre": "Other",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "Ancient aromatic white Muscat grape, used for wine, table grapes and raisins."
+    },
+    {
+      "id": "1.1.17.2",
+      "name": "Colombard",
+      "subgenre": "Other",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of southwest France, used for Cognac and Armagnac distillation and for fresh whites such as C\u00f4tes de Gascogne."
+    },
+    {
+      "id": "1.1.17.3",
+      "name": "Chasselas",
+      "subgenre": "Other",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape most associated with Switzerland (Fendant in Valais). It makes delicate, low-acid dry whites."
+    },
+    {
+      "id": "1.1.17.4",
+      "name": "Petite Arvine",
+      "subgenre": "Other",
+      "parent": "Non-Testable White",
+      "slug": null,
+      "definition": "White grape of the Valais, Switzerland."
+    },
+    {
+      "id": "1.1.18.1",
+      "name": "Concord",
+      "subgenre": "Vitis labrusca",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Vitis labrusca-derived American grape with 'foxy' flavor, widely used for juice."
+    },
+    {
+      "id": "1.1.18.2",
+      "name": "Catawba",
+      "subgenre": "Vitis labrusca",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "American pink-red grape of Vitis labrusca heritage. It was historically important for 19th-century Ohio sparkling wine."
+    },
+    {
+      "id": "1.1.18.3",
+      "name": "Niagara",
+      "subgenre": "Vitis labrusca",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "White American grape of labrusca type, used for sweet wine and juice."
+    },
+    {
+      "id": "1.1.18.4",
+      "name": "Isabella",
+      "subgenre": "Vitis labrusca",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "American hybrid grape of Vitis labrusca origin, with 'foxy' flavor."
+    },
+    {
+      "id": "1.1.18.5",
+      "name": "Ives",
+      "subgenre": "Vitis labrusca",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "American red grape of labrusca type, historically used in the eastern US."
+    },
+    {
+      "id": "1.1.19.1",
+      "name": "Vitis riparia (riverbank grape)",
+      "subgenre": "Vitis riparia & rupestris",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "North American vine species, cold-hardy and phylloxera-resistant, used as a rootstock parent."
+    },
+    {
+      "id": "1.1.19.2",
+      "name": "Vitis rupestris (rock grape)",
+      "subgenre": "Vitis riparia & rupestris",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "North American vine species, deep-rooting, used as a rootstock parent."
+    },
+    {
+      "id": "1.1.19.3",
+      "name": "Vitis berlandieri",
+      "subgenre": "Vitis riparia & rupestris",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "North American vine species native to Texas, valued as a rootstock parent for lime tolerance."
+    },
+    {
+      "id": "1.1.19.4",
+      "name": "Mainly rootstock parents \u2014 see Rootstocks",
+      "subgenre": "Vitis riparia & rupestris",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "These American Vitis species are used mainly as parents of phylloxera-resistant rootstocks, not for wine; see the Rootstocks group."
+    },
+    {
+      "id": "1.1.20.1",
+      "name": "Scuppernong",
+      "subgenre": "Vitis rotundifolia (Muscadine)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Bronze muscadine (Vitis rotundifolia) variety, the original muscadine named in North Carolina."
+    },
+    {
+      "id": "1.1.20.2",
+      "name": "Carlos",
+      "subgenre": "Vitis rotundifolia (Muscadine)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Bronze-skinned muscadine (Vitis rotundifolia) variety grown in the southeastern US for wine and juice."
+    },
+    {
+      "id": "1.1.20.3",
+      "name": "Noble",
+      "subgenre": "Vitis rotundifolia (Muscadine)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Spanish legal aging term (Ley 24/2003) for wine aged at least 18 months in total."
+    },
+    {
+      "id": "1.1.20.4",
+      "name": "Magnolia",
+      "subgenre": "Vitis rotundifolia (Muscadine)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Bronze-skinned muscadine variety grown in the southeastern US."
+    },
+    {
+      "id": "1.1.21.1",
+      "name": "Norton (Cynthiana)",
+      "subgenre": "Vitis aestivalis",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Native American red grape (Vitis aestivalis lineage), Missouri's state grape."
+    },
+    {
+      "id": "1.1.22.1",
+      "name": "Seyval Blanc",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "French-American hybrid white grape grown in England, New York and Canada."
+    },
+    {
+      "id": "1.1.22.2",
+      "name": "Vidal Blanc",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "French-American hybrid white grape, widely used for Canadian icewine."
+    },
+    {
+      "id": "1.1.22.3",
+      "name": "Chambourcin",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "French-American hybrid red grape, popular in the eastern US for its disease resistance and deep color."
+    },
+    {
+      "id": "1.1.22.4",
+      "name": "Baco Noir",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "French-American hybrid red grape bred by Fran\u00e7ois Baco from Folle Blanche and a Vitis riparia. It is grown in cool climates such as Ontario and New York."
+    },
+    {
+      "id": "1.1.22.5",
+      "name": "Mar\u00e9chal Foch",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "French-American hybrid red grape suited to cool climates."
+    },
+    {
+      "id": "1.1.22.6",
+      "name": "Traminette",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Hybrid white grape from Gew\u00fcrztraminer parentage, bred in the US."
+    },
+    {
+      "id": "1.1.22.7",
+      "name": "Marquette",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Cold-hardy red hybrid grape from the University of Minnesota, a grandchild of Pinot Noir."
+    },
+    {
+      "id": "1.1.22.8",
+      "name": "Frontenac",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Cold-hardy red hybrid grape from the University of Minnesota."
+    },
+    {
+      "id": "1.1.22.9",
+      "name": "La Crescent",
+      "subgenre": "Interspecific Hybrids",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Cold-hardy white hybrid grape from the University of Minnesota, with apricot-citrus aromas."
+    },
+    {
+      "id": "1.1.23.1",
+      "name": "Regent",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "German fungus-resistant (PIWI) red grape bred at Geilweilerhof."
+    },
+    {
+      "id": "1.1.23.2",
+      "name": "Solaris",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Early-ripening German fungus-resistant (PIWI) white grape, suited to very cool climates."
+    },
+    {
+      "id": "1.1.23.3",
+      "name": "Johanniter",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "German fungus-resistant (PIWI) white grape bred at Freiburg with Riesling as a parent."
+    },
+    {
+      "id": "1.1.23.4",
+      "name": "Souvignier Gris",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "German fungus-resistant (PIWI) white grape bred at Freiburg."
+    },
+    {
+      "id": "1.1.23.5",
+      "name": "Cabernet Cortis",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "German fungus-resistant (PIWI) red grape bred at Freiburg with Cabernet Sauvignon as a parent."
+    },
+    {
+      "id": "1.1.23.6",
+      "name": "Muscaris",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "German fungus-resistant (PIWI) aromatic white grape with Solaris and Muscat parentage."
+    },
+    {
+      "id": "1.1.23.7",
+      "name": "Divico",
+      "subgenre": "PIWI (Fungus-Resistant)",
+      "parent": "Non-Vitis vinifera",
+      "slug": null,
+      "definition": "Swiss fungus-resistant red grape bred by Agroscope, with Gamaret as a parent."
+    },
+    {
+      "id": "1.1.24.1",
+      "name": "Pinot Noir Dijon 115",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Widely planted Burgundian 'Dijon' clone of Pinot Noir."
+    },
+    {
+      "id": "1.1.24.2",
+      "name": "Pinot Noir Dijon 667",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Burgundian 'Dijon' clone of Pinot Noir with small clusters."
+    },
+    {
+      "id": "1.1.24.3",
+      "name": "Pinot Noir Dijon 777",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Burgundian 'Dijon' clone of Pinot Noir, known for deep color and dark fruit."
+    },
+    {
+      "id": "1.1.24.4",
+      "name": "Pinot Noir Pommard (UCD 4)",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Pinot Noir selection from Burgundy distributed by UC Davis, important in Oregon and California."
+    },
+    {
+      "id": "1.1.24.5",
+      "name": "Pinot Noir W\u00e4denswil (UCD 1A)",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Swiss-origin Pinot Noir selection distributed by UC Davis."
+    },
+    {
+      "id": "1.1.24.6",
+      "name": "Chardonnay Dijon 76",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "One of the Burgundian 'Dijon' clones of Chardonnay, selected in France and widely planted in Oregon and elsewhere."
+    },
+    {
+      "id": "1.1.24.7",
+      "name": "Chardonnay Dijon 96",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "A Burgundian 'Dijon' clone of Chardonnay, used for still and sparkling wine."
+    },
+    {
+      "id": "1.1.24.8",
+      "name": "Chardonnay Wente",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "The Wente selection, the historic Chardonnay clonal lineage behind much of California's Chardonnay. It is known for small, uneven ('hen and chicken') berries."
+    },
+    {
+      "id": "1.1.24.9",
+      "name": "Cabernet Sauvignon 337",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "A widely planted French certified clone of Cabernet Sauvignon. It is known for small clusters and concentrated fruit."
+    },
+    {
+      "id": "1.1.24.10",
+      "name": "Sangiovese Grosso (Brunello)",
+      "subgenre": "Clones",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Local name for the Sangiovese biotype used for Brunello di Montalcino."
+    },
+    {
+      "id": "1.1.25.1",
+      "name": "Pinot Gris (from Pinot Noir)",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Pink-grey-skinned color mutation of Pinot Noir."
+    },
+    {
+      "id": "1.1.25.2",
+      "name": "Pinot Blanc",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "White mutation of Pinot Noir, grown in Alsace, Italy (Pinot Bianco) and Germany (Weissburgunder)."
+    },
+    {
+      "id": "1.1.25.3",
+      "name": "Pinot Meunier (chimera)",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Meunier is a periclinal chimera: its outer cell layer carries a mutation that the inner tissue of Pinot Noir lacks."
+    },
+    {
+      "id": "1.1.25.4",
+      "name": "Grenache Blanc",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "White-skinned form of Grenache, used in the Rh\u00f4ne, Roussillon and Spain."
+    },
+    {
+      "id": "1.1.25.5",
+      "name": "Grenache Gris",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Grey-pink-skinned form of Grenache, notable in Roussillon."
+    },
+    {
+      "id": "1.1.25.6",
+      "name": "Gew\u00fcrztraminer (aromatic Savagnin Rose)",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Very aromatic, pink-skinned white grape (an aromatic form of Savagnin), notable in Alsace."
+    },
+    {
+      "id": "1.1.25.7",
+      "name": "Chardonnay Musqu\u00e9",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Aromatic, Muscat-scented clonal variants of Chardonnay."
+    },
+    {
+      "id": "1.1.25.8",
+      "name": "Sauvignon Gris",
+      "subgenre": "Mutations (Bud Sports)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Pink-skinned mutation of Sauvignon Blanc."
+    },
+    {
+      "id": "1.1.26.1",
+      "name": "Alicante Bouschet",
+      "subgenre": "Teinturiers (Red-Fleshed)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Teinturier (red-fleshed) grape bred from Petit Bouschet and Grenache."
+    },
+    {
+      "id": "1.1.26.2",
+      "name": "Saperavi",
+      "subgenre": "Teinturiers (Red-Fleshed)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Teinturier red grape of Georgia, deeply colored."
+    },
+    {
+      "id": "1.1.26.3",
+      "name": "Petit Bouschet",
+      "subgenre": "Teinturiers (Red-Fleshed)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Teinturier red grape bred by Louis Bouschet from Aramon and Teinturier du Cher. It is a parent of Alicante Bouschet."
+    },
+    {
+      "id": "1.1.26.4",
+      "name": "Grand Noir de la Calmette",
+      "subgenre": "Teinturiers (Red-Fleshed)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Teinturier red grape bred by Henri Bouschet."
+    },
+    {
+      "id": "1.1.26.5",
+      "name": "Gamay de Bouze",
+      "subgenre": "Teinturiers (Red-Fleshed)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Teinturier (red-fleshed) mutation of Gamay."
+    },
+    {
+      "id": "1.1.26.6",
+      "name": "Rubired",
+      "subgenre": "Teinturiers (Red-Fleshed)",
+      "parent": "Vine Genetics",
+      "slug": null,
+      "definition": "Californian teinturier hybrid grape, used for color and juice."
+    },
+    {
+      "id": "1.1.27.1",
+      "name": "Riparia Gloire de Montpellier",
+      "subgenre": "Riparia & Rupestris Types",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Pure Vitis riparia rootstock selection. Low vigor and early ripening, suited to fertile soils."
+    },
+    {
+      "id": "1.1.27.2",
+      "name": "Rupestris du Lot (St. George)",
+      "subgenre": "Riparia & Rupestris Types",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Vitis rupestris rootstock, deep-rooting and vigorous."
+    },
+    {
+      "id": "1.1.27.3",
+      "name": "3309 Couderc",
+      "subgenre": "Riparia & Rupestris Types",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis riparia \u00d7 V. rupestris cross. Moderately low in vigor and widely used in cool, deep, well-watered soils; it handles drought and lime poor"
+    },
+    {
+      "id": "1.1.27.4",
+      "name": "101-14 Millardet et de Grasset",
+      "subgenre": "Riparia & Rupestris Types",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis riparia \u00d7 V. rupestris cross, bred in France in the 1880s. It is low-vigor and advances ripening, suited to fertile, moist soils, but it "
+    },
+    {
+      "id": "1.1.27.5",
+      "name": "Schwarzmann",
+      "subgenre": "Riparia & Rupestris Types",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis riparia \u00d7 V. rupestris cross with some nematode tolerance."
+    },
+    {
+      "id": "1.1.28.1",
+      "name": "5BB Kober",
+      "subgenre": "Berlandieri \u00d7 Riparia",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. riparia cross, selected by Kober in Austria. It is vigorous and lime-tolerant."
+    },
+    {
+      "id": "1.1.28.2",
+      "name": "SO4",
+      "subgenre": "Berlandieri \u00d7 Riparia",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. riparia cross (Selection Oppenheim 4)."
+    },
+    {
+      "id": "1.1.28.3",
+      "name": "5C Teleki",
+      "subgenre": "Berlandieri \u00d7 Riparia",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. riparia cross, selected in Hungary. Moderate vigor and early ripening."
+    },
+    {
+      "id": "1.1.28.4",
+      "name": "420A Millardet et de Grasset",
+      "subgenre": "Berlandieri \u00d7 Riparia",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. riparia cross. Low vigor, lime-tolerant and slow to establish; common in Champagne and Burgundy."
+    },
+    {
+      "id": "1.1.29.1",
+      "name": "110 Richter",
+      "subgenre": "Berlandieri \u00d7 Rupestris",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. rupestris cross. It is vigorous and drought-tolerant, widely used in dry Mediterranean vineyards."
+    },
+    {
+      "id": "1.1.29.2",
+      "name": "1103 Paulsen",
+      "subgenre": "Berlandieri \u00d7 Rupestris",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. rupestris cross, bred in Sicily. It is vigorous and tolerates drought and moderate salinity."
+    },
+    {
+      "id": "1.1.29.3",
+      "name": "140 Ruggeri",
+      "subgenre": "Berlandieri \u00d7 Rupestris",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. rupestris cross, bred in Sicily. It is very vigorous and tolerates drought and limestone soils."
+    },
+    {
+      "id": "1.1.29.4",
+      "name": "99 Richter",
+      "subgenre": "Berlandieri \u00d7 Rupestris",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock from a Vitis berlandieri \u00d7 V. rupestris cross. Vigorous and drought-tolerant, used in warm regions."
+    },
+    {
+      "id": "1.1.30.1",
+      "name": "Freedom",
+      "subgenre": "Nematode-Resistant & Other",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Nematode-resistant rootstock with Vitis champinii in its parentage, used in California."
+    },
+    {
+      "id": "1.1.30.2",
+      "name": "Harmony",
+      "subgenre": "Nematode-Resistant & Other",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Nematode-resistant rootstock used in California."
+    },
+    {
+      "id": "1.1.30.3",
+      "name": "Dog Ridge",
+      "subgenre": "Nematode-Resistant & Other",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Vigorous rootstock selection of Vitis champinii, tolerant of nematodes and drought."
+    },
+    {
+      "id": "1.1.30.4",
+      "name": "Ramsey (Salt Creek)",
+      "subgenre": "Nematode-Resistant & Other",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Very vigorous Vitis champinii rootstock, tolerant of nematodes, drought and salinity."
+    },
+    {
+      "id": "1.1.30.5",
+      "name": "1616 Couderc",
+      "subgenre": "Nematode-Resistant & Other",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "Rootstock bred in France from a Vitis solonis \u00d7 V. riparia cross. It is low-vigor and tolerates wet and somewhat saline soils."
+    },
+    {
+      "id": "1.1.30.6",
+      "name": "Own-rooted (ungrafted)",
+      "subgenre": "Nematode-Resistant & Other",
+      "parent": "Rootstocks",
+      "slug": null,
+      "definition": "A vine growing on its own roots rather than grafted onto a rootstock."
+    },
+    {
+      "id": "1.1.31.1",
+      "name": "Single Guyot",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Cane-pruning system that keeps one cane plus a renewal spur."
+    },
+    {
+      "id": "1.1.31.2",
+      "name": "Double Guyot",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Cane-pruning system that keeps two canes, one trained each way along the wire."
+    },
+    {
+      "id": "1.1.31.3",
+      "name": "Bilateral cordon (spur-pruned)",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Vine training in which a permanent arm (cordon) extends in two directions along a wire. Short spurs on the cordon are pruned each winter."
+    },
+    {
+      "id": "1.1.31.4",
+      "name": "Vertical shoot positioning (VSP)",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Trellis system where shoots are trained upward in a narrow vertical curtain."
+    },
+    {
+      "id": "1.1.31.5",
+      "name": "Gobelet (bush vine)",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Free-standing vine trained without wires into a goblet shape, common in hot, dry regions."
+    },
+    {
+      "id": "1.1.31.6",
+      "name": "Pergola",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Overhead trellis system, traditional in parts of Italy and northwest Spain."
+    },
+    {
+      "id": "1.1.31.7",
+      "name": "Lyre",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Divided-canopy trellis shaped like a U or lyre."
+    },
+    {
+      "id": "1.1.31.8",
+      "name": "Scott Henry",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Divided vertical trellis with upper shoots trained up and lower shoots trained down."
+    },
+    {
+      "id": "1.1.31.9",
+      "name": "Smart-Dyson",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Divided vertical trellis with upward and downward shoots, devised by Richard Smart and John Dyson."
+    },
+    {
+      "id": "1.1.31.10",
+      "name": "Geneva Double Curtain",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Divided-canopy trellis developed at Geneva, New York, with two hanging curtains of shoots."
+    },
+    {
+      "id": "1.1.31.11",
+      "name": "Sprawl",
+      "subgenre": "Training Systems",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Training with little shoot positioning, letting the canopy hang freely."
+    },
+    {
+      "id": "1.1.32.1",
+      "name": "Cane pruning",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Winter pruning that keeps one or two of last year's canes and ties them along the wire to bear the new crop. The Guyot system is an example."
+    },
+    {
+      "id": "1.1.32.2",
+      "name": "Spur pruning",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Winter pruning of last year's canes down to short spurs on a permanent cordon."
+    },
+    {
+      "id": "1.1.32.3",
+      "name": "Shoot thinning",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Removing excess or poorly placed shoots early in the season."
+    },
+    {
+      "id": "1.1.32.4",
+      "name": "Shoot positioning",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Training the season's new shoots into place on the trellis."
+    },
+    {
+      "id": "1.1.32.5",
+      "name": "Leaf removal",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Removing leaves around the grape clusters to improve air flow and sun exposure."
+    },
+    {
+      "id": "1.1.32.6",
+      "name": "Hedging (topping)",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Trimming the tops and sides of the vine canopy during the growing season."
+    },
+    {
+      "id": "1.1.32.7",
+      "name": "Green harvest (crop thinning)",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Removing some unripe bunches to reduce yield and concentrate the rest."
+    },
+    {
+      "id": "1.1.32.8",
+      "name": "Cover crops",
+      "subgenre": "Canopy Practices",
+      "parent": "Canopy Management",
+      "slug": null,
+      "definition": "Plants grown between vine rows to manage soil erosion, structure, water and vine vigor."
+    },
+    {
+      "id": "1.1.33.1",
+      "name": "Destemming",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Separating grape berries from their stems before crushing or fermentation."
+    },
+    {
+      "id": "1.1.33.2",
+      "name": "Whole-cluster fermentation",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Fermenting red grapes with their stems still attached."
+    },
+    {
+      "id": "1.1.33.3",
+      "name": "Cold soak",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Holding crushed red grapes cold before fermentation to extract color and aroma."
+    },
+    {
+      "id": "1.1.33.4",
+      "name": "Carbonic maceration",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Whole, uncrushed grapes ferment inside a CO2-filled vessel, giving fruity, low-tannin reds (as in Beaujolais)."
+    },
+    {
+      "id": "1.1.33.5",
+      "name": "Pump-over (remontage)",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Pumping fermenting red wine from the bottom of the tank over the skin cap to extract color and tannin."
+    },
+    {
+      "id": "1.1.33.6",
+      "name": "Punch-down (pigeage)",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Pushing the floating skin cap down into fermenting red wine to extract color and tannin."
+    },
+    {
+      "id": "1.1.33.7",
+      "name": "D\u00e9lestage (rack & return)",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Draining fermenting red juice off the skins into another tank, then pouring it back over the cap to extract gently."
+    },
+    {
+      "id": "1.1.33.8",
+      "name": "Extended maceration",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Leaving red wine on its skins after fermentation ends to change tannin texture."
+    },
+    {
+      "id": "1.1.33.9",
+      "name": "Saign\u00e9e",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Bleeding off juice from a red-wine tank early to make ros\u00e9 and concentrate the remaining red."
+    },
+    {
+      "id": "1.1.33.10",
+      "name": "Malolactic conversion",
+      "subgenre": "Red Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Bacterial conversion of malic acid into lactic acid, softening a wine's acidity."
+    },
+    {
+      "id": "1.1.34.1",
+      "name": "Whole-bunch pressing",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Pressing whole clusters without crushing, giving cleaner, lower-phenolic juice."
+    },
+    {
+      "id": "1.1.34.2",
+      "name": "Skin contact",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Leaving juice in contact with grape skins; for white grapes this makes 'orange' or amber wine."
+    },
+    {
+      "id": "1.1.34.3",
+      "name": "Cold settling (d\u00e9bourbage)",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Letting freshly pressed white juice rest cold so solids settle out before fermentation."
+    },
+    {
+      "id": "1.1.34.4",
+      "name": "Cool fermentation",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Fermenting at low temperatures (often around 10\u201316 \u00b0C for whites) to keep fresh, fruity aromas."
+    },
+    {
+      "id": "1.1.34.5",
+      "name": "Lees aging (sur lie)",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Leaving wine in contact with its spent yeast after fermentation to build texture and flavor."
+    },
+    {
+      "id": "1.1.34.6",
+      "name": "B\u00e2tonnage",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Stirring the lees (spent yeast) back into a wine during aging to add texture."
+    },
+    {
+      "id": "1.1.34.7",
+      "name": "Direct-press ros\u00e9",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Ros\u00e9 made by pressing red grapes right away, giving brief skin contact and pale color."
+    },
+    {
+      "id": "1.1.34.8",
+      "name": "Blocked malolactic",
+      "subgenre": "White & Ros\u00e9 Winemaking",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Preventing malolactic fermentation (for example by cold, sulfur dioxide or filtration) so the wine keeps its sharper malic acidity."
+    },
+    {
+      "id": "1.1.35.1",
+      "name": "Traditional method",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Sparkling method in which the second fermentation happens in the bottle sold (as in Champagne and Cava)."
+    },
+    {
+      "id": "1.1.35.2",
+      "name": "Tank (Charmat) method",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Sparkling method with the second fermentation in a pressurized tank (common for Prosecco)."
+    },
+    {
+      "id": "1.1.35.3",
+      "name": "Ancestral method",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Sparkling method where wine is bottled before primary fermentation finishes, trapping its CO2."
+    },
+    {
+      "id": "1.1.35.4",
+      "name": "Transfer method",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Sparkling method with second fermentation in bottle, after which the wine is transferred to a tank, filtered and rebottled."
+    },
+    {
+      "id": "1.1.35.5",
+      "name": "Riddling (remuage)",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Gradually turning and tilting sparkling-wine bottles so sediment collects in the neck before disgorgement."
+    },
+    {
+      "id": "1.1.35.6",
+      "name": "Disgorgement",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Removing the frozen plug of yeast sediment from a traditional-method sparkling wine bottle."
+    },
+    {
+      "id": "1.1.35.7",
+      "name": "Dosage",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Sugar-and-wine mixture added after disgorgement, setting a sparkling wine's sweetness level."
+    },
+    {
+      "id": "1.1.35.8",
+      "name": "Carbonation",
+      "subgenre": "Sparkling Methods",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Presence of dissolved CO2, which makes wine sparkling. It comes either from a second fermentation or from injected gas."
+    },
+    {
+      "id": "1.1.36.1",
+      "name": "Mutage (fortification during fermentation)",
+      "subgenre": "Fortified & Oxidative",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Stopping fermentation by adding grape spirit, leaving natural sugar (used for Port and vins doux naturels)."
+    },
+    {
+      "id": "1.1.36.2",
+      "name": "Post-fermentation fortification",
+      "subgenre": "Fortified & Oxidative",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Adding spirit after fermentation has finished, leaving a dry base that may be sweetened later. Sherry is the classic example."
+    },
+    {
+      "id": "1.1.36.3",
+      "name": "Flor (biological aging)",
+      "subgenre": "Fortified & Oxidative",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "A layer of yeast on the surface of Fino and Manzanilla Sherry that protects the wine from oxidation."
+    },
+    {
+      "id": "1.1.36.4",
+      "name": "Oxidative aging",
+      "subgenre": "Fortified & Oxidative",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Aging with deliberate oxygen contact, giving nutty, dried-fruit flavors (e.g. Oloroso, tawny Port)."
+    },
+    {
+      "id": "1.1.36.5",
+      "name": "Estufagem (Madeira)",
+      "subgenre": "Fortified & Oxidative",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Madeira method of heating wine in tanks (estufas) to speed up aging."
+    },
+    {
+      "id": "1.1.37.1",
+      "name": "Fining",
+      "subgenre": "Finishing",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Adding an agent (such as bentonite or egg white) that binds and removes haze or harsh compounds."
+    },
+    {
+      "id": "1.1.37.2",
+      "name": "Filtration",
+      "subgenre": "Finishing",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Passing wine through a filter medium to remove yeast, bacteria or haze before bottling."
+    },
+    {
+      "id": "1.1.37.3",
+      "name": "Cold stabilization",
+      "subgenre": "Finishing",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Chilling wine so tartrate crystals form and can be removed before bottling."
+    },
+    {
+      "id": "1.1.37.4",
+      "name": "Blending",
+      "subgenre": "Finishing",
+      "parent": "Winemaking Techniques",
+      "slug": null,
+      "definition": "Combining wines from different grapes, vineyards, vessels or vintages to build balance and a consistent style."
+    },
+    {
+      "id": "1.1.38.1",
+      "name": "American white oak (Quercus alba)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "The main American barrel oak. Its staves are usually sawn rather than split, and it typically gives stronger vanilla and coconut notes than French oak."
+    },
+    {
+      "id": "1.1.38.2",
+      "name": "French sessile oak (Q. petraea)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "European oak species with tighter grain and more aromatic compounds, widely preferred for wine barrels."
+    },
+    {
+      "id": "1.1.38.3",
+      "name": "French pedunculate oak (Q. robur)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "European oak species, more porous and higher in tannin than sessile oak. It is traditionally preferred for spirits such as Cognac."
+    },
+    {
+      "id": "1.1.38.4",
+      "name": "Hungarian oak (Q. petraea)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Sessile oak from Hungary's forests (e.g. Zempl\u00e9n), used for barrels."
+    },
+    {
+      "id": "1.1.38.5",
+      "name": "Oregon oak (Q. garryana)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Oak native to the Pacific Northwest, sometimes used for wine barrels."
+    },
+    {
+      "id": "1.1.38.6",
+      "name": "Mizunara (Q. mongolica, Japan)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Japanese oak used for whisky casks. It is porous and hard to work, and is associated with sandalwood and incense aromas."
+    },
+    {
+      "id": "1.1.38.7",
+      "name": "Acacia (black locust)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Wood of the black locust tree (Robinia pseudoacacia), sometimes used for white-wine barrels. It is commonly described as giving floral notes with little oak-sty"
+    },
+    {
+      "id": "1.1.38.8",
+      "name": "Chestnut (Castanea sativa)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Sweet chestnut wood, historically used for barrels in Italy and France. It is porous and low in aromatic compounds, so it allows oxygen exchange."
+    },
+    {
+      "id": "1.1.38.9",
+      "name": "Cherry (Prunus avium)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Cherry wood, occasionally used for casks. It is commonly described as oxidizing wine faster and adding fruity, lightly sweet notes."
+    },
+    {
+      "id": "1.1.38.10",
+      "name": "Amburana (Brazil)",
+      "subgenre": "Oak & Other Woods",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Brazilian hardwood (Amburana cearensis) used for casks, especially for cacha\u00e7a. It gives strong sweet-spice aromas often compared to cinnamon."
+    },
+    {
+      "id": "1.1.39.1",
+      "name": "Allier",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "French d\u00e9partement whose forests (including Tron\u00e7ais) supply tight-grained sessile oak prized for wine barrels."
+    },
+    {
+      "id": "1.1.39.2",
+      "name": "Tron\u00e7ais (Allier)",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Famous oak forest in the Allier, France, planted under Colbert, with tight-grained oak."
+    },
+    {
+      "id": "1.1.39.3",
+      "name": "Nevers",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Oak forests of the Ni\u00e8vre, France, known for fine-grained oak."
+    },
+    {
+      "id": "1.1.39.4",
+      "name": "Bertranges",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Oak forest in the Ni\u00e8vre, France, known for fine-grained sessile oak for barrels."
+    },
+    {
+      "id": "1.1.39.5",
+      "name": "Vosges",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Oak forests of the Vosges mountains, France, used for barrels."
+    },
+    {
+      "id": "1.1.39.6",
+      "name": "Limousin (wide grain, Cognac)",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Oak forests near Limoges, France, with wide-grained, tannic oak traditionally used for Cognac."
+    },
+    {
+      "id": "1.1.39.7",
+      "name": "Jupilles",
+      "subgenre": "French Oak Forests",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Oak forest in the Sarthe, France, used for barrels."
+    },
+    {
+      "id": "1.1.40.1",
+      "name": "Open-air seasoning (typically 24\u201336 months)",
+      "subgenre": "Seasoning",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Drying barrel staves outdoors so rain and sun leach harsh tannins before coopering."
+    },
+    {
+      "id": "1.1.40.2",
+      "name": "Kiln-dried staves",
+      "subgenre": "Seasoning",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Barrel staves dried quickly in kilns rather than seasoned outdoors."
+    },
+    {
+      "id": "1.1.40.3",
+      "name": "Rain & sun leaching of harsh tannins",
+      "subgenre": "Seasoning",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "The effect of outdoor seasoning on staves: weather washes out bitter tannins and starts breaking down wood compounds."
+    },
+    {
+      "id": "1.1.41.1",
+      "name": "Light toast",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Barrel interior toasted briefly, keeping fresh wood character and less roasted flavor."
+    },
+    {
+      "id": "1.1.41.2",
+      "name": "Medium toast",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Middle toast level for barrels, balancing fresh oak with vanilla and toasty notes."
+    },
+    {
+      "id": "1.1.41.3",
+      "name": "Medium-plus toast",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Toast level between medium and heavy, giving more caramel and spice."
+    },
+    {
+      "id": "1.1.41.4",
+      "name": "Heavy toast",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Barrel interior toasted long and hot, giving roasted, smoky, coffee-like flavors."
+    },
+    {
+      "id": "1.1.41.5",
+      "name": "Toasted heads",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Barrel ends (heads) toasted like the staves, adding more toast flavor."
+    },
+    {
+      "id": "1.1.41.6",
+      "name": "Untoasted heads",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Barrel heads left untoasted, keeping more raw-wood character."
+    },
+    {
+      "id": "1.1.41.7",
+      "name": "See Spirits Academy: char levels",
+      "subgenre": "Toast Levels",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Cross-reference: barrel char levels (#1\u2013#4) are covered in the Spirits Academy."
+    },
+    {
+      "id": "1.1.42.1",
+      "name": "Blood tub (~40 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Very small cask of about 40 litres. Its high wood-to-liquid ratio speeds wood extraction."
+    },
+    {
+      "id": "1.1.42.2",
+      "name": "Quarter cask (~125 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Small cask that speeds up spirit maturation."
+    },
+    {
+      "id": "1.1.42.3",
+      "name": "American standard barrel (200 L / 53 gal)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "The common 53-gallon (~200 L) American oak barrel."
+    },
+    {
+      "id": "1.1.42.4",
+      "name": "Bordeaux barrique (225 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Standard 225 L Bordeaux barrel."
+    },
+    {
+      "id": "1.1.42.5",
+      "name": "Burgundy pi\u00e8ce (228 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Standard 228 L Burgundy barrel."
+    },
+    {
+      "id": "1.1.42.6",
+      "name": "Hogshead (~250 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Cask of around 250 L, often rebuilt from bourbon barrels."
+    },
+    {
+      "id": "1.1.42.7",
+      "name": "Puncheon (~450\u2013500 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Large cask used for wine, rum and whisky."
+    },
+    {
+      "id": "1.1.42.8",
+      "name": "Sherry butt (~500 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Traditional Sherry cask of around 500 L, often reused to age whisky."
+    },
+    {
+      "id": "1.1.42.9",
+      "name": "Port pipe (~550\u2013650 L)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Traditional Douro cask, used for Port and later often for whisky finishing."
+    },
+    {
+      "id": "1.1.42.10",
+      "name": "Foudre / foeder (1,000 L+)",
+      "subgenre": "Barrel Sizes",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Large wooden vat, often over 1,000 L. Its low wood-to-liquid ratio gives little oak flavor."
+    },
+    {
+      "id": "1.1.43.1",
+      "name": "New oak",
+      "subgenre": "New vs Used",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "A barrel used for the first time, giving the most oak flavor and tannin."
+    },
+    {
+      "id": "1.1.43.2",
+      "name": "First fill",
+      "subgenre": "New vs Used",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "A cask used for the first time after its previous contents (e.g. first-fill ex-bourbon), giving more flavor than refill casks."
+    },
+    {
+      "id": "1.1.43.3",
+      "name": "Refill (second fill+)",
+      "subgenre": "New vs Used",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "A cask reused after its first fill, giving less flavor each time."
+    },
+    {
+      "id": "1.1.43.4",
+      "name": "Neutral oak (3+ uses)",
+      "subgenre": "New vs Used",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Barrels used several times that now give little oak flavor but still allow slow oxygen exchange."
+    },
+    {
+      "id": "1.1.43.5",
+      "name": "Rejuvenated (re-toasted/re-charred)",
+      "subgenre": "New vs Used",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "A used cask that has been scraped and re-toasted or re-charred to restore some of its flavor."
+    },
+    {
+      "id": "1.1.43.6",
+      "name": "Percentage new oak (wine \u00e9levage)",
+      "subgenre": "New vs Used",
+      "parent": "Barrel Toasting & Aging",
+      "slug": null,
+      "definition": "Share of a wine aged in brand-new barrels, which controls how much oak flavor it gets."
+    },
+    {
+      "id": "1.1.44.1",
+      "name": "Sangria",
+      "subgenre": "Wine-Based Drinks",
+      "parent": null,
+      "slug": null,
+      "definition": "Spanish punch of wine, fruit, sweetener and often brandy."
+    },
+    {
+      "id": "1.1.44.2",
+      "name": "Spritzer",
+      "subgenre": "Wine-Based Drinks",
+      "parent": null,
+      "slug": null,
+      "definition": "Wine mixed with sparkling water."
+    },
+    {
+      "id": "1.1.44.3",
+      "name": "Wine cooler",
+      "subgenre": "Wine-Based Drinks",
+      "parent": null,
+      "slug": null,
+      "definition": "Wine-based drink mixed with fruit juice, sugar and carbonation."
+    },
+    {
+      "id": "1.1.44.4",
+      "name": "Mulled wine",
+      "subgenre": "Wine-Based Drinks",
+      "parent": null,
+      "slug": null,
+      "definition": "Wine heated with spices, sugar and often citrus."
+    },
+    {
+      "id": "1.1.44.5",
+      "name": "Kalimotxo (wine + cola)",
+      "subgenre": "Wine-Based Drinks",
+      "parent": null,
+      "slug": null,
+      "definition": "Basque drink of red wine mixed with cola, roughly half and half."
+    },
+    {
+      "id": "1.1.45.1",
+      "name": "Dealcoholized red",
+      "subgenre": "Dealcoholized Wine (\u22640.5% ABV)",
+      "parent": null,
+      "slug": null,
+      "definition": "Red wine made normally, then with most alcohol removed (e.g. by vacuum distillation or membranes). It is labeled non-alcoholic at or below 0.5% ABV."
+    },
+    {
+      "id": "1.1.45.2",
+      "name": "Dealcoholized white",
+      "subgenre": "Dealcoholized Wine (\u22640.5% ABV)",
+      "parent": null,
+      "slug": null,
+      "definition": "White wine with most alcohol removed after fermentation, typically to 0.5% ABV or less."
+    },
+    {
+      "id": "1.1.45.3",
+      "name": "Dealcoholized sparkling",
+      "subgenre": "Dealcoholized Wine (\u22640.5% ABV)",
+      "parent": null,
+      "slug": null,
+      "definition": "Sparkling wine with alcohol removed and carbonation restored, typically to 0.5% ABV or less."
+    },
+    {
+      "id": "1.1.45.4",
+      "name": "Dealcoholized ros\u00e9",
+      "subgenre": "Dealcoholized Wine (\u22640.5% ABV)",
+      "parent": null,
+      "slug": null,
+      "definition": "Ros\u00e9 wine with most alcohol removed after fermentation, typically to 0.5% ABV or less."
+    },
+    {
+      "id": "1.1.46.1",
+      "name": "Crianza \u00b7 2 yr (1 oak)",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Crianza: official/legal aging category. Requirement: 2 yr (1 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.46.2",
+      "name": "Reserva \u00b7 3 yr (1 oak, 6 mo btl)",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Reserva: official/legal aging category. Requirement: 3 yr (1 oak, 6 mo btl). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.46.3",
+      "name": "Gran Reserva \u00b7 5 yr (2 oak, 2 btl)",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Gran Reserva: official/legal aging category. Requirement: 5 yr (2 oak, 2 btl). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.46.4",
+      "name": "White/Ros\u00e9 Crianza \u00b7 18 mo (6 oak)",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "White/Ros\u00e9 Crianza: official/legal aging category. Requirement: 18 mo (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.46.5",
+      "name": "White/Ros\u00e9 Reserva \u00b7 2 yr (6 oak)",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "White/Ros\u00e9 Reserva: official/legal aging category. Requirement: 2 yr (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.46.6",
+      "name": "White/Ros\u00e9 Gran Reserva \u00b7 4 yr (6 oak)",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "White/Ros\u00e9 Gran Reserva: official/legal aging category. Requirement: 4 yr (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and sour"
+    },
+    {
+      "id": "1.1.46.7",
+      "name": "Sparkling Reserva \u00b7 24 mo lees",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Sparkling Reserva: official/legal aging category. Requirement: 24 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.46.8",
+      "name": "Gran A\u00f1ada sparkling \u00b7 36 mo lees",
+      "subgenre": "Rioja (DOCa)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Gran A\u00f1ada sparkling: official/legal aging category. Requirement: 36 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.47.1",
+      "name": "Crianza \u00b7 2 yr (1 oak)",
+      "subgenre": "Ribera del Duero (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Crianza: official/legal aging category. Requirement: 2 yr (1 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.47.2",
+      "name": "Reserva \u00b7 3 yr (1 oak)",
+      "subgenre": "Ribera del Duero (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Reserva: official/legal aging category. Requirement: 3 yr (1 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.47.3",
+      "name": "Gran Reserva \u00b7 5 yr (2 oak)",
+      "subgenre": "Ribera del Duero (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Gran Reserva: official/legal aging category. Requirement: 5 yr (2 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.1",
+      "name": "Noble \u00b7 18 mo",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Spanish legal aging term (Ley 24/2003) for wine aged at least 18 months in total. Requirement: 18 mo."
+    },
+    {
+      "id": "1.1.48.2",
+      "name": "A\u00f1ejo \u00b7 24 mo",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "A\u00f1ejo: official/legal aging category. Requirement: 24 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.3",
+      "name": "Viejo \u00b7 36 mo",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Viejo: official/legal aging category. Requirement: 36 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.4",
+      "name": "Crianza red \u00b7 2 yr (6 oak)",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Crianza red: official/legal aging category. Requirement: 2 yr (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.5",
+      "name": "Reserva red \u00b7 3 yr (1 oak)",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Reserva red: official/legal aging category. Requirement: 3 yr (1 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.6",
+      "name": "Gran Reserva red \u00b7 5 yr (18 mo oak)",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Gran Reserva red: official/legal aging category. Requirement: 5 yr (18 mo oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.7",
+      "name": "Crianza white/ros\u00e9 \u00b7 18 mo (6 oak)",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Crianza white/ros\u00e9: official/legal aging category. Requirement: 18 mo (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.8",
+      "name": "Reserva white/ros\u00e9 \u00b7 2 yr (6 oak)",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Reserva white/ros\u00e9: official/legal aging category. Requirement: 2 yr (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.48.9",
+      "name": "Gran Reserva white/ros\u00e9 \u00b7 4 yr (6 oak)",
+      "subgenre": "Spain: Generic Terms (Ley 24/2003 art. 3, repealed)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Gran Reserva white/ros\u00e9: official/legal aging category. Requirement: 4 yr (6 oak). Times are minimums unless stated; see facts for barrel/bottle detail and sour"
+    },
+    {
+      "id": "1.1.49.1",
+      "name": "Cava de Guarda \u00b7 9 mo",
+      "subgenre": "Cava (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Cava de Guarda: official/legal aging category. Requirement: 9 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.49.2",
+      "name": "Cava Reserva \u00b7 18 mo",
+      "subgenre": "Cava (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Cava Reserva: official/legal aging category. Requirement: 18 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.49.3",
+      "name": "Cava Gran Reserva \u00b7 30 mo",
+      "subgenre": "Cava (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Cava Gran Reserva: official/legal aging category. Requirement: 30 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.49.4",
+      "name": "Cava de Paraje Calificado \u00b7 36 mo",
+      "subgenre": "Cava (DO)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Cava de Paraje Calificado: official/legal aging category. Requirement: 36 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.50.1",
+      "name": "All Sherry \u00b7 avg 2+ yr",
+      "subgenre": "Sherry (Jerez-X\u00e9r\u00e8s-Sherry)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "All Sherry: official/legal aging category. Requirement: avg 2+ yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.50.2",
+      "name": "12 Years \u00b7 certified avg",
+      "subgenre": "Sherry (Jerez-X\u00e9r\u00e8s-Sherry)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "12 Years: official/legal aging category. Requirement: certified avg. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.50.3",
+      "name": "15 Years \u00b7 certified avg",
+      "subgenre": "Sherry (Jerez-X\u00e9r\u00e8s-Sherry)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "15 Years: official/legal aging category. Requirement: certified avg. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.50.4",
+      "name": "VOS \u00b7 20+ yr",
+      "subgenre": "Sherry (Jerez-X\u00e9r\u00e8s-Sherry)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "VOS: official/legal aging category. Requirement: 20+ yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.50.5",
+      "name": "VORS \u00b7 30+ yr",
+      "subgenre": "Sherry (Jerez-X\u00e9r\u00e8s-Sherry)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "VORS: official/legal aging category. Requirement: 30+ yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.51.1",
+      "name": "Chianti Classico Riserva \u00b7 24 mo (3 btl)",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Chianti Classico Riserva: official/legal aging category. Requirement: 24 mo (3 btl). Times are minimums unless stated; see facts for barrel/bottle detail and so"
+    },
+    {
+      "id": "1.1.51.2",
+      "name": "Chianti Classico Gran Selezione \u00b7 30 mo (3 btl)",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Chianti Classico Gran Selezione: official/legal aging category. Requirement: 30 mo (3 btl). Times are minimums unless stated; see facts for barrel/bottle detail"
+    },
+    {
+      "id": "1.1.51.3",
+      "name": "Brunello \u00b7 5 yr (2 oak, 4 mo btl)",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Brunello: official/legal aging category. Requirement: 5 yr (2 oak, 4 mo btl). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.51.4",
+      "name": "Brunello Riserva \u00b7 6 yr (2 oak, 6 mo btl)",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Brunello Riserva: official/legal aging category. Requirement: 6 yr (2 oak, 6 mo btl). Times are minimums unless stated; see facts for barrel/bottle detail and s"
+    },
+    {
+      "id": "1.1.51.5",
+      "name": "Rosso di Montalcino \u00b7 release Sep 1 after harvest",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Rosso di Montalcino: official/legal aging category. Requirement: release Sep 1 after harvest. Times are minimums unless stated; see facts for barrel/bottle deta"
+    },
+    {
+      "id": "1.1.51.6",
+      "name": "Vino Nobile \u00b7 2 yr",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Vino Nobile: official/legal aging category. Requirement: 2 yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.51.7",
+      "name": "Vino Nobile Riserva \u00b7 3 yr (6 mo btl)",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Vino Nobile Riserva: official/legal aging category. Requirement: 3 yr (6 mo btl). Times are minimums unless stated; see facts for barrel/bottle detail and sourc"
+    },
+    {
+      "id": "1.1.51.8",
+      "name": "Chianti Riserva \u00b7 24 mo (3 btl)",
+      "subgenre": "Tuscany",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Chianti Riserva: official/legal aging category. Requirement: 24 mo (3 btl). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.1",
+      "name": "Barolo \u00b7 38 mo (18 wood)",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Barolo: official/legal aging category. Requirement: 38 mo (18 wood). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.2",
+      "name": "Barolo Riserva \u00b7 62 mo (18 wood)",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Barolo Riserva: official/legal aging category. Requirement: 62 mo (18 wood). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.3",
+      "name": "Barbaresco \u00b7 26 mo (9 wood)",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Barbaresco: official/legal aging category. Requirement: 26 mo (9 wood). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.4",
+      "name": "Barbaresco Riserva \u00b7 50 mo (9 wood)",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Barbaresco Riserva: official/legal aging category. Requirement: 50 mo (9 wood). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.5",
+      "name": "Amarone \u00b7 2 yr",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Amarone: official/legal aging category. Requirement: 2 yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.6",
+      "name": "Amarone Riserva \u00b7 4 yr",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Amarone Riserva: official/legal aging category. Requirement: 4 yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.7",
+      "name": "Taurasi \u00b7 3 yr (12 wood)",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Taurasi: official/legal aging category. Requirement: 3 yr (12 wood). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.52.8",
+      "name": "Taurasi Riserva \u00b7 4 yr (18 wood)",
+      "subgenre": "Piedmont, Veneto & Campania",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Taurasi Riserva: official/legal aging category. Requirement: 4 yr (18 wood). Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.53.1",
+      "name": "Franciacorta \u00b7 18 mo lees",
+      "subgenre": "Italian Traditional-Method",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Traditional-method sparkling wine DOCG from Lombardy, Italy. It is made mainly from Chardonnay and Pinot Noir. Requirement: 18 mo lees."
+    },
+    {
+      "id": "1.1.53.2",
+      "name": "Franciacorta Sat\u00e8n/Ros\u00e9 \u00b7 24 mo lees",
+      "subgenre": "Italian Traditional-Method",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Franciacorta Sat\u00e8n/Ros\u00e9: official/legal aging category. Requirement: 24 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source"
+    },
+    {
+      "id": "1.1.53.3",
+      "name": "Franciacorta Millesimato \u00b7 30 mo lees",
+      "subgenre": "Italian Traditional-Method",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Franciacorta Millesimato: official/legal aging category. Requirement: 30 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and sourc"
+    },
+    {
+      "id": "1.1.53.4",
+      "name": "Franciacorta Riserva \u00b7 60 mo lees",
+      "subgenre": "Italian Traditional-Method",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Franciacorta Riserva: official/legal aging category. Requirement: 60 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.53.5",
+      "name": "Trento DOC \u00b7 15 mo lees",
+      "subgenre": "Italian Traditional-Method",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Trento DOC: official/legal aging category. Requirement: 15 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.53.6",
+      "name": "Trento Riserva \u00b7 36 mo lees",
+      "subgenre": "Italian Traditional-Method",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Trento Riserva: official/legal aging category. Requirement: 36 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.54.1",
+      "name": "Champagne NV \u00b7 15 mo from tirage",
+      "subgenre": "Champagne & Cr\u00e9mant",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Champagne NV: official/legal aging category. Requirement: 15 mo from tirage. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.54.2",
+      "name": "Champagne Vintage \u00b7 36 mo from tirage",
+      "subgenre": "Champagne & Cr\u00e9mant",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Champagne Vintage: official/legal aging category. Requirement: 36 mo from tirage. Times are minimums unless stated; see facts for barrel/bottle detail and sourc"
+    },
+    {
+      "id": "1.1.54.3",
+      "name": "Champagne NV lees \u00b7 12 mo",
+      "subgenre": "Champagne & Cr\u00e9mant",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Champagne NV lees: official/legal aging category. Requirement: 12 mo. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.54.4",
+      "name": "Cr\u00e9mant \u00b7 9 mo lees (12 mo to consumer)",
+      "subgenre": "Champagne & Cr\u00e9mant",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "French traditional-method sparkling wine made outside Champagne (e.g. Alsace, Loire, Burgundy, Jura). Requirement: 9 mo lees (12 mo to consumer)."
+    },
+    {
+      "id": "1.1.54.5",
+      "name": "Cr\u00e9mant du Jura \u00b7 12 mo before release",
+      "subgenre": "Champagne & Cr\u00e9mant",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Cr\u00e9mant du Jura: official/legal aging category. Requirement: 12 mo before release. Times are minimums unless stated; see facts for barrel/bottle detail and sour"
+    },
+    {
+      "id": "1.1.55.1",
+      "name": "Vin Jaune \u00b7 6 yr 3 mo (60 mo under voile)",
+      "subgenre": "Jura & Vins Doux Naturels",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Vin Jaune: official/legal aging category. Requirement: 6 yr 3 mo (60 mo under voile). Times are minimums unless stated; see facts for barrel/bottle detail and s"
+    },
+    {
+      "id": "1.1.55.2",
+      "name": "Banyuls Grand Cru \u00b7 30 mo wood",
+      "subgenre": "Jura & Vins Doux Naturels",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Banyuls Grand Cru: official/legal aging category. Requirement: 30 mo wood. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.55.3",
+      "name": "Rivesaltes Ambr\u00e9/Tuil\u00e9 \u00b7 to Aug 31, 2nd yr",
+      "subgenre": "Jura & Vins Doux Naturels",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Rivesaltes Ambr\u00e9/Tuil\u00e9: official/legal aging category. Requirement: to Aug 31, 2nd yr. Times are minimums unless stated; see facts for barrel/bottle detail and "
+    },
+    {
+      "id": "1.1.55.4",
+      "name": "Rivesaltes Hors d'\u00c2ge \u00b7 5 yr",
+      "subgenre": "Jura & Vins Doux Naturels",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Rivesaltes Hors d'\u00c2ge: official/legal aging category. Requirement: 5 yr. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.56.1",
+      "name": "Vintage \u00b7 bottled by Jul 30, yr 3",
+      "subgenre": "Port (IVDP)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Vintage: official/legal aging category. Requirement: bottled by Jul 30, yr 3. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.56.2",
+      "name": "LBV \u00b7 bottled yr 4\u20136",
+      "subgenre": "Port (IVDP)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "LBV: official/legal aging category. Requirement: bottled yr 4\u20136. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.56.3",
+      "name": "Colheita \u00b7 7+ yr wood",
+      "subgenre": "Port (IVDP)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Colheita: official/legal aging category. Requirement: 7+ yr wood. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.56.4",
+      "name": "Tawny Reserve \u00b7 IVDP panel",
+      "subgenre": "Port (IVDP)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Tawny Reserve: official/legal aging category. Requirement: IVDP panel. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.56.5",
+      "name": "Tawny 10/20/30/40/50/80 Years \u00b7 indicated age",
+      "subgenre": "Port (IVDP)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Tawny 10/20/30/40/50/80 Years: official/legal aging category. Requirement: indicated age. Times are minimums unless stated; see facts for barrel/bottle detail a"
+    },
+    {
+      "id": "1.1.57.1",
+      "name": "Colheita \u00b7 5+ yr wood",
+      "subgenre": "Madeira (IVBAM)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Colheita: official/legal aging category. Requirement: 5+ yr wood. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.57.2",
+      "name": "Frasqueira \u00b7 20+ yr wood",
+      "subgenre": "Madeira (IVBAM)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Frasqueira: official/legal aging category. Requirement: 20+ yr wood. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.57.3",
+      "name": "5/10/15/20/30/40/50 Years \u00b7 indicated age",
+      "subgenre": "Madeira (IVBAM)",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "5/10/15/20/30/40/50 Years: official/legal aging category. Requirement: indicated age. Times are minimums unless stated; see facts for barrel/bottle detail and s"
+    },
+    {
+      "id": "1.1.58.1",
+      "name": "Tokaji Asz\u00fa \u00b7 18 mo wood, release yr 3",
+      "subgenre": "Central Europe",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Hungarian sweet wine made by adding botrytized (asz\u00fa) berries to base wine or must. Requirement: 18 mo wood, release yr 3."
+    },
+    {
+      "id": "1.1.58.2",
+      "name": "Tokaji Eszencia \u00b7 no fixed minimum",
+      "subgenre": "Central Europe",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Tokaji Eszencia: official/legal aging category. Requirement: no fixed minimum. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.58.3",
+      "name": "Sekt Austria \u00b7 9 mo lees (6 mo Charmat)",
+      "subgenre": "Central Europe",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Sekt Austria: official/legal aging category. Requirement: 9 mo lees (6 mo Charmat). Times are minimums unless stated; see facts for barrel/bottle detail and sou"
+    },
+    {
+      "id": "1.1.58.4",
+      "name": "Sekt Austria Reserve \u00b7 18 mo lees",
+      "subgenre": "Central Europe",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Sekt Austria Reserve: official/legal aging category. Requirement: 18 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    },
+    {
+      "id": "1.1.58.5",
+      "name": "Sekt Austria Gro\u00dfe Reserve \u00b7 36 mo lees",
+      "subgenre": "Central Europe",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Sekt Austria Gro\u00dfe Reserve: official/legal aging category. Requirement: 36 mo lees. Times are minimums unless stated; see facts for barrel/bottle detail and sou"
+    },
+    {
+      "id": "1.1.58.6",
+      "name": "Germany \u00b7 no general aging minimum",
+      "subgenre": "Central Europe",
+      "parent": "Aging Requirements",
+      "slug": null,
+      "definition": "Germany: official/legal aging category. Requirement: no general aging minimum. Times are minimums unless stated; see facts for barrel/bottle detail and source."
+    }
+  ],
+  "prev": null,
+  "next": {
+    "name": "Beer Academy",
+    "id": "1.2",
+    "href": null
+  }
+}
